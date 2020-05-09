@@ -6,7 +6,7 @@ const BlogPost = ({ data }) => {
     const post = data.markdownRemark
     return (
         <Layout>
-            <div style={{'marginLeft': '5rem', 'marginRight': '5rem'}}>
+            <div>
             <h2>{post.frontmatter.title}</h2>
             <p>{post.frontmatter.date}</p>
             <div dangerouslySetInnerHTML = {{ __html: post.html }} />
