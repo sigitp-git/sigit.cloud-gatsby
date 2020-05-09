@@ -33,9 +33,9 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main style={{'marginLeft': '5rem', 'marginRight': '5rem'}}>{children}</main>
+        <main>{children}</main>
         <hr/>
-        <footer style={{'marginLeft': '5rem', 'marginRight': '5rem'}}>
+        <footer>
           <Link to="/">Home</Link>{` `}
           <Link to="/about/">About</Link>{` `}
           <Link to="/disclaimer/">Disclaimer</Link>{` `}
