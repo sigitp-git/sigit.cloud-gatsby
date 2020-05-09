@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="About" />
-        <h1>About</h1>
+        <h2>About</h2>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
             <Image fixed={data.avatar.childImageSharp.fixed} alt={data.site.siteMetadata.author}
                 style={{

@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 const Disclaimer = () => (
   <Layout>
     <SEO title="Disclaimer" />
-    <h1>Disclaimer</h1>
+    <h2>Disclaimer</h2>
     <p>
         Any views or opinions expressed here are strictly my own. While I work for Amazon Web Services (AWS), this blog is not my job for AWS. I am solely responsible for all content published here.
     </p>
