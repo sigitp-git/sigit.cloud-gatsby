@@ -25,9 +25,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 // Dynamically reate pages based on graphql query on slugs from each node, put component of that page from blog-post.js template
+// Create pagination using src/templates/blog-list.js
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
     const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
+    const blogListTemplate = path.resolve('./src/templates/blog-list.js')
 
     // this graphql is function string to pass graphql query, this is a node version of graphql
     // this query returns a promise of slugs. use then instead of async await
@@ -52,9 +54,11 @@ exports.createPages = ({ graphql, actions }) => {
     `, { limit: 1000}).then(result => {
         const posts = result.data.allMarkdownRemark.edges
         posts.forEach((post, index) => {
+            // create prev and next on each posts render
             const previous = index === posts.length - 1 ? null : posts[index + 1].node
             const next = index === 0 ? null : posts[index - 1].node
 
+            // previous and next are objects props sent as pageContect object to blogPostTemplate
             createPage({
                 path: post.node.fields.slug,
                 component: blogPostTemplate,
@@ -66,13 +70,14 @@ exports.createPages = ({ graphql, actions }) => {
             })
         })
         // Create blog post list pages
-        const postsPerPage = 15
+        // Assign path page2, page3, page4, etc
+        const postsPerPage = 6
         const numPages = Math.ceil(posts.length / postsPerPage)
 
         Array.from({ length: numPages }).forEach((_, i) => {
             createPage({
-                path: i === 0 ? `/` : `/${i + 1}`,
-                component: path.resolve('./src/templates/blog-list.js'),
+                path: i === 0 ? `/` : `${i + 1}`,
+                component: blogListTemplate,
                 context: {
                     limit: postsPerPage,
                     skip: i * postsPerPage,
