@@ -3,7 +3,7 @@ title: "Update Kartu Ijo"
 date: "2013-01-30"
 ---
 
-Dapet email dari Mba Lisa, lawyer di [Barry Appleman and Leiden](http://www.balglobal.com/ "http://www.balglobal.com/") kalau sekarang si [proses kartu ijo](http://sigitp.wordpress.com/2012/10/01/permanent-residency-process/ "http://sigitp.wordpress.com/2012/10/01/permanent-residency-process/") sedang dalam tahap PERM labor certification yang totalnya perlu waktu 3-4 bulan.
+Dapet email dari Mba Lisa, lawyer di [Barry Appleman and Leiden](https://www.balglobal.com/ "https://www.balglobal.com/") kalau sekarang si [proses kartu ijo](https://sigitp.wordpress.com/2012/10/01/permanent-residency-process/ "https://sigitp.wordpress.com/2012/10/01/permanent-residency-process/") sedang dalam tahap PERM labor certification yang totalnya perlu waktu 3-4 bulan.
 
 Proses nya sendiri dimulai Desember tahun lalu jadi mungkin sekitar April selesai. Setelah itu baru dimulai aplikasi permanent residency nya yang perlu waktu 6-9 bulan. Masih lama ternyata, tapi jelas lebih cepat daripada temen-temen yang berasal dari India dan China.
 

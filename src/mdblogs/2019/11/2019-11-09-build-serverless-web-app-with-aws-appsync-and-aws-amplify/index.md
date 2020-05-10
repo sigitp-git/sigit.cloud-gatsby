@@ -123,7 +123,7 @@ Above commands will install application packages and compile the code to run on 
 
 **Step 3. Test Front-End Web Application Locally**
 
-With VS Code, once the application packages installed and compiled, your default browser will be automatically opened with [http://localhost:3000/](http://localhost:3000/) where the application runs.
+With VS Code, once the application packages installed and compiled, your default browser will be automatically opened with [https://localhost:3000/](https://localhost:3000/) where the application runs.
 
 Test by adding events into the application.
 

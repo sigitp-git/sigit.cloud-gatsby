@@ -13,7 +13,7 @@ date: "2013-12-23"
 > - Supports **arbitrary custom topologies**, and includes a basic set of **parametrized topologies**
 > - also Provides a straightforward and extensible **Python API** for network creation and experimentation
 > 
-> [mininet.org/overview](http://mininet.org/overview)
+> [mininet.org/overview](https://mininet.org/overview)
 
 Once Mininet VM installed (see previous post), you can start to play around with it. Access the VM with root access (_**sudo su**_). _**mn**_ command can be used to activate basic topology of Mininet. The basic topology is: **h1-s1-h2** with one OpenFlow controller **c0**. We can create custom topology by building certain Python script (will be discussed later). See below log.
 
@@ -176,6 +176,6 @@ root@mininet-vm:/home/mininet#
 
 Reading materials:
 
-1. [mininet.org](http://mininet.org)
-2. [opennetworking.org](http://opennetworking.org)
+1. [mininet.org](https://mininet.org)
+2. [opennetworking.org](https://opennetworking.org)
 3. [SDN with OpenFlow](https://play.google.com/store/books/details?id=GSC8AQAAQBAJ&source=productsearch&utm_source=HA_Desktop_US&utm_medium=SEM&utm_campaign=PLA&pcampaignid=MKTAD0930BO1)

@@ -7,7 +7,7 @@ I also have done this long time ago, just have time to write today :) Yes busy b
 
 Definition
 
-So let's start with US L-1 VISA definition. According to [http://www.workpermit.com/us/us\_l1.htm](http://www.workpermit.com/us/us_l1.htm) :
+So let's start with US L-1 VISA definition. According to [https://www.workpermit.com/us/us\_l1.htm](https://www.workpermit.com/us/us_l1.htm) :
 
 > The United States L1 visa is a non-immigrant visa which allows companies operating both in the US and abroad to transfer certain classes of employee from  its foreign operations to the USA operations for up to seven years. The employee must have worked for a subsidiary, parent, affiliate or branch office of your US company outside of the US for at least one year out of the last three years.
 > 
@@ -36,9 +36,9 @@ Applicant's Forms
 
 The DS-160 form has to be completed online. Check all the forms here:
 
-[http://www.ustraveldocs.com/](http://www.ustraveldocs.com/ "blocked::http://www.ustraveldocs.com/")
+[https://www.ustraveldocs.com/](https://www.ustraveldocs.com/ "blocked::https://www.ustraveldocs.com/")
 
-[http://jakarta.usembassy.gov/](http://jakarta.usembassy.gov/ "blocked::http://jakarta.usembassy.gov/")
+[https://jakarta.usembassy.gov/](https://jakarta.usembassy.gov/ "blocked::https://jakarta.usembassy.gov/")
 
 And very important thing is that the photograph should meet the requirement exactly. Just go to Jl. Sabang In Central Jakarta, lots of photo studio there comply with US Embassy standard.
 

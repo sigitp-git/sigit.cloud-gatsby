@@ -28,4 +28,4 @@ Ericsson's LTE test bed thus uses cyclic-prefix OFDM (CP-OFDM) technology in the
 
 The LTE test bed is currently limited to a single cell configuration without support for radio resource management, admission control, or handover between cells or sectors. Apart from basic radio and baseband (BB) capabilities, it implements medium access control (MAC), radio link control (RLC), and a simple interface to applications and services. It has also been prepared to work with advanced antenna solutions. Therefore, the LTE access network can optimize transmission according to a user's location and needs - that is, it can combine several streams, form beams (beamforming) for longer range, or employ other combinations of transmission.
 
-[http://www.ericsson.com/ericsson/corpinfo/publications/review/2007\_01/02.shtml](http://www.ericsson.com/ericsson/corpinfo/publications/review/2007_01/02.shtml)
+[https://www.ericsson.com/ericsson/corpinfo/publications/review/2007\_01/02.shtml](https://www.ericsson.com/ericsson/corpinfo/publications/review/2007_01/02.shtml)

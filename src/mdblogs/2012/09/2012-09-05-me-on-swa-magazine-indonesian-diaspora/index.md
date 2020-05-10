@@ -3,9 +3,9 @@ title: "Me on SWA Magazine - Indonesian Diaspora"
 date: "2012-09-05"
 ---
 
-My friend Pyuth posted this on twitter: [http://pics.lockerz.com/s/240677455](http://pics.lockerz.com/s/240677455)
+My friend Pyuth posted this on twitter: [https://pics.lockerz.com/s/240677455](https://pics.lockerz.com/s/240677455)
 
-I was surprised because I didn't remember any of this before.[![Image](http://sigitp.files.wordpress.com/2012/09/x2_e58724f1.jpg?w=468)](http://sigitp.files.wordpress.com/2012/09/x2_e58724f1.jpg)
+I was surprised because I didn't remember any of this before.[![Image](https://sigitp.files.wordpress.com/2012/09/x2_e58724f1.jpg?w=468)](https://sigitp.files.wordpress.com/2012/09/x2_e58724f1.jpg)
 
 And then I remember, about 3 months ago, there was a SWA Magazine editor add me on LinkedIn and she was asking me to participate on Indonesian Diaspora survey. She sent me a form to fill in consisting personal information like: Name, Education History, Company & Work History, Salary, Compensation, Benefits and whether I will come back to Indonesia or not, etc.
 

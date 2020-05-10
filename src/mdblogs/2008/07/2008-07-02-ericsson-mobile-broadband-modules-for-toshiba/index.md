@@ -17,17 +17,17 @@ Users of Toshiba business laptops will soon benefit from Ericsson’s latest wir
 
 **Notes to editors:**
 
-Fact sheet and product images: [www.ericsson.com/solutions/mobile\_broadband\_modules/press.shtml](http://www.ericsson.com/solutions/mobile_broadband_modules/press.shtml)
+Fact sheet and product images: [www.ericsson.com/solutions/mobile\_broadband\_modules/press.shtml](https://www.ericsson.com/solutions/mobile_broadband_modules/press.shtml)
 
 Ericsson’s standard multimedia content is available at the broadcast room:
 
-[www.ericsson.com/broadcast\_room](http://www.ericsson.com/broadcast_room)
+[www.ericsson.com/broadcast\_room](https://www.ericsson.com/broadcast_room)
 
 _Ericsson is the world's leading provider of technology and services to telecom operators. The market leader in 2G and 3G mobile technologies, Ericsson supplies communications services and manages networks that serve more than 195 million subscribers. The company’s portfolio comprises mobile and fixed network infrastructure, and broadband and multimedia solutions for operators, enterprises and developers. The Sony Ericsson joint venture provides consumers with feature-rich personal mobile devices._
 
 _Ericsson is advancing its vision of ‘communication for all’ through innovation, technology, and sustainable business solutions. Working in 175 countries, more than 70,000 employees generated revenue of USD 27.9 billion (SEK 188 billion) in 2007. Founded in 1876 and headquartered in Stockholm, Sweden, Ericsson is listed on OMX Nordic Exchange Stockholm and NASDAQ._
 
-_For more information, visit [www.ericsson.com](www.ericsson.com) or [www.ericsson.mobi](http://www.ericsson.mobi/)._
+_For more information, visit [www.ericsson.com](www.ericsson.com) or [www.ericsson.mobi](https://www.ericsson.mobi/)._
 
 **FOR FURTHER INFORMATION, PLEASE CONTACT**
 

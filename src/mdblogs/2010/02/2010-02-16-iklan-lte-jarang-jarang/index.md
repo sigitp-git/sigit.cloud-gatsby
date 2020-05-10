@@ -7,7 +7,7 @@ Jarang - jarang E/// ada iklannya di detik.com, biasanya  NSN yang ngiklan mulu
 
 atau ini sebenernya bukan iklan? :D
 
-[http://www.detikinet.com/read/2010/02/13/094248/1298805/328/setelah-eropa-as-bersiap-sambut-lte](http://www.detikinet.com/read/2010/02/13/094248/1298805/328/setelah-eropa-as-bersiap-sambut-lte)
+[https://www.detikinet.com/read/2010/02/13/094248/1298805/328/setelah-eropa-as-bersiap-sambut-lte](https://www.detikinet.com/read/2010/02/13/094248/1298805/328/setelah-eropa-as-bersiap-sambut-lte)
 
 ![](images/bwa150.JPG) Ilustrasi (Ist.)
 

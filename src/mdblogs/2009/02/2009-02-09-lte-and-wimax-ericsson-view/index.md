@@ -9,7 +9,7 @@ Ericsson’s Chief Technology Officer, Håkan Eriksson, has been named one of th
 
 We asked Håkan Eriksson three questions about why he stood behind the 3GPP-based Long-Term Evolution (LTE) standard when others were touting WiMAX technology, and why he believes LTE will lead the way to the 4G future.
 
-![Håkan Eriksson](http://mail.google.com/a/ipv6.or.id/?ui=2&ik=9b585f9d4b&view=att&th=11f550f942cc62b3&attid=0.1&disp=emb&zw "Håkan Eriksson")
+![Håkan Eriksson](https://mail.google.com/a/ipv6.or.id/?ui=2&ik=9b585f9d4b&view=att&th=11f550f942cc62b3&attid=0.1&disp=emb&zw "Håkan Eriksson")
 
 Håkan Eriksson
 

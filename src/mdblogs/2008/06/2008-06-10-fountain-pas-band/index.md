@@ -15,10 +15,10 @@ ooo..dreams lead another dreams see the shining stone are waiting for the rims t
 
 ooo..dreams lead another dreams see the shining stone are waiting for the rims to renew the day of my black yesterday re-pictures my white canvas black, grey then white
 
-ooo..dreams lead another dreams [](http://wisnu06.multiply.com/) see the shining stone are waiting for the rims to renew the day of my black yesterday re-pictures my white canvas black, grey then white
+ooo..dreams lead another dreams [](https://wisnu06.multiply.com/) see the shining stone are waiting for the rims to renew the day of my black yesterday re-pictures my white canvas black, grey then white
 
-lyric from [http://www.pas-band.com/index.php](http://www.pas-band.com/index.php)
+lyric from [https://www.pas-band.com/index.php](https://www.pas-band.com/index.php)
 
-mp3 from [http://wisnu06.multiply.com/](http://wisnu06.multiply.com/)
+mp3 from [https://wisnu06.multiply.com/](https://wisnu06.multiply.com/)
 
 M.A.N.T.A.P

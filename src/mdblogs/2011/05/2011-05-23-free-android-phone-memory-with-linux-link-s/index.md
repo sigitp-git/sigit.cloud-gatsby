@@ -3,7 +3,7 @@ title: "Free Android Phone Memory with Linux link -s"
 date: "2011-05-23"
 ---
 
-Source: [http://www.baadnwz.eu/search/label/tutorials](http://www.baadnwz.eu/search/label/tutorials)
+Source: [https://www.baadnwz.eu/search/label/tutorials](https://www.baadnwz.eu/search/label/tutorials)
 
 Although there is a2sd, that keeps the apks on the sd-ext some files are stored on phone's nand on /data partition and if we install alot of apk's then you remain out of free space. WE DO ALL THIS WITH PHONEON, NOT IN RECOVERY 1st let's see how much free space i'm having:
 

@@ -9,7 +9,7 @@ The kitchen and cashier located in the middle part of the restaurant which is st
 
 **Recorder:** iPhone 5 with iLapse apps.
 
-**Venue:** Five Sixty by Wolfgang Puck Restaurant at Reunion Tower Dallas http://www.wolfgangpuck.com/restaurants/fine-dining/3917/
+**Venue:** Five Sixty by Wolfgang Puck Restaurant at Reunion Tower Dallas https://www.wolfgangpuck.com/restaurants/fine-dining/3917/
 
 \[youtube=https://www.youtube.com/watch?v=JV9TNlpFLYo\]
 

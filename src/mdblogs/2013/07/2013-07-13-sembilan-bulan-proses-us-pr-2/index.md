@@ -11,11 +11,11 @@ Menyambung posting terkait proses PR/Kartu Ijo, saya akan ringkas proses nya sep
 
 Link dibawah adalah posting saya sebelumnya tentang US PR.
 
-[http://sigitp.wordpress.com/2012/10/01/permanent-residency-process/](http://sigitp.wordpress.com/2012/10/01/permanent-residency-process/)
+[https://sigitp.wordpress.com/2012/10/01/permanent-residency-process/](https://sigitp.wordpress.com/2012/10/01/permanent-residency-process/)
 
-[http://sigitp.wordpress.com/2013/01/29/update-kartu-ijo/](http://sigitp.wordpress.com/2013/01/29/update-kartu-ijo/)
+[https://sigitp.wordpress.com/2013/01/29/update-kartu-ijo/](https://sigitp.wordpress.com/2013/01/29/update-kartu-ijo/)
 
-[http://sigitp.wordpress.com/2013/03/06/us-permanent-residency-process-status-check/](http://sigitp.wordpress.com/2013/03/06/us-permanent-residency-process-status-check/)
+[https://sigitp.wordpress.com/2013/03/06/us-permanent-residency-process-status-check/](https://sigitp.wordpress.com/2013/03/06/us-permanent-residency-process-status-check/)
 
 **1\. Pihak yang terlibat:**
 

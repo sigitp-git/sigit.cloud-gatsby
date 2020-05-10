@@ -3,7 +3,7 @@ title: "Good Riddance"
 date: "2011-05-18"
 ---
 
-\[youtube=http://www.youtube.com/watch?v=JE2QnjT4k8Q\]
+\[youtube=https://www.youtube.com/watch?v=JE2QnjT4k8Q\]
 
 Another turning point, a fork stuck in the road Time grabs you by the wrist, directs you where to go So make the best of this test, and don't ask why It's not a question, but a lesson learned in time
 

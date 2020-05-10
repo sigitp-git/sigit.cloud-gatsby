@@ -129,7 +129,7 @@ npm run amplify-push
 ## [](https://github.com/sebsto/amplify-datastore-js-e2e#implement--start-the-app)Implement & Start the App
 
 ```javascript
-# start the app, your browser should open the app at http://localhost:3000
+# start the app, your browser should open the app at https://localhost:3000
 npm start
 ```
 

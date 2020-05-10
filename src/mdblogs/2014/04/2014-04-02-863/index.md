@@ -3,7 +3,7 @@ title: "Running"
 date: "2014-04-02"
 ---
 
-Triggered by overweight verdict during EOY 2008 medical check up, I started running for 30 minutes daily (on weekdays) at a gym close to Ericsson Indonesia office. At that time running wasn't such a hype as it is Today in Jakarta. Furthermore, running outside the gym considered arguably unhealthy with [certain air condition](http://online.wsj.com/news/articles/SB10000872396390444897304578046713405298742). Though Jakarta air condition Today might have improved well with frequent Car Free Day program.
+Triggered by overweight verdict during EOY 2008 medical check up, I started running for 30 minutes daily (on weekdays) at a gym close to Ericsson Indonesia office. At that time running wasn't such a hype as it is Today in Jakarta. Furthermore, running outside the gym considered arguably unhealthy with [certain air condition](https://online.wsj.com/news/articles/SB10000872396390444897304578046713405298742). Though Jakarta air condition Today might have improved well with frequent Car Free Day program.
 
 \[caption id="attachment\_877" align="alignleft" width="186"\][![2009 - 89KG](images/2009-89kg.jpg)](https://sigitp.files.wordpress.com/2014/04/2009-89kg.jpg) Me in 2009, 25 YR - 89 KG\[/caption\]
 

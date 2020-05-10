@@ -9,41 +9,41 @@ Me myself has been using cellphone since 2004. I don't have many cellphones actu
 
 1\. Siemens C62 (2004 - 2006)
 
-My first cellphone, Siemens C62. I bought this one using my commission money from [Mr. Prof. R.J. Widodo](http://rjwidodo.blogspot.com "Prof. R.J. Widodo") for helping him arranging international conference on Control Systems in my 3rd year at ITB. I worked for this event with my two other friends: Ari Pribadi and Dzikri Hakam.
+My first cellphone, Siemens C62. I bought this one using my commission money from [Mr. Prof. R.J. Widodo](https://rjwidodo.blogspot.com "Prof. R.J. Widodo") for helping him arranging international conference on Control Systems in my 3rd year at ITB. I worked for this event with my two other friends: Ari Pribadi and Dzikri Hakam.
 
 ![](images/1-siemens-c62.jpg)
 
 **GENERAL**
 
-[2G Network](http://www.gsmarena.com/network-bands.php3)
+[2G Network](https://www.gsmarena.com/network-bands.php3)
 
 GSM 900 / 1800 / 1900
 
-[Announced](http://www.gsmarena.com/siemens_c62-540.php)
+[Announced](https://www.gsmarena.com/siemens_c62-540.php)
 
 2003, 4Q
 
-[Status](http://www.gsmarena.com/siemens_c62-540.php)
+[Status](https://www.gsmarena.com/siemens_c62-540.php)
 
 Discontinued
 
 **SIZE**
 
-[Dimensions](http://www.gsmarena.com/siemens_c62-540.php)
+[Dimensions](https://www.gsmarena.com/siemens_c62-540.php)
 
 101 x 44 x 20 mm, 82 cc
 
-[Weight](http://www.gsmarena.com/siemens_c62-540.php)
+[Weight](https://www.gsmarena.com/siemens_c62-540.php)
 
 85 g
 
 **DISPLAY**
 
-[Type](http://www.gsmarena.com/glossary.php3?term=display-type)
+[Type](https://www.gsmarena.com/glossary.php3?term=display-type)
 
 CSTN, 4096 colors
 
-[Size](http://www.gsmarena.com/siemens_c62-540.php)
+[Size](https://www.gsmarena.com/siemens_c62-540.php)
 
 128 x 128 pixels, 7 lines
 
@@ -51,29 +51,29 @@ CSTN, 4096 colors
 
 **SOUND**
 
-[Alert types](http://www.gsmarena.com/glossary.php3?term=call-alerts)
+[Alert types](https://www.gsmarena.com/glossary.php3?term=call-alerts)
 
 Vibration; Downloadable polyphonic ringtones
 
-[Speakerphone](http://www.gsmarena.com/glossary.php3?term=loudspeaker)
+[Speakerphone](https://www.gsmarena.com/glossary.php3?term=loudspeaker)
 
 Yes
 
 **MEMORY**
 
-[Phonebook](http://www.gsmarena.com/glossary.php3?term=phonebook)
+[Phonebook](https://www.gsmarena.com/glossary.php3?term=phonebook)
 
 50 x 4 fields, 4 contact groups
 
-[Call records](http://www.gsmarena.com/siemens_c62-540.php)
+[Call records](https://www.gsmarena.com/siemens_c62-540.php)
 
 10 dialed, 10 received, 10 missed calls
 
-[Internal](http://www.gsmarena.com/glossary.php3?term=dynamic-memory)
+[Internal](https://www.gsmarena.com/glossary.php3?term=dynamic-memory)
 
 1.6 MB
 
-[Card slot](http://www.gsmarena.com/glossary.php3?term=memory-card-slot)
+[Card slot](https://www.gsmarena.com/glossary.php3?term=memory-card-slot)
 
 No
 
@@ -89,31 +89,31 @@ No
 
 **DATA**
 
-[GPRS](http://www.gsmarena.com/glossary.php3?term=gprs)
+[GPRS](https://www.gsmarena.com/glossary.php3?term=gprs)
 
 Class 8 (4+1 slots), 32 - 40 kbps
 
-[EDGE](http://www.gsmarena.com/glossary.php3?term=edge)
+[EDGE](https://www.gsmarena.com/glossary.php3?term=edge)
 
 No
 
-[3G](http://www.gsmarena.com/glossary.php3?term=3g)
+[3G](https://www.gsmarena.com/glossary.php3?term=3g)
 
 No
 
-[WLAN](http://www.gsmarena.com/glossary.php3?term=wi-fi)
+[WLAN](https://www.gsmarena.com/glossary.php3?term=wi-fi)
 
 No
 
-[Bluetooth](http://www.gsmarena.com/glossary.php3?term=bluetooth)
+[Bluetooth](https://www.gsmarena.com/glossary.php3?term=bluetooth)
 
 No
 
-[Infrared port](http://www.gsmarena.com/glossary.php3?term=irda)
+[Infrared port](https://www.gsmarena.com/glossary.php3?term=irda)
 
 No
 
-[USB](http://www.gsmarena.com/glossary.php3?term=usb)
+[USB](https://www.gsmarena.com/glossary.php3?term=usb)
 
 **CAMERA**
 
@@ -121,31 +121,31 @@ No
 
 **FEATURES**
 
-[Messaging](http://www.gsmarena.com/glossary.php3?term=messaging)
+[Messaging](https://www.gsmarena.com/glossary.php3?term=messaging)
 
 SMS, EMS, MMS, Email
 
-[Browser](http://www.gsmarena.com/glossary.php3?term=browser)
+[Browser](https://www.gsmarena.com/glossary.php3?term=browser)
 
 WAP 1.2.1
 
-[Radio](http://www.gsmarena.com/glossary.php3?term=fm-radio)
+[Radio](https://www.gsmarena.com/glossary.php3?term=fm-radio)
 
 No
 
-[Games](http://www.gsmarena.com/glossary.php3?term=mobile-games)
+[Games](https://www.gsmarena.com/glossary.php3?term=mobile-games)
 
 2 - Achevo, Falling
 
-[Colors](http://www.gsmarena.com/siemens_c62-540.php)
+[Colors](https://www.gsmarena.com/siemens_c62-540.php)
 
 3 - Eagle White, Pidgeon Blue and Cherry Red
 
-[GPS](http://www.gsmarena.com/glossary.php3?term=gps)
+[GPS](https://www.gsmarena.com/glossary.php3?term=gps)
 
 No
 
-[Java](http://www.gsmarena.com/glossary.php3?term=java)
+[Java](https://www.gsmarena.com/glossary.php3?term=java)
 
 No
 
@@ -161,11 +161,11 @@ No
 
 Standard, Li-Ion 630 mAh (EBA-610)
 
-[Stand-by](http://www.gsmarena.com/glossary.php3?term=stand-by-time)
+[Stand-by](https://www.gsmarena.com/glossary.php3?term=stand-by-time)
 
 Up to 250 h
 
-[Talk time](http://www.gsmarena.com/glossary.php3?term=talk-time)
+[Talk time](https://www.gsmarena.com/glossary.php3?term=talk-time)
 
 Up to 4 h 30 min
 

@@ -208,11 +208,11 @@ Some of the references cited in this article are contained in the list of books 
 
 **Links to Other Areas of This Web Site**
 
-- [Articles by Fred Nickols](http://home.att.net/%7Enickols/articles.htm)
-- [Distance Consulting Home Page](http://home.att.net/%7Enickols/distance.htm)
-- [Personal](http://home.att.net/%7Enickols/personal.html)
-- [Project History](http://home.att.net/%7Enickols/projects.htm)
-- [Resume](http://home.att.net/%7Enickols/resume.htm)
-- [Services](http://home.att.net/%7Enickols/services.html)
+- [Articles by Fred Nickols](https://home.att.net/%7Enickols/articles.htm)
+- [Distance Consulting Home Page](https://home.att.net/%7Enickols/distance.htm)
+- [Personal](https://home.att.net/%7Enickols/personal.html)
+- [Project History](https://home.att.net/%7Enickols/projects.htm)
+- [Resume](https://home.att.net/%7Enickols/resume.htm)
+- [Services](https://home.att.net/%7Enickols/services.html)
 
 **This page last updated on September 12, 2004**

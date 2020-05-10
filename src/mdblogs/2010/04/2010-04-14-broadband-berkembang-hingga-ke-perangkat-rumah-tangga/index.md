@@ -5,7 +5,7 @@ date: "2010-04-14"
 
 Warning: Another Narcism :p :p
 
-[http://www.antaranews.com/berita/1267873814/broadband-berkembang-hingga-ke-perangkat-rumah-tangga](http://www.antaranews.com/berita/1267873814/broadband-berkembang-hingga-ke-perangkat-rumah-tangga)
+[https://www.antaranews.com/berita/1267873814/broadband-berkembang-hingga-ke-perangkat-rumah-tangga](https://www.antaranews.com/berita/1267873814/broadband-berkembang-hingga-ke-perangkat-rumah-tangga)
 
 Sabtu, 6 Maret 2010 18:10 WIB | Iptek | Internet
 

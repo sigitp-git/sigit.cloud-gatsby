@@ -122,4 +122,4 @@ g. The routers support a variety of high-speed interfaces (including SONET/SDH, 
 
 h. High Availablility Options such as Graceful RE Switchover (GRES), and Bidirectional Forwarding Detection (BFD).
 
-http://www.tutorialsweb.com
+https://www.tutorialsweb.com

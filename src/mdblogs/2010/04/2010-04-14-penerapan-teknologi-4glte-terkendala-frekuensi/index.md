@@ -5,7 +5,7 @@ date: "2010-04-14"
 
 Warning: Narcism Detected :p
 
-[http://tekno.kompas.com/read/xml/2010/03/05/19462245/penerapan.teknologi.4glte.terkendala.frekuensi](http://tekno.kompas.com/read/xml/2010/03/05/19462245/penerapan.teknologi.4glte.terkendala.frekuensi)
+[https://tekno.kompas.com/read/xml/2010/03/05/19462245/penerapan.teknologi.4glte.terkendala.frekuensi](https://tekno.kompas.com/read/xml/2010/03/05/19462245/penerapan.teknologi.4glte.terkendala.frekuensi)
 
 ##### Jumat, 5 Maret 2010 | 19:46 WIB
 

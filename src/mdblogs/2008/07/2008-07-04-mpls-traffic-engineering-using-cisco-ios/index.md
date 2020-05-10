@@ -5,7 +5,7 @@ date: "2008-07-04"
 
 Lab physical topology:
 
-[![](http://sigitp.files.wordpress.com/2008/07/blog.jpg?w=300)](http://sigitp.files.wordpress.com/2008/07/blog.jpg)
+[![](https://sigitp.files.wordpress.com/2008/07/blog.jpg?w=300)](https://sigitp.files.wordpress.com/2008/07/blog.jpg)
 
 Configuration:
 
@@ -211,7 +211,7 @@ network 10.0.0.0 0.255.255.255 area 0
 
 !
 
-ip http server
+ip https server
 
 ip classless
 
@@ -489,7 +489,7 @@ network 10.0.0.0 0.255.255.255 area 0
 
 !
 
-ip http server
+ip https server
 
 ip classless
 
@@ -727,7 +727,7 @@ network 10.0.0.0 0.255.255.255 area 0
 
 !
 
-ip http server
+ip https server
 
 ip classless
 
@@ -941,7 +941,7 @@ network 10.0.0.0 0.255.255.255 area 0
 
 !
 
-ip http server
+ip https server
 
 ip classless
 
@@ -1159,7 +1159,7 @@ network 10.0.0.0 0.255.255.255 area 0
 
 !
 
-ip http server
+ip https server
 
 ip classless
 

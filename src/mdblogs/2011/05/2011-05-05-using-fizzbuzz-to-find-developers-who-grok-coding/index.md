@@ -3,13 +3,13 @@ title: "Using FizzBuzz to Find Developers who Grok Coding"
 date: "2011-05-05"
 ---
 
-This post title I took from [http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/](http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/). Nice test that makes me want to try it. Basically here's the test:
+This post title I took from [https://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/](https://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/). Nice test that makes me want to try it. Basically here's the test:
 
 > Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
 So, I log in into inet0.net machine and begin scripting in perl.
 
-\[caption id="attachment\_265" align="aligncenter" width="480" caption="fizzbuzz"\][![fizzbuzz](images/fizzbuzz.jpg "fizzbuzz")](http://sigitp.files.wordpress.com/2011/05/fizzbuzz.jpg)\[/caption\]
+\[caption id="attachment\_265" align="aligncenter" width="480" caption="fizzbuzz"\][![fizzbuzz](images/fizzbuzz.jpg "fizzbuzz")](https://sigitp.files.wordpress.com/2011/05/fizzbuzz.jpg)\[/caption\]
 
 Then I run it, voila!
 
