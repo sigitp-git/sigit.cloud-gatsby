@@ -51,7 +51,7 @@ const BlogList = ({ data, pageContext}) => {
       >
         {!isFirst && (
           <Link to={prevPage} rel="prev" style={{color: 'darkslateblue'}}>
-            {"<< Prev"}
+            <small>{"<< Prev"}</small>
           </Link>
         )}
         {Array.from({ length: numPages }, (_, i) => (
@@ -70,13 +70,13 @@ const BlogList = ({ data, pageContext}) => {
                 background: i + 1 === currentPage ? 'darkslateblue' : '',
               }}
             >
-              {i + 1}
+              <small>{i + 1}</small>
             </Link>
           </li>
         ))}
         {!isLast && (
           <Link to={nextPage} rel="next" style={{color: 'darkslateblue'}}>
-            {"Next >>"}
+            <small>{"Next >>"}</small>
           </Link>
         )}
       </ul><br/>
