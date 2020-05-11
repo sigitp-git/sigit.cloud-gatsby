@@ -18,6 +18,7 @@ const Header = ({ siteTitle }) => (
     >
     <Link to="/" style={{ color: `darkslateblue`, textDecoration: `none`}}>{siteTitle}</Link><br/>
     <Link to="/about/" style={{ fontSize: `1.5rem`, color: `darkslateblue`, textDecoration: `none`}}><small>about</small></Link><span style={{ fontSize: `1.2rem`, color: `white`, textDecoration: `none`}}> | </span>
+    <Link to="/gallery/" style={{ fontSize: `1.5rem`, color: `darkslateblue`, textDecoration: `none`}}><small>gallery</small></Link><span style={{ fontSize: `1.2rem`, color: `white`, textDecoration: `none`}}> | </span>
     <Link to="/disclaimer/" style={{ fontSize: `1.5rem`, color: `darkslateblue`, textDecoration: `none`}}><small>disclaimer</small></Link>
     </div>
   </header>

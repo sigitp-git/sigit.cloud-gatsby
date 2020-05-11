@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "gatsby-image"
 import SEO from "../components/seo"
 
-const IndexPage = ({ data }) => (
+const About = ({ data }) => (
     <Layout>
         <SEO title="About" />
         <h2>About</h2>
@@ -74,7 +74,7 @@ const IndexPage = ({ data }) => (
     </Layout>
 )
 
-export default IndexPage
+export default About
 
 export const aboutQuery = graphql`
 query AboutQuery {

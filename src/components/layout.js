@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
         <footer>
           <Link to="/">Home</Link>{` `}
           <Link to="/about/">About</Link>{` `}
+          <Link to="/gallery/">Gallery</Link>{` `}
           <Link to="/disclaimer/">Disclaimer</Link>{` `}
           © {new Date().getFullYear()}, a <a href="https://aws.amazon.com/serverless/" target="_blank" rel="noopener noreferrer">Serverless</a> Blog, Built with
           {` `}
