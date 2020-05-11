@@ -10,7 +10,7 @@ const About = ({ data }) => (
         <SEO title="About" />
         <h2>About</h2>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
-            <Image fixed={data.avatar.childImageSharp.fixed} alt={data.site.siteMetadata.author}
+            <Image critical={true} fixed={data.avatar.childImageSharp.fixed} alt={data.site.siteMetadata.author}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -30,7 +30,7 @@ const About = ({ data }) => (
         </div>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
         <p><a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a></p>
-            <Image fixed={data.cert0.childImageSharp.fixed}
+            <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -38,7 +38,7 @@ const About = ({ data }) => (
                     borderRadius: `3%`,
                 }}
             />
-            <Image fixed={data.cert1.childImageSharp.fixed}
+            <Image critical={true} fixed={data.cert1.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -46,7 +46,7 @@ const About = ({ data }) => (
                     borderRadius: `3%`,
                 }}
             />
-            <Image fixed={data.cert2.childImageSharp.fixed}
+            <Image critical={true} fixed={data.cert2.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -54,7 +54,7 @@ const About = ({ data }) => (
                     borderRadius: `3%`,
                 }}
             />
-            <Image fixed={data.cert3.childImageSharp.fixed}
+            <Image critical={true} fixed={data.cert3.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -62,7 +62,7 @@ const About = ({ data }) => (
                     borderRadius: `3%`,
                 }}
             />
-            <Image fixed={data.cert4.childImageSharp.fixed}
+            <Image critical={true} fixed={data.cert4.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,

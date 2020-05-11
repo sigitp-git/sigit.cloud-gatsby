@@ -38,6 +38,7 @@ module.exports = {
             options: {
               maxWidth: 590,
               linkImagesToOriginal: false,
+              loading: `eager`,
             }
           }
         ]
