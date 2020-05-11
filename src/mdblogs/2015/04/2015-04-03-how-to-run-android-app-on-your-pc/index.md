@@ -5,7 +5,11 @@ date: "2015-04-03"
 
 I keep my phone's app curated, I don't install unnecessary app. In the same time, I still need some redundant app like Telegram & Whatsapp to keep in touch. Getting/replying text and call between iOS 8 and Yosemite works like a charm, so running app on your Mac/PC is the next logical step.
 
-\[caption id="attachment\_1076" align="alignnone" width="300"\][![Android App on Your PC](https://sigitp.files.wordpress.com/2015/04/screen-shot-2015-04-03-at-11-41-09-am.png?w=300)](https://sigitp.files.wordpress.com/2015/04/screen-shot-2015-04-03-at-11-41-09-am.png) Android App on Your PC\[/caption\]
+
+
+[![Android App on Your PC](https://sigitp.files.wordpress.com/2015/04/screen-shot-2015-04-03-at-11-41-09-am.png?w=300)](https://sigitp.files.wordpress.com/2015/04/screen-shot-2015-04-03-at-11-41-09-am.png) 
+
+
 
 With Google Chrome's ARC Welder, it's very easy to do:
 

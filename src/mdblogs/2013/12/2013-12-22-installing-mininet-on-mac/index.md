@@ -21,6 +21,7 @@ My solution is to install the X11 inside the VM itself. Do this by using this co
 
 If those steps are done, we are good to go. I will write more about Mininet and [OpenFlow](https://openflow.org) based SDN (Software-Defined Networking) in the future.
 
-Stay tuned!
-
-PS: I am using Macbook Air 11", Mid 2011 (1.5 GHz Intel Core i5, 4GB RAM)
+> Stay tuned!
+>
+> PS: I am using Macbook Air 11", Mid 2011 (1.5 GHz Intel Core i5, 4GB RAM)
+>

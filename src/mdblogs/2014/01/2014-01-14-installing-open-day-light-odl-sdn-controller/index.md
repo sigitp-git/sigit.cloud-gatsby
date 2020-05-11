@@ -9,23 +9,30 @@ date: "2014-01-14"
 
 On your Ubuntu Mininet VM (see my previous posts), execute these commands to install it:
 
+```shell
 $ sudo apt-get update
 $ sudo apt-get install maven git openjdk-7-jre openjdk-7-jdk
 $ git clone https://git.opendaylight.org/gerrit/p/controller.git
 $ cd controller/opendaylight/distribution/opendaylight/
 $ mvn clean install
 $ cd target/distribution.opendaylight-0.1.0-SNAPSHOT-osgipackage/opendaylight
+```
 
 Once done, the run.sh script can be found at:
 
+```shell
 ~/controller/opendaylight/distribution/opendaylight/target/distribution.opendaylight-osgipackage/opendaylight
+```
 
 Before we run the ODL controller run.sh script, we have to make sure the JAVA\_HOME variable set correctly. Add this line to your .bashrc configuration (under home directory).
 
+```shell
 JAVA\_HOME=:/usr/lib/jvm/java-1.7.0-openjdk-amd64
+```
 
 Now execute the run.sh file
 
+```shell
 mininet@mininet-vm:~$ cd controller/opendaylight/distribution/opendaylight/target/distribution.opendaylight-osgipackage/opendaylight
 mininet@mininet-vm:~/controller/opendaylight/distribution/opendaylight/target/distribution.opendaylight-osgipackage/opendaylight$ ls
 configuration  lib  plugins  run.bat  run.sh  version.propertiesmininet@mininet-vm:~/controller/opendaylight/distribution/opendaylight/target/distribution.opendaylight-osgipackage/opendaylight$ ./run.sh
@@ -33,6 +40,7 @@ configuration  lib  plugins  run.bat  run.sh  version.propertiesmininet@min
 Once done, you will get this message:
 
 2014-01-14 14:06:51.552 PST \[pool-24-thread-1\] INFO  o.o.c.m.s.c.i.service.TwoPhaseCommit - Transaction: BA-0 Finished successfully
+```
 
 And ODL controller GUI interface can be accessed via web browser: https://127.0.0.1:8080 as pictured below (username admin, password admin for default).
 

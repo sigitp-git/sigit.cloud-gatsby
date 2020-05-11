@@ -161,17 +161,7 @@ Initiate Amplify Console by using:
 amplify add hosting
 ```
 
-
-
-#select using arrow keys, enter
-Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment)
-
-#then select, enter
-Continuous deployment (Git-based deployments)
-
-#browser fired up to choose your Github repository, follow the wizard
-
-The following Amplify Console will show
+The following Amplify Console will show, browser fired up to choose your Github repository, follow the wizard to proceed with Amplify Console (Managed hosting with custom domains, Continuous deployment).
 
 ![](images/Screen-Shot-2020-05-02-at-5.47.15-PM-1-1024x435.png)
 
@@ -199,4 +189,4 @@ Amplify Console completed CI/CD pipeline
 
 [https://docs.amplify.aws/lib/datastore/data-access/q/platform/js](https://docs.amplify.aws/lib/datastore/data-access/q/platform/js)
 
-[Disclaimer](https://www.sigit.cloud/disclaimer/)
+

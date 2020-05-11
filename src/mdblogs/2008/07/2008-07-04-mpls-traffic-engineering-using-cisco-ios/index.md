@@ -9,6 +9,7 @@ Lab physical topology:
 
 Configuration:
 
+```
 PE1-AS1#sh run
 
 Building configuration...
@@ -1208,3 +1209,6 @@ login
 end
 
 P3-AS1#
+```
+
+

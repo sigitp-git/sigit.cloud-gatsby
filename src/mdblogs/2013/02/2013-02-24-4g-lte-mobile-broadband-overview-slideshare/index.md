@@ -11,10 +11,9 @@ Mas Himawan's post on this event: [https://himawan.blogsome.com/2013/02/20/webe
 
 The slides:
 
-Downloadable [PDF](https://dl.dropbox.com/u/35930182/4G%20LTE%20Mobile%20Broadband%20Overview%20-%20Sigit%20Priyanggoro%20-%20Introduction%20-%20MAC.pdf)
-
-\[slideshare id=16728636&doc=4gltemobilebroadbandoverview-sigitpriyanggoro-introduction-mac-130224002538-phpapp02\]
+https://www.slideshare.net/sigitpriyanggoro/4-g-lte-mobile-broadband-overview-sigit-priyanggoro-introduction-mac
 
 **Networked Society, Machine to Machine, Smartphone, Smartgrid, Smartcar, Smarthouse, etc:**
 
-\[youtube=https://www.youtube.com/watch?v=qLI3s8Qq6is\]
+[![](http://img.youtube.com/vi/qLI3s8Qq6is/0.jpg)](http://www.youtube.com/watch?v=qLI3s8Qq6is "")
+

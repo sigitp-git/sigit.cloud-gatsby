@@ -9,10 +9,11 @@ This post title I took from [https://imranontech.com/2007/01/24/using-fizzbuzz-
 
 So, I log in into inet0.net machine and begin scripting in perl.
 
-\[caption id="attachment\_265" align="aligncenter" width="480" caption="fizzbuzz"\][![fizzbuzz](images/fizzbuzz.jpg "fizzbuzz")](https://sigitp.files.wordpress.com/2011/05/fizzbuzz.jpg)\[/caption\]
+[![fizzbuzz](images/fizzbuzz.jpg "fizzbuzz")](https://sigitp.files.wordpress.com/2011/05/fizzbuzz.jpg)
 
 Then I run it, voila!
 
+```perl6
 sigit@amazon:~$ perl fizzbuzz.pl
 1
 2
@@ -115,3 +116,6 @@ Fizz
 Fizz
 Buzz
 sigit@amazon:~$
+```
+
+

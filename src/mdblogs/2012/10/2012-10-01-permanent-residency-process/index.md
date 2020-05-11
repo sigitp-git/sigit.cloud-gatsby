@@ -3,7 +3,7 @@ title: "Permanent Residency Process"
 date: "2012-10-01"
 ---
 
-Bismillah, akhirnya proses permanent residency dimulai. Lawfirm yang dipake Ericsson adalah Berry Appleman & Leiden ([https://www.balglobal.com/](https://www.balglobal.com/)). Let's see berapa lama sampai bisa dapet Permanent Resident/Green Card, karena untuk negara-negara kayak China dan India, bisa sampe 7 - 10 tahun.
+Akhirnya proses permanent residency dimulai. Lawfirm yang dipake Ericsson adalah Berry Appleman & Leiden ([https://www.balglobal.com/](https://www.balglobal.com/)). Let's see berapa lama sampai bisa dapet Permanent Resident/Green Card, karena untuk negara-negara kayak China dan India, bisa sampe 7 - 10 tahun.
 
 ![](images/balsmall.jpg "BAL")
 
