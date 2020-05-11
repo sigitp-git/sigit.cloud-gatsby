@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
           <Link to="/">Home</Link>{` `}
           <Link to="/about/">About</Link>{` `}
           <Link to="/disclaimer/">Disclaimer</Link>{` `}
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, a <a href="https://aws.amazon.com/serverless/" target="_blank" rel="noopener noreferrer">Serverless</a> Blog, Built with
           {` `}
           <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
           {` `}
