@@ -19,6 +19,14 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            work
+            company
+            city
+            siteUrl
+            social {
+              linkedin
+              github
+            }
           }
         }
       }
@@ -66,6 +74,38 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `github:creator`,
+          content: site.siteMetadata.social.github,
+        },
+        {
+          name: `linkedin:creator`,
+          content: site.siteMetadata.social.linkedin,
+        },
+        {
+          name: `blog:creator`,
+          content: site.siteMetadata.author,
+        },
+        {
+          name: `blog:work`,
+          content: site.siteMetadata.work,
+        },
+        {
+          name: `blog:company`,
+          content: site.siteMetadata.company,
+        },
+        {
+          name: `author:city`,
+          content: site.siteMetadata.city,
+        },
+        {
+          name: `blog:siteUrl`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          name: `blog:description`,
+          content: site.siteMetadata.description,
         },
       ].concat(meta)}
     />
