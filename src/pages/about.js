@@ -18,7 +18,10 @@ const About = ({ data }) => {
 
     return (
     <Layout>
-        <SEO title="About" />
+        <SEO
+            title="About"
+            keywords={[`sigit`, `priyanggoro`, `sigit priyanggoro`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`, `reactjs`]}
+        />
         <h2>About</h2>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
             {/* <Image critical={true} fixed={data.avatar.childImageSharp.fixed} alt={data.site.siteMetadata.author}

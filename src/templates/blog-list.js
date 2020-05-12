@@ -18,7 +18,7 @@ const BlogList = ({ data, pageContext}) => {
     <Layout location={pageContext.location} title={siteTitle}>
       <SEO
         title={siteTitle}
-        keywords={[`sigit`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`sigit`, `priyanggoro`, `sigit priyanggoro`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`, `reactjs`]}
       />
 
       {posts.map(({ node }) => {

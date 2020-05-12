@@ -3,6 +3,7 @@ import React from "react";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Gallery = () => {
 
@@ -57,7 +58,12 @@ const Gallery = () => {
 
     return(
         <Layout>
-            <ImageGallery items={images} />
+        <SEO
+            title="Gallery"
+            keywords={[`sigit`, `priyanggoro`, `sigit priyanggoro`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`, `reactjs`]}
+        />
+        <h2>Gallery</h2>
+        <ImageGallery items={images} />
         </Layout>
     )
 }

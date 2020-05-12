@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 // catch data from graphql, catch pageContext from gatsby-node.js
 const BlogPost = ({ data, pageContext }) => {
@@ -9,6 +10,10 @@ const BlogPost = ({ data, pageContext }) => {
     const post = data.markdownRemark
     return (
         <Layout>
+            <SEO
+                title={post.frontmatter.title}
+                keywords={[`sigit`, `priyanggoro`, `sigit priyanggoro`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`, `reactjs`]}
+            />
             <div>
                 <h2>{post.frontmatter.title}</h2>
                 <p>{post.frontmatter.date}</p>
