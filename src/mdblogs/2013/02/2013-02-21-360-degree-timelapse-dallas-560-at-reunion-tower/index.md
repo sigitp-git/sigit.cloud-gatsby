@@ -11,6 +11,6 @@ The kitchen and cashier located in the middle part of the restaurant which is st
 
 **Venue:** Five Sixty by Wolfgang Puck Restaurant at Reunion Tower Dallas https://www.wolfgangpuck.com/restaurants/fine-dining/3917/
 
-[![](http://img.youtube.com/vi/JV9TNlpFLYo/0.jpg)](http://www.youtube.com/watch?v=JV9TNlpFLYo "")
+[![](https://img.youtube.com/vi/JV9TNlpFLYo/0.jpg)](https://www.youtube.com/watch?v=JV9TNlpFLYo "")
 
 

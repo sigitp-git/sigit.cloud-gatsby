@@ -75,8 +75,8 @@ network 192.168.64.0 0.0.63.255 area 1
 default-information originate
 !
 ip route 10.0.0.0 255.0.0.0 Null0 (simulate ISP connection)
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -201,8 +201,8 @@ network 192.168.1.0 0.0.0.255 area 0
 network 192.168.3.0 0.0.0.255 area 0
 network 192.168.208.0 0.0.0.3 area 2
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -326,8 +326,8 @@ router ospf 1
 log-adjacency-changes
 network 192.168.208.0 0.0.0.3 area 2
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !

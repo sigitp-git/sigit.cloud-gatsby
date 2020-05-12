@@ -102,8 +102,8 @@ network 192.168.1.0 0.0.0.255 area 0
 network 192.168.3.0 0.0.0.255 area 0
 network 192.168.224.0 0.0.0.3 area 51
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -230,8 +230,8 @@ ip route 192.168.240.0 255.255.255.0 Null0
 ip route 192.168.244.0 255.255.255.0 Null0
 ip route 192.168.248.0 255.255.255.0 Null0
 ip route 192.168.252.0 255.255.255.0 Null0
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -345,8 +345,8 @@ network 192.168.1.0 0.0.0.255 area 0
 network 192.168.64.0 0.0.63.255 area 1
 default-information originate always (distribute default routing information)
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !

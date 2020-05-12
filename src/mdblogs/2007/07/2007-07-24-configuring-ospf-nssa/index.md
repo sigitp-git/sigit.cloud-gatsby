@@ -131,8 +131,8 @@ network 192.168.1.0 0.0.0.255 area 0
 network 192.168.3.0 0.0.0.255 area 0
 network 192.168.224.0 0.0.0.3 area 51
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -288,8 +288,8 @@ area 51 nssa (configure area 51 as nssa)
 redistribute connected (this will be distributed using type 7 LSA, not type 5)
 network 192.168.224.0 0.0.0.3 area 51
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -399,8 +399,8 @@ log-adjacency-changes
 network 192.168.1.0 0.0.0.255 area 0
 network 192.168.64.0 0.0.63.255 area 1
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !

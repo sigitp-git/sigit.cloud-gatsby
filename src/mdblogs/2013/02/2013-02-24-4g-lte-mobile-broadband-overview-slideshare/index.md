@@ -15,5 +15,5 @@ https://www.slideshare.net/sigitpriyanggoro/4-g-lte-mobile-broadband-overview-si
 
 **Networked Society, Machine to Machine, Smartphone, Smartgrid, Smartcar, Smarthouse, etc:**
 
-[![](http://img.youtube.com/vi/qLI3s8Qq6is/0.jpg)](http://www.youtube.com/watch?v=qLI3s8Qq6is "")
+[![](https://img.youtube.com/vi/qLI3s8Qq6is/0.jpg)](https://www.youtube.com/watch?v=qLI3s8Qq6is "")
 

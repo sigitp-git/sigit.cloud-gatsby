@@ -80,8 +80,8 @@ network 192.168.0.0 0.0.0.255 area 0
 network 192.168.1.0 0.0.0.255 area 0
 network 192.168.224.0 0.0.0.255 area 51
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -230,8 +230,8 @@ network 192.168.3.0 0.0.0.255 area 51
 network 192.168.224.0 0.0.0.255 area 51
 network 192.168.240.0 0.0.0.3 area 3
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
@@ -378,8 +378,8 @@ router ospf 1
 log-adjacency-changes
 network 192.168.240.0 0.0.0.3 area 3
 !
-no ip http server
-no ip http secure-server
+no ip https server
+no ip https secure-server
 !
 !
 !
