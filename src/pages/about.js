@@ -40,7 +40,7 @@ const About = ({ data }) => {
         </div>
         <div style={{ display: `flex` }}>
             <p>
-                A blog by <strong>{data.site.siteMetadata.author}</strong><br/> 
+                A <a href={`https://www.linkedin.com/feed/hashtag/?keywords=serverless`} target="_blank" rel="noopener noreferrer">#serverless</a> blog by <strong>{data.site.siteMetadata.author}</strong><br/> 
                 <strong>{data.site.siteMetadata.work}</strong><br/> 
                 at <strong>{data.site.siteMetadata.company}</strong>, based in <strong>{data.site.siteMetadata.city}</strong>. {` `}<br/><br/> 
                 <a href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`} target="_blank" rel="noopener noreferrer"> LinkedIn</a><br/> 
