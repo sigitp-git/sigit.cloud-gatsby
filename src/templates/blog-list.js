@@ -39,18 +39,19 @@ const BlogList = ({ data, pageContext}) => {
           </div>
         )
       })}
+      <div>
       <ul
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'center',
           listStyle: 'none',
           padding: 0,
         }}
       >
         {!isFirst && (
-          <Link to={prevPage} rel="prev" style={{padding: '0.5rem', color: 'darkslateblue'}}>
+          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'darkslateblue'}}>
             {"<< Prev"}
           </Link>
         )}
@@ -64,6 +65,8 @@ const BlogList = ({ data, pageContext}) => {
             <Link
               to={`/${i === 0 ? '' : i + 1}`}
               style={{
+                marginTop: '0.1rem',
+                marginBottom: '0.1rem',
                 padding: '0.5rem',
                 textDecoration: 'none',
                 color: i + 1 === currentPage ? '#ffffff' : 'darkslateblue',
@@ -75,11 +78,12 @@ const BlogList = ({ data, pageContext}) => {
           </li>
         ))}
         {!isLast && (
-          <Link to={nextPage} rel="next" style={{ padding: '0.5rem', color: 'darkslateblue' }}>
+          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'darkslateblue' }}>
             {"Next >>"}
           </Link>
         )}
-      </ul><br/>
+      </ul>
+      </div>
     </Layout>
   )
 }
