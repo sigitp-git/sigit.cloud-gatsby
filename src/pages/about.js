@@ -47,13 +47,14 @@ const About = ({ data }) => {
                 <strong>{data.site.siteMetadata.work}</strong><br/> 
                 at <strong>{data.site.siteMetadata.company}</strong>, based in <strong>{data.site.siteMetadata.city}</strong>. {` `}<br/><br/> 
                 <a href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`} target="_blank" rel="noopener noreferrer"> LinkedIn</a><br/> 
-                <a href={`https://github.com/${data.site.siteMetadata.social.github}`} target="_blank" rel="noopener noreferrer"> GitHub</a>
+                <a href={`https://github.com/${data.site.siteMetadata.social.github}`} target="_blank" rel="noopener noreferrer"> GitHub</a><br/>
+                <a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a>
             </p>
         </div>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
-        <p><a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a></p>
         
         <ImageGallery items={images} />
+
             {/* <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
