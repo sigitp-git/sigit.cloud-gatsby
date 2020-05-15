@@ -48,7 +48,6 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://aws.amazon.com/appsync/" target="_blank" rel="noopener noreferrer">AppSync</a>
           {` `}
-          <span style={{'color': 'darkslateblue'}}>#darkslateblue</span>
         </footer>
       </div>
     </>

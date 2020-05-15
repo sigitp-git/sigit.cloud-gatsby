@@ -1,3 +1,8 @@
+:root {
+  --themeColor: darkslateblue;
+  --hoverColor: rgb(105, 95, 171); 
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -59,7 +64,7 @@ b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
-  color: darkslateblue;
+  color: var(--themeColor);
 }
 dfn {
   font-style: italic;
@@ -252,7 +257,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -269,7 +274,7 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -286,7 +291,7 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -303,7 +308,7 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -320,7 +325,7 @@ h5 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -337,7 +342,7 @@ h6 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: darkslateblue;
+  color: var(--themeColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -646,20 +651,20 @@ pre tt:after {
 
 a:link {
   text-decoration: none;
-  color: darkslateblue;
+  color: var(--themeColor);
 }
 
 a:visited {
   text-decoration: none;
-  color: darkslateblue;
+  color: var(--themeColor);
 }
 
 a:hover {
   text-decoration: none;
-  color: rgb(105, 95, 171);
+  color: var(--hoverColor);
 }
 
 a:active {
   text-decoration: none;
-  color: darkslateblue;
+  color: var(--themeColor);
 }
