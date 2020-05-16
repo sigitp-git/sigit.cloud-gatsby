@@ -7,7 +7,7 @@ date: "2020-05-16"
 
 Example of running App with customized Amazon Cognito: https://master.d1dp3i9zp6cblx.amplifyapp.com/postblog. This App front-end is based on GatsbyJS/React components. 
 
-You can try to Sing Up and Sign In, it will need valid Phone Number and E-Mail Address. 
+You can try to Sign Up and Sign In, it will need valid Phone Number and E-Mail Address. 
 
 ![](images/Screen Shot 2020-05-16 at 12.50.19 PM.png)
 
