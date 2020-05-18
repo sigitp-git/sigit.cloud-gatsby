@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import '../components/layout.css'
 
 const BlogList = ({ data, pageContext}) => {
   const siteTitle = data.site.siteMetadata.title
@@ -51,7 +52,7 @@ const BlogList = ({ data, pageContext}) => {
         }}
       >
         {!isFirst && (
-          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'darkslateblue'}}>
+          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--themeColor)'}}>
             {"<< Prev"}
           </Link>
         )}
@@ -69,8 +70,8 @@ const BlogList = ({ data, pageContext}) => {
                 marginBottom: '0.1rem',
                 padding: '0.5rem',
                 textDecoration: 'none',
-                color: i + 1 === currentPage ? '#ffffff' : 'darkslateblue',
-                background: i + 1 === currentPage ? 'darkslateblue' : '',
+                color: i + 1 === currentPage ? '#ffffff' : 'var(--themeColor)',
+                background: i + 1 === currentPage ? 'var(--themeColor)' : '',
               }}
             >
               {i + 1}
@@ -78,7 +79,7 @@ const BlogList = ({ data, pageContext}) => {
           </li>
         ))}
         {!isLast && (
-          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'darkslateblue' }}>
+          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--themeColor)' }}>
             {"Next >>"}
           </Link>
         )}
