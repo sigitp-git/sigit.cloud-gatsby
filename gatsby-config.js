@@ -11,6 +11,7 @@ module.exports = {
     social: {
       linkedin: `sigitpriyanggoro`,
       github: `sigitp-git`,
+      devto: `sigitp`,
     },
   },
   plugins: [

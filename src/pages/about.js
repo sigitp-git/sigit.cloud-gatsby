@@ -48,6 +48,7 @@ const About = ({ data }) => {
                 at <strong>{data.site.siteMetadata.company}</strong>, based in <strong>{data.site.siteMetadata.city}</strong>. {` `}<br/><br/> 
                 <a href={`https://www.linkedin.com/in/${data.site.siteMetadata.social.linkedin}`} target="_blank" rel="noopener noreferrer"> LinkedIn</a><br/> 
                 <a href={`https://github.com/${data.site.siteMetadata.social.github}`} target="_blank" rel="noopener noreferrer"> GitHub</a><br/>
+                <a href={`https://dev.to/${data.site.siteMetadata.social.devto}`} target="_blank" rel="noopener noreferrer"> Dev.To</a><br/>
                 <a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a>
             </p>
         </div>
@@ -162,6 +163,7 @@ site {
     social {
         linkedin
         github
+        devto
     }
     }
 }
