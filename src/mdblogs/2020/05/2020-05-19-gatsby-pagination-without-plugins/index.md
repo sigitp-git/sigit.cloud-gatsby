@@ -229,3 +229,4 @@ https://github.com/NickyMeuleman/gatsby-paginated-blog
 
 #### Discuss on Dev.to
 
+https://dev.to/sigitp/gatsbyjs-pagination-without-plugins-f1k
