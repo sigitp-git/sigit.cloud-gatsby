@@ -54,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
     `, { limit: 1000}).then(result => {
         const posts = result.data.allMarkdownRemark.edges
         posts.forEach((post, index) => {
-            // create prev and next on each posts render
+            // create prev and next on each posts render (for Blog Post Pagination, BPP)
             const previous = index === posts.length - 1 ? null : posts[index + 1].node
             const next = index === 0 ? null : posts[index - 1].node
 
@@ -69,8 +69,8 @@ exports.createPages = ({ graphql, actions }) => {
                 },
             })
         })
-        // Create blog post list pages
-        // Assign path page2, page3, page4, etc
+        // Create blog list pages (for Blog List Pagination, BLP)
+        // Assign path /2, /3, p/4, etc
         const postsPerPage = 6
         const numPages = Math.ceil(posts.length / postsPerPage)
 

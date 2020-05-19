@@ -7,7 +7,7 @@ import '../components/layout.css'
 const BlogList = ({ data, pageContext}) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  const { currentPage, numPages } = pageContext
+  const { numPages, currentPage } = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
   const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()

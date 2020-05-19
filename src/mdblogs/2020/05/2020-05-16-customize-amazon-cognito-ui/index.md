@@ -3,7 +3,7 @@ title: "Customize Amazon Cognito UI"
 date: "2020-05-16"
 ---
 
-##### Running App Example
+#### Running App Example
 
 Example of running App with customized Amazon Cognito: https://master.d1dp3i9zp6cblx.amplifyapp.com/postblog. This App front-end is based on GatsbyJS/React components. 
 
@@ -13,9 +13,9 @@ You can try to Sign Up and Sign In, it will need valid Phone Number and E-Mail A
 
 
 
-##### Code
+#### Code
 
-###### Add Cognito
+##### Add Cognito
 
 Add Amazon Cognito support to your App by using Amplify CLI from your App directory as follow:
 
@@ -29,7 +29,7 @@ prompt$ amplify push
 (pushing your Cognito configuration to AWS back-end using CloudFormation. Cognito User Pools and configuration will be created)
 ```
 
-###### CSS
+##### CSS
 
 https://github.com/sigitp-git/gatsby-appsync-amplify-pub/blob/master/src/components/layout.css 
 
@@ -45,9 +45,7 @@ https://github.com/sigitp-git/gatsby-appsync-amplify-pub/blob/master/src/compone
 
 The three CSS custom variables above (`--amplify-primary-color, --amplify-primary-tint`, and `--amplify-primary-shade`) overrides default (**orange**) colors from Amplify/Cognito libraries. Check this page for complete list of customizable CSS variables: https://docs.amplify.aws/ui/customization/theming/q/framework/react. 
 
-
-
-###### JavaScript/React
+##### JavaScript/React
 
 https://github.com/sigitp-git/gatsby-appsync-amplify-pub/blob/master/src/pages/postblog.js
 
@@ -84,6 +82,10 @@ We can then call the Amplify UI Components from the return statement of the appl
 
 We can also customize the `headerText` for both ` <AmplifySignIn>`, and `<AmplifySignUp>` components.
 
-###### Summary
+##### Summary
 
 As you can see, adding Authentication, Sign Up, Sign In, and Sign Out is very easy with Amazon Cognito. AWS handles the backend heavy-lifting to store your user information, SMS/E-Mail based verification, Passwords policy and much more, Happy Coding!
+
+##### Discuss on Dev.to
+
+https://dev.to/sigitp/customize-amazon-cognito-ui-1pl

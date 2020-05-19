@@ -143,4 +143,6 @@ We have learned the basics of [AWS AppSync](https://aws.amazon.com/appsync/) and
 
 We also explored a simple ReactJS based Front-End Web Application which utilizes [AWS AppSync](https://aws.amazon.com/appsync/) and [AWS Amplify](https://aws.amazon.com/amplify/) capabilities.
 
+#### Discuss on Dev.To
 
+https://dev.to/sigitp/build-serverless-web-app-with-aws-appsync-aws-amplify-51in 

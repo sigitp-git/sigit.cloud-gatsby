@@ -57,7 +57,7 @@ useEffect(() => {listExpenses()}, \[expenses\])
 
 Follow below step-by-step approach to reproduce the App and learn.
 
-## Prerequisite:
+#### Prerequisite
 
 Install Amplify CLI
 
@@ -145,7 +145,7 @@ amplify delete
 
 You might need to manually delete two Amazon S3 buckets created. In the [AWS Console](https://s3.console.aws.amazon.com/s3/home), search for the two buckets having `datastore` part of their name.
 
-## Optional: Amplify Console for CI/CD
+#### Optional - Amplify Console for CI/CD
 
 You can host your app using Amplify Console for CI/CD purposes. First create a repository on Github for example, then commit your changes.
 
@@ -179,7 +179,11 @@ Every-time you commit your code change to the GitHub master branch, Amplify Cons
 
 Amplify Console completed CI/CD pipeline
 
-## References:
+##### Discuss on Dev.to
+
+https://dev.to/sigitp/serverless-budget-calculator-with-amplify-datastore-4d8e
+
+##### References
 
 [https://aws.amazon.com/blogs/aws/amplify-datastore-simplify-development-of-offline-apps-with-graphql/](https://aws.amazon.com/blogs/aws/amplify-datastore-simplify-development-of-offline-apps-with-graphql/)
 
