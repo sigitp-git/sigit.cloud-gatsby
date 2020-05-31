@@ -4,17 +4,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "gatsby-image"
 import SEO from "../components/seo"
-import ImageGallery from "react-image-gallery";
+//import ImageGallery from "react-image-gallery";
 
 const About = ({ data }) => {
 
-    // Source: https://google-photos-album-demo.glitch.me/yuuwZL6S8xEPzFLU9
-    const response = ["https://lh3.googleusercontent.com/E6xUtKDxsesMvgh5uDXcSZVFglC8PrgbENubZDrWAT83ooBqQvUARfhR0k_WI1ZlydTrUFhCQyOG29YmY0HqK3JKnZ8hOVRySXMYBEFx3CkiKn3_2j6qt2q4Qm02mtcDbZAO8cS3wHw","https://lh3.googleusercontent.com/twgJt3k-TiwC81lOTRqr58Smx5vfGNojQrA0EENu4qU-LZcPSxlAHR6WMj0zoEW-8QgR_5VgiUDgnyteZeR2YOhPnqA3gP-urzFGtw_0CYrxoFpjnlYeqMfBM6IOWhSE6r4Y2MdrNXM","https://lh3.googleusercontent.com/a-_I_2Sxws3JRSa_ewsSI2aDER7qsLIxokraQAsOntwk6T2oCL9R08hQffrCbLlzwVxdOiMFZh8EIo3cyUOZwkVvCKP9GM7NXtdpy2sDTsxXp9eZm4RJHghMzRgrXAyuCSOiiUOeQ0g","https://lh3.googleusercontent.com/JJAro1YgKWThQ410M-mtTHxobXMfuBJHxET9tu16l3a54Yq8de5PWPYGw23VBhda8ODFhBygC1EwtjYrnw-CVEcpPr33YJ9aJZMeAXz2-GjNkD6lpaRzkL0-kOEN7lxYcukgvCun3og","https://lh3.googleusercontent.com/GYSN1TtbniEv9ktkErnoESo-YaWIl14weEKw4L61tSQPnhpwVbNFKKdBT2E_zjDHY74SGFxkfLB9lcCfbKkqEDRJmIE-Wbwi07-hxiwmDbW69nGoTkhUUimNpV4iMNoE-ho3HjCKvUU"]
+    // // Source: https://google-photos-album-demo.glitch.me/yuuwZL6S8xEPzFLU9
+    // const response = ["https://lh3.googleusercontent.com/E6xUtKDxsesMvgh5uDXcSZVFglC8PrgbENubZDrWAT83ooBqQvUARfhR0k_WI1ZlydTrUFhCQyOG29YmY0HqK3JKnZ8hOVRySXMYBEFx3CkiKn3_2j6qt2q4Qm02mtcDbZAO8cS3wHw","https://lh3.googleusercontent.com/twgJt3k-TiwC81lOTRqr58Smx5vfGNojQrA0EENu4qU-LZcPSxlAHR6WMj0zoEW-8QgR_5VgiUDgnyteZeR2YOhPnqA3gP-urzFGtw_0CYrxoFpjnlYeqMfBM6IOWhSE6r4Y2MdrNXM","https://lh3.googleusercontent.com/a-_I_2Sxws3JRSa_ewsSI2aDER7qsLIxokraQAsOntwk6T2oCL9R08hQffrCbLlzwVxdOiMFZh8EIo3cyUOZwkVvCKP9GM7NXtdpy2sDTsxXp9eZm4RJHghMzRgrXAyuCSOiiUOeQ0g","https://lh3.googleusercontent.com/JJAro1YgKWThQ410M-mtTHxobXMfuBJHxET9tu16l3a54Yq8de5PWPYGw23VBhda8ODFhBygC1EwtjYrnw-CVEcpPr33YJ9aJZMeAXz2-GjNkD6lpaRzkL0-kOEN7lxYcukgvCun3og","https://lh3.googleusercontent.com/GYSN1TtbniEv9ktkErnoESo-YaWIl14weEKw4L61tSQPnhpwVbNFKKdBT2E_zjDHY74SGFxkfLB9lcCfbKkqEDRJmIE-Wbwi07-hxiwmDbW69nGoTkhUUimNpV4iMNoE-ho3HjCKvUU"]
 
-    const images = response.map(url => ({
-        original: `${url}=w1024`,
-        thumbnail: `${url}=w100`
-    }))
+    // const images = response.map(url => ({
+    //     original: `${url}=w1024`,
+    //     thumbnail: `${url}=w100`
+    // }))
 
     return (
     <Layout>
@@ -52,11 +52,27 @@ const About = ({ data }) => {
                 <a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a>
             </p>
         </div>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`, borderRadius: `100%` }}>
-        
-        <ImageGallery items={images} />
+        <div style={{ display: `flex` }}>
+            <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left`}}>
+                <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3dtyGkMtYQMO4sr-2oQaA33HlnpxwVWGgpmmwvmHiQ8qXn0EkZyjEFJb8HFPiDEdvoGuwNHVwNtbPRnFunZAfGZmlGz7HORV9oO3aJDLAUhxt8BYBf-MrEz7d1gXDZFGwgxkbltXn7LVFoofK33UWuH1Q=s512-no?authuser=0"/>
+            </div>
+            <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left` }}>
+                <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3dFLKZIPhYG_hBFMrb4DVvyU6RV4RQJ5tiQV69xla-5C3j65-bcPU2fwo6v88bnz3Xg5sHLT9JbQ9pjsIMyIA4DzRzBIbqhcYdFWjDJE0B2CIeJJbhVsneoKilutjXTLj88exqjUkzY54rEWfCa08DbqQ=s512-no?authuser=0"/>
+            </div>
+            <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left` }}>
+                <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3coK-UgiuG62rZwZRtK6zH2JcrWzeaxMULM8dvzTA6T23gPCb2B_lXWYVD7jsmeJPD3QHHDOOKaK38jlKA5taotmIGbenaQGxZMEoKqcRlEWkoQGkv2CR3tqWt1N7O_JEHV1iN0vnlfVl4zYe7NO_aKJA=s512-no?authuser=0"/>
+            </div>
+            <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left` }}>
+                <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3d21KYnY2WSbSbgkL7Dfz5ldzXCVplnBlxmlR1DBeTiP5qbkSWVDlNjKqy-_r8JM-cAcQy-Kxc-A99OQtU8rIZQKBENUR2vQfqOqnK-ufMV9XiPnznrA7mdEUJAuHgyWU1jjMM4VivXIklyEs9Sd9210g=s512-no?authuser=0"/>
+            </div>
+            <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left` }}>
+                <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3e_93hIROyznUz00XgrMPx0ym0B1_XinAfXcHEhUUQLO9uu5KcbOfpOapZSscEQtxKXptsrjYWmD1l7Qv4Cdxeaz1xBh0VgDY6AkY9qWcJz1WRjl0WgOXjcUnaTN_d4SOjn6lCidRIMHiHHiE5INJ6-rw=s512-no?authuser=0"/>
+            </div>
+        </div>
 
-            {/* <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
+        {/* <ImageGallery items={images} />
+
+             <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
                 style={{
                     marginRight: "1rem",
                     marginBottom: 10,
@@ -95,8 +111,8 @@ const About = ({ data }) => {
                     minWidth: 50,
                     borderRadius: `3%`,
                 }}
-            /> */}
-        </div>
+            /> 
+        </div> */}
     </Layout>
     )
 }
