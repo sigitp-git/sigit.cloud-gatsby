@@ -34,19 +34,48 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <hr/>
+        <hr />
         <footer>
-          <Link to="/">Home</Link>{` `}
-          <Link to="/about/">About</Link>{` `}
-          <Link to="/gallery/">Gallery</Link>{` `}
-          <Link to="/disclaimer/">Disclaimer</Link>{` `}
-          © {new Date().getFullYear()}, a <a href="https://aws.amazon.com/serverless/" target="_blank" rel="noopener noreferrer">Serverless</a> Blog, Built with
+          <Link to="/">Home</Link>
           {` `}
-          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
+          <Link to="/about/">About</Link>
           {` `}
-          <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer">Amplify</a>
+          <Link to="/gallery/">Gallery</Link>
           {` `}
-          <a href="https://aws.amazon.com/appsync/" target="_blank" rel="noopener noreferrer">AppSync</a>
+          <Link to="/disclaimer/">Disclaimer</Link>
+          {` `}© {new Date().getFullYear()}, a{" "}
+          <a
+            href="https://aws.amazon.com/serverless/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Serverless
+          </a>{" "}
+          Blog, Built with
+          {` `}
+          <a
+            href="https://www.gatsbyjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby
+          </a>
+          {` `}
+          <a
+            href="https://aws.amazon.com/amplify/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Amplify
+          </a>
+          {` `}
+          <a
+            href="https://aws.amazon.com/appsync/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AppSync
+          </a>
           {` `}
         </footer>
       </div>

@@ -5,7 +5,7 @@
   --headerTitleColor: whitesmoke;
   --headerSubLinkBG: #353239;
   --themeColor: whitesmoke;
-  --hoverColor: rgb(190, 149, 235); 
+  --hoverColor: rgb(226, 212, 243); 
   /* --headerColor: #6F439C; */
   --headerColor: rebeccapurple;
   --blogListBG: #353239;
@@ -681,7 +681,6 @@ a:visited {
 a:hover {
   text-decoration: none;
   color: var(--hoverColor);
-  transition: background .3s ease;
 }
 
 a:active {
@@ -691,15 +690,17 @@ a:active {
 
 .blog-list {
   text-decoration: none;
-  color: #fafafa;
-  cursor: pointer;
-  background: #353239;
-  border: 1px solid #423e47;
   margin: 1.6rem 0;
   padding: 1rem 1.6rem;
   display: block;
-  transition: background .3s ease;
-  display: flex;
-  justify-content: space-between;
-  align-items: center
+  align-items: center;
+  cursor: pointer;
+  border: 1px hidden var(--blogListBrdr);
+  border-radius: 5px;
+  background: var(--blogListBG);
+  transition: background .3s ease, color .3s ease;
+}
+
+.blog-list:hover {
+  background: #3d3941;
 }

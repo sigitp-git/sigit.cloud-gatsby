@@ -39,21 +39,7 @@ const BlogList = ({ data, pageContext }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-            <div
-              key={node.fields.slug}
-              style={{
-                cursor: "pointer",
-                transition: "background .3s ease",
-                border: "1px solid var(--blogListBrdr)",
-                marginTop: "1rem",
-                marginBottom: "3rem",
-                background: "var(--blogListBG)",
-                paddingTop: "1rem",
-                paddingBottom: "1rem",
-                paddingLeft: "1rem",
-                paddingRight: "1rem",
-              }}
-            >
+            <div key={node.fields.slug} className="blog-list">
               <h2
                 style={{
                   marginBottom: "1rem",
