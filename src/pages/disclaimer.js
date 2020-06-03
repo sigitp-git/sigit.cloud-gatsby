@@ -23,7 +23,18 @@ const Disclaimer = () => (
       ]}
     />
     <h2>Disclaimer</h2>
-    <div style={{border: '1px solid var(--blogListBrdr)', marginTop: '1rem', marginBottom: '3rem', background: 'var(--blogListBG)', paddingTop: '1rem', paddingBottom: '0rem', paddingLeft: '1rem', paddingRight: '1rem'}}>
+    <div
+      style={{
+        border: "1px solid var(--blogListBrdr)",
+        marginTop: "1rem",
+        marginBottom: "2rem",
+        background: "var(--blogListBG)",
+        paddingTop: "1rem",
+        paddingBottom: "0rem",
+        paddingLeft: "1rem",
+        paddingRight: "1rem",
+      }}
+    >
       <p>
         Any views or opinions expressed here are strictly my own. While I work
         for Amazon Web Services (AWS), this blog is not my job for AWS. I am

@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import '../components/layout.css'
+import React from "react"
+import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import "../components/layout.css"
 
-const BlogList = ({ data, pageContext}) => {
+const BlogList = ({ data, pageContext }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   const { numPages, currentPage } = pageContext
   const isFirst = currentPage === 1
   const isLast = currentPage === numPages
-  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString()
+  const prevPage = currentPage - 1 === 1 ? "/" : (currentPage - 1).toString()
   const nextPage = (currentPage + 1).toString()
 
   //console.log(pageContext)
@@ -19,71 +19,117 @@ const BlogList = ({ data, pageContext}) => {
     <Layout location={pageContext.location} title={siteTitle}>
       <SEO
         title={siteTitle}
-        keywords={[`sigit`, `priyanggoro`, `sigit priyanggoro`, `aws`, `severless`, `amplify`, `appsync`, `blog`, `gatsby`, `javascript`, `react`, `reactjs`]}
+        keywords={[
+          `sigit`,
+          `priyanggoro`,
+          `sigit priyanggoro`,
+          `aws`,
+          `severless`,
+          `amplify`,
+          `appsync`,
+          `blog`,
+          `gatsby`,
+          `javascript`,
+          `react`,
+          `reactjs`,
+        ]}
       />
 
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <div key={node.fields.slug} style={{border: '1px solid var(--blogListBrdr)', marginTop: '1rem', marginBottom: '3rem', background: 'var(--blogListBG)', paddingTop: '1rem', paddingBottom: '1rem', paddingLeft: '1rem', paddingRight: '1rem'}}>
-            <h2
+          <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+            <div
+              key={node.fields.slug}
               style={{
-                marginBottom: '1rem',
+                cursor: "pointer",
+                transition: "background .3s ease",
+                border: "1px solid var(--blogListBrdr)",
+                marginTop: "1rem",
+                marginBottom: "3rem",
+                background: "var(--blogListBG)",
+                paddingTop: "1rem",
+                paddingBottom: "1rem",
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
               }}
             >
-              <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
+              <h2
+                style={{
+                  marginBottom: "1rem",
+                }}
+              >
                 {title}
-              </Link>
-            </h2>
-            {node.frontmatter.date}
-            <p dangerouslySetInnerHTML={{ __html: node.excerpt }}/>
-          </div>
+              </h2>
+              {node.frontmatter.date}
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          </Link>
         )
       })}
       <div>
-      <ul
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          alignItems: 'center',
-          listStyle: 'none',
-          padding: 0,
-        }}
-      >
-        {!isFirst && (
-          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--headerColor)'}}>
-            {"<< Prev"}
-          </Link>
-        )}
-        {Array.from({ length: numPages }, (_, i) => (
-          <li
-            key={`pagination-number${i + 1}`}
-            style={{
-              margin: 0,
-            }}
-          >
+        <ul
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+            listStyle: "none",
+            padding: 0,
+          }}
+        >
+          {!isFirst && (
             <Link
-              to={`/${i === 0 ? '' : i + 1}`}
+              to={prevPage}
+              rel="prev"
               style={{
-                marginTop: '0.1rem',
-                marginBottom: '0.1rem',
-                padding: '0.5rem',
-                textDecoration: 'none',
-                color: i + 1 === currentPage ? '#ffffff' : 'var(--headerColor)',
-                background: i + 1 === currentPage ? 'var(--headerColor)' : '',
+                marginTop: "0.1rem",
+                marginBottom: "0.1rem",
+                padding: "0.5rem",
+                color: "var(--headerColor)",
               }}
             >
-              {i + 1}
+              {"<< Prev"}
             </Link>
-          </li>
-        ))}
-        {!isLast && (
-          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--headerColor)' }}>
-            {"Next >>"}
-          </Link>
-        )}
-      </ul>
+          )}
+          {Array.from({ length: numPages }, (_, i) => (
+            <li
+              key={`pagination-number${i + 1}`}
+              style={{
+                margin: 0,
+              }}
+            >
+              <Link
+                to={`/${i === 0 ? "" : i + 1}`}
+                style={{
+                  marginTop: "0.1rem",
+                  marginBottom: "0.1rem",
+                  padding: "0.5rem",
+                  textDecoration: "none",
+                  color:
+                    i + 1 === currentPage ? "#ffffff" : "var(--headerColor)",
+                  background: i + 1 === currentPage ? "var(--headerColor)" : "",
+                }}
+              >
+                {i + 1}
+              </Link>
+            </li>
+          ))}
+          {!isLast && (
+            <Link
+              to={nextPage}
+              rel="next"
+              style={{
+                marginTop: "0.1rem",
+                marginBottom: "0.1rem",
+                padding: "0.5rem",
+                color: "var(--headerColor)",
+              }}
+            >
+              {"Next >>"}
+            </Link>
+          )}
+        </ul>
       </div>
     </Layout>
   )

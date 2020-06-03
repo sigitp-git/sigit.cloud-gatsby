@@ -3,12 +3,15 @@
   /* --themeColor: #43799c; */
   /* --themeColor: #6F439C; */
   --headerTitleColor: whitesmoke;
+  --headerSubLinkBG: #353239;
   --themeColor: whitesmoke;
-  --hoverColor: rgb(204, 176, 233); 
-  --headerColor: #6F439C;
+  --hoverColor: rgb(190, 149, 235); 
+  /* --headerColor: #6F439C; */
+  --headerColor: rebeccapurple;
   --blogListBG: #353239;
   --blogListBrdr: #423e47; 
   --headingColor: #6F439C;
+  /* --headingColor: rebeccapurple; */
   /* --hoverColor: rgb(105, 95, 171);  */
 }
 
@@ -667,17 +670,18 @@ pre tt:after {
 
 a:link {
   text-decoration: none;
-  color: var(--headingColor);
+  color: var(--themeColor);
 }
 
 a:visited {
   text-decoration: none;
-  color: var(--headingColor);
+  color: var(--themeColor);
 }
 
 a:hover {
   text-decoration: none;
   color: var(--hoverColor);
+  transition: background .3s ease;
 }
 
 a:active {
