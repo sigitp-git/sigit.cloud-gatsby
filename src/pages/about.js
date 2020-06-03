@@ -52,7 +52,7 @@ const About = ({ data }) => {
                 <a href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`} target="_blank" rel="noopener noreferrer"> AWS Certifications</a>
             </p>
         </div>
-        <div style={{ display: `flex` }}>
+        <div style={{ display: `flex`}}>
             <div style={{ maxWidth: `100px`, marginBottom: `1.45rem`, borderRadius: `100%`, float: `left`}}>
                 <img alt="cert" src="https://lh3.googleusercontent.com/pw/ACtC-3dtyGkMtYQMO4sr-2oQaA33HlnpxwVWGgpmmwvmHiQ8qXn0EkZyjEFJb8HFPiDEdvoGuwNHVwNtbPRnFunZAfGZmlGz7HORV9oO3aJDLAUhxt8BYBf-MrEz7d1gXDZFGwgxkbltXn7LVFoofK33UWuH1Q=s512-no?authuser=0"/>
             </div>

@@ -25,7 +25,7 @@ const BlogList = ({ data, pageContext}) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <div key={node.fields.slug} style={{marginTop: '1rem', marginBottom: '3rem'}}>
+          <div key={node.fields.slug} style={{border: '1px solid var(--blogListBrdr)', marginTop: '1rem', marginBottom: '3rem', background: 'var(--blogListBG)', paddingTop: '1rem', paddingBottom: '1rem', paddingLeft: '1rem', paddingRight: '1rem'}}>
             <h2
               style={{
                 marginBottom: '1rem',
@@ -52,7 +52,7 @@ const BlogList = ({ data, pageContext}) => {
         }}
       >
         {!isFirst && (
-          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--themeColor)'}}>
+          <Link to={prevPage} rel="prev" style={{marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--headerColor)'}}>
             {"<< Prev"}
           </Link>
         )}
@@ -70,8 +70,8 @@ const BlogList = ({ data, pageContext}) => {
                 marginBottom: '0.1rem',
                 padding: '0.5rem',
                 textDecoration: 'none',
-                color: i + 1 === currentPage ? '#ffffff' : 'var(--themeColor)',
-                background: i + 1 === currentPage ? 'var(--themeColor)' : '',
+                color: i + 1 === currentPage ? '#ffffff' : 'var(--headerColor)',
+                background: i + 1 === currentPage ? 'var(--headerColor)' : '',
               }}
             >
               {i + 1}
@@ -79,7 +79,7 @@ const BlogList = ({ data, pageContext}) => {
           </li>
         ))}
         {!isLast && (
-          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--themeColor)' }}>
+          <Link to={nextPage} rel="next" style={{ marginTop: '0.1rem', marginBottom: '0.1rem', padding: '0.5rem', color: 'var(--headerColor)' }}>
             {"Next >>"}
           </Link>
         )}
