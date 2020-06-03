@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
       style={{
         background: `var(--headerSubLinkBG)`,
         marginBottom: `1rem`,
-        border: `1px solid #423e47`,
+        border: `1px hidden #423e47`,
       }}
     >
       <div
