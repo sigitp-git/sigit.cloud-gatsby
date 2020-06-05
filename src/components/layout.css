@@ -1,16 +1,17 @@
 :root {
+  --headerTitleColor: whitesmoke;
+  --headerColor: rebeccapurple;
+  --headerSubLinkBG: #353239;
+  --bodyBGColor: #2B292E;
+  --themeColor: whitesmoke;
+  --headingColor: #6F439C;
+  --hoverColor: rgb(226, 212, 243); 
+  --blogListBG: #353239;
+  --blogListBrdr: #423e47; 
+  /* --headerColor: #6F439C; */
   /* --themeColor: darkslateblue; */
   /* --themeColor: #43799c; */
   /* --themeColor: #6F439C; */
-  --headerTitleColor: whitesmoke;
-  --headerSubLinkBG: #353239;
-  --themeColor: whitesmoke;
-  --hoverColor: rgb(226, 212, 243); 
-  /* --headerColor: #6F439C; */
-  --headerColor: rebeccapurple;
-  --blogListBG: #353239;
-  --blogListBrdr: #423e47; 
-  --headingColor: #6F439C;
   /* --headingColor: rebeccapurple; */
   /* --hoverColor: rgb(105, 95, 171);  */
 }
@@ -27,7 +28,6 @@ body {
   margin-right: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: hsl(222, 14%, 7%); */
 }
 article,
 aside,
@@ -230,7 +230,7 @@ header {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: white;
+  color: var(--headerTitleColor);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
@@ -240,9 +240,9 @@ header {
 }
 
 body {
-  background:#2B292E;
+  background: var(--bodyBGColor);
   /* color: hsla(0, 0%, 0%, 0.8); */
-  color: white;
+  color: var(--themeColor);
   /* font-family: georgia, serif; */
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;

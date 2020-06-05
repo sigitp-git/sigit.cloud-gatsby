@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
       >
         <Link
           to="/"
-          style={{ fontSize: `2.5rem`, color: `var(--headerTitleColor)` }}
+          style={{ fontSize: `2.5rem` }}
         >
           <span className="blog-header">{siteTitle}</span>
         </Link>
