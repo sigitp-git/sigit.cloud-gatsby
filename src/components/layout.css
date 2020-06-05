@@ -704,3 +704,19 @@ a:active {
 .blog-list:hover {
   background: #3d3941;
 }
+
+.footer-links {
+  color: var(--headingColor);
+}
+
+.footer-links:hover {
+  color: var(--hoverColor);
+}
+
+.blog-header {
+  color: var(--headerTitleColor);
+}
+
+.blog-header:hover {
+  color: var(--hoverColor);
+}

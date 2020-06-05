@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{ fontSize: `2.5rem`, color: `var(--headerTitleColor)` }}
         >
-          {siteTitle}
+          <span className="blog-header">{siteTitle}</span>
         </Link>
       </div>
     </header>

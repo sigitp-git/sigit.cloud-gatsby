@@ -36,20 +36,20 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <hr />
         <footer>
-          <Link to="/">Home</Link>
+          <Link to="/"><span className="footer-links">Home</span></Link>
           {` `}
-          <Link to="/about/">About</Link>
+          <Link to="/about/"><span className="footer-links">About</span></Link>
           {` `}
-          <Link to="/gallery/">Gallery</Link>
+          <Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
           {` `}
-          <Link to="/disclaimer/">Disclaimer</Link>
+          <Link to="/disclaimer/"><span className="footer-links">Disclaimer</span></Link>
           {` `}© {new Date().getFullYear()}, a{" "}
           <a
             href="https://aws.amazon.com/serverless/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Serverless
+            #serverless
           </a>{" "}
           Blog, Built with
           {` `}
