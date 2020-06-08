@@ -40,6 +40,7 @@ module.exports = {
               maxWidth: 590,
               linkImagesToOriginal: false,
               loading: `eager`,
+              quality: 100,
             }
           }
         ]
