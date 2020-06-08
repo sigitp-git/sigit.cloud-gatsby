@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
         // background: `inherit`,
         background: `var(--headerColor)`,
         marginBottom: `0`,
-        border: `1px solid #423e47`,
+        border: `1px solid var(--headerColor)`,
       }}
     >
       <div
@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
       style={{
         background: `var(--headerSubLinkBG)`,
         marginBottom: `1rem`,
-        border: `1px hidden #423e47`,
+        border: `1px hidden var(--headerSubLinkBG)`,
       }}
     >
       <div
