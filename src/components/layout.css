@@ -1,13 +1,23 @@
 :root {
-  --headerTitleColor: whitesmoke;
-  --headerColor: #6F439C;
-  --headerSubLinkBG: #353239;
-  --bodyBGColor: #2B292E;
-  --themeColor: whitesmoke;
-  --headingColor: #6F439C;
-  --hoverColor: rgb(226, 212, 243); 
-  --blogListBG: #353239;
-  --blogListBrdr: #423e47; 
+  --headerTitleColor: white;
+  --headerColor: darkslateblue;
+  --headerSubLinkBG: rgb(103, 93, 170);
+  --headerSubLinkColor: white;
+  /* --headerSubLinkBG: #353239; */
+  /* --bodyBGColor: #2B292E; */
+  --bodyBGColor: white;
+  --themeColor: #2e152c;
+  --headingColor: rgb(104, 92, 184);
+  --hoverColor: rgb(120, 100, 251); 
+  /* --hoverColor: rgb(226, 212, 243);  */
+ /*  --blogListBG: #353239; */
+  /* --blogListBG: #eeecf1; */
+  --blogListBG: #faf9fb;
+  /* --blogListBGHover: #faf9fb; */
+  --blogListBGHover: #eeecf1;
+  /* --blogListBGHover: #3d3941; */
+  --blogListBrdr: rgb(230, 223, 223); 
+  /* --blogListBrdr: #423e47;  */
   /* --headerColor: #6F439C; */
   /* --themeColor: darkslateblue; */
   /* --themeColor: #43799c; */
@@ -698,11 +708,11 @@ a:active {
   border: 1px hidden var(--blogListBrdr);
   border-radius: 5px;
   background: var(--blogListBG);
-  transition: background .3s ease, color .3s ease;
+  transition: background 1s ease, color 1s ease;
 }
 
 .blog-list:hover {
-  background: #3d3941;
+  background: var(--blogListBGHover);
 }
 
 .footer-links {
@@ -718,5 +728,13 @@ a:active {
 }
 
 .blog-header:hover {
+  color: var(--hoverColor);
+}
+
+.blog-subheader {
+  color: var(--headerSubLinkColor);
+}
+
+.blog-subheader:hover {
   color: var(--hoverColor);
 }
