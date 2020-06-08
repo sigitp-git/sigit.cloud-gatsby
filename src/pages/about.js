@@ -101,13 +101,14 @@ const About = ({ data }) => {
       </div>
       <br />
       <div style={{ display: `flex`, marginBottom: `2rem` }}>
-        <Image critical={true} fixed={data.cert0.childImageSharp.fixed} />
-        <Image critical={true} fixed={data.cert1.childImageSharp.fixed} />
-        <Image critical={true} fixed={data.cert2.childImageSharp.fixed} />
-        <Image critical={true} fixed={data.cert3.childImageSharp.fixed} />
-        <Image critical={true} fixed={data.cert4.childImageSharp.fixed} />
+        <div style={{ minWidth: `30px`, marginBottom: `1.45rem`, borderRadius: `100%`, display: `flex`, flexWrap: `wrap`, float: `left`, alignItems: `flex-start`}}>
+          <div><Image critical={true} fixed={data.cert0.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+          <div><Image critical={true} fixed={data.cert1.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+          <div><Image critical={true} fixed={data.cert2.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+          <div><Image critical={true} fixed={data.cert3.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+          <div><Image critical={true} fixed={data.cert4.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+        </div>
       </div>
-
       {/* <ImageGallery items={images} />
 
              <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
