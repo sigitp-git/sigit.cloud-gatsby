@@ -144,3 +144,4 @@ https://docs.amplify.aws/lib/storage/getting-started/q/platform/js
 
 #### Discuss on Dev.to
 
+https://dev.to/sigitp/s3-image-video-upload-react-component-with-aws-amplify-4ej4
