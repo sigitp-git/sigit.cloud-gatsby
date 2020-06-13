@@ -33,7 +33,7 @@ const About = ({ data }) => {
         }}
       >
         <Image
-          critical={true}
+          eager
           fixed={data.avatar.childImageSharp.fixed}
           alt={data.site.siteMetadata.author}
           style={{
@@ -99,59 +99,25 @@ const About = ({ data }) => {
           </a>
         </p>
       </div>
-      <br />
       <div style={{ display: `flex`, marginBottom: `2rem` }}>
-        <div style={{ minWidth: `30px`, marginBottom: `1.45rem`, borderRadius: `100%`, display: `flex`, flexWrap: `wrap`, float: `left`, alignItems: `flex-start`}}>
-          <div><Image critical={true} fixed={data.cert0.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
-          <div><Image critical={true} fixed={data.cert1.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
-          <div><Image critical={true} fixed={data.cert2.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
-          <div><Image critical={true} fixed={data.cert3.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
-          <div><Image critical={true} fixed={data.cert4.childImageSharp.fixed} alt={data.site.siteMetadata.author} /></div>
+        <div
+          style={{
+            minWidth: `30px`,
+            marginBottom: `1.45rem`,
+            borderRadius: `100%`,
+            display: `flex`,
+            flexWrap: `wrap`,
+            float: `left`,
+            alignItems: `flex-start`,
+          }}
+        >
+          {data.allFile.edges.map(({ node }, i) => (
+            <div key={i} style={{ marginBottom: "0.5rem" }}>
+              <Image eager fixed={node.childImageSharp.fixed} alt={node.name} />
+            </div>
+          ))}
         </div>
       </div>
-      {/* <ImageGallery items={images} />
-
-             <Image critical={true} fixed={data.cert0.childImageSharp.fixed}
-                style={{
-                    marginRight: "1rem",
-                    marginBottom: 10,
-                    minWidth: 50,
-                    borderRadius: `3%`,
-                }}
-            />
-            <Image critical={true} fixed={data.cert1.childImageSharp.fixed}
-                style={{
-                    marginRight: "1rem",
-                    marginBottom: 10,
-                    minWidth: 50,
-                    borderRadius: `3%`,
-                }}
-            />
-            <Image critical={true} fixed={data.cert2.childImageSharp.fixed}
-                style={{
-                    marginRight: "1rem",
-                    marginBottom: 10,
-                    minWidth: 50,
-                    borderRadius: `3%`,
-                }}
-            />
-            <Image critical={true} fixed={data.cert3.childImageSharp.fixed}
-                style={{
-                    marginRight: "1rem",
-                    marginBottom: 10,
-                    minWidth: 50,
-                    borderRadius: `3%`,
-                }}
-            />
-            <Image critical={true} fixed={data.cert4.childImageSharp.fixed}
-                style={{
-                    marginRight: "1rem",
-                    marginBottom: 10,
-                    minWidth: 50,
-                    borderRadius: `3%`,
-                }}
-            /> 
-        </div> */}
     </Layout>
   )
 }
@@ -162,44 +128,26 @@ export const aboutQuery = graphql`
   query AboutQuery {
     avatar: file(relativePath: { eq: "profile-pic.jpg" }) {
       childImageSharp {
-        # fixed(width: 302, height: 403)
         fixed(width: 302, height: 403, quality: 100) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    cert0: file(relativePath: { eq: "cert0.png" }) {
-      childImageSharp {
-        fixed(width: 100, height: 100, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
+    allFile(
+      filter: {
+        extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+        absolutePath: { regex: "/cer/" }
       }
-    }
-    cert1: file(relativePath: { eq: "cert1.png" }) {
-      childImageSharp {
-        fixed(width: 100, height: 100, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    cert2: file(relativePath: { eq: "cert2.png" }) {
-      childImageSharp {
-        fixed(width: 100, height: 100, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    cert3: file(relativePath: { eq: "cert3.png" }) {
-      childImageSharp {
-        fixed(width: 100, height: 100, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    cert4: file(relativePath: { eq: "cert4.png" }) {
-      childImageSharp {
-        fixed(width: 100, height: 100, quality: 100) {
-          ...GatsbyImageSharpFixed
+      sort: { order: ASC, fields: relativePath }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fixed(width: 100, quality: 100) {
+              ...GatsbyImageSharpFixed
+            }
+          }
         }
       }
     }

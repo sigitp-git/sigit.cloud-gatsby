@@ -38,7 +38,7 @@ const BlogList = ({ data, pageContext }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+          <Link key={node.fields.slug} style={{ boxShadow: "none" }} to={node.fields.slug}>
             <div key={node.fields.slug} className="blog-list">
               <h2
                 style={{
