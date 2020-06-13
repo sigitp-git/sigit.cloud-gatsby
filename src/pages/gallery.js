@@ -1,7 +1,5 @@
 import React from "react"
-//import axios from "axios";
 import "react-image-gallery/styles/css/image-gallery.css"
-//import Image from "gatsby-image"
 import ImageGallery from "react-image-gallery"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
