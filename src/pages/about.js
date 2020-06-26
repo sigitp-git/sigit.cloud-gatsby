@@ -89,6 +89,25 @@ const About = ({ data }) => {
             Dev.To
           </a>
           <br />
+          AWS Blogs:
+          <a
+            href={`https://aws.amazon.com/blogs/mt/managing-aws-organizations-accounts-using-aws-config-and-aws-cloudformation-stacksets/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            1
+          </a>
+          ,
+          <a
+            href={`https://aws.amazon.com/blogs/apn/automating-rotation-of-iam-user-access-and-secret-keys-with-aws-secrets-manager/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            2
+          </a>
+          <br />
           <a
             href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`}
             target="_blank"
