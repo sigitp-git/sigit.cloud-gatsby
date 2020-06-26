@@ -89,23 +89,13 @@ const About = ({ data }) => {
             Dev.To
           </a>
           <br />
-          AWS Blogs:
           <a
-            href={`https://aws.amazon.com/blogs/mt/managing-aws-organizations-accounts-using-aws-config-and-aws-cloudformation-stacksets/`}
+            href={`https://aws.amazon.com/blogs/?filtered-posts.q=sigit%2Bpriyanggoro&filtered-posts.q_operator=AND`}
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
-            1
-          </a>
-          ,
-          <a
-            href={`https://aws.amazon.com/blogs/apn/automating-rotation-of-iam-user-access-and-secret-keys-with-aws-secrets-manager/`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            2
+            AWS Blogs
           </a>
           <br />
           <a
