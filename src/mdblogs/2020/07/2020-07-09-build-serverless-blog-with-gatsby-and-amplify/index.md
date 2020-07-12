@@ -281,3 +281,6 @@ AWS AppSync provides toolkit, libraries, and console to help developers build ap
 
  
 
+#### Discuss on Dev.to
+
+https://dev.to/sigitp/build-serverless-blog-with-gatsby-and-aws-amplify-1h96
