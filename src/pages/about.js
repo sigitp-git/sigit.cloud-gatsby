@@ -90,7 +90,7 @@ const About = ({ data }) => {
           </a>
           <br />
           <a
-            href={`https://aws.amazon.com/blogs/?filtered-posts.q=sigit%2Bpriyanggoro&filtered-posts.q_operator=AND`}
+            href={`https://aws.amazon.com/blogs/?filtered-posts.q=sigit%2Bpriyanggoro&filtered-posts.q_operator=AND&awsf.blog-master-events=*all`}
             target="_blank"
             rel="noopener noreferrer"
           >
