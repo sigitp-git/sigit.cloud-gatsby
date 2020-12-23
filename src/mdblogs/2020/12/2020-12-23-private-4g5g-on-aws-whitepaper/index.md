@@ -11,7 +11,7 @@ https://d1.awsstatic.com/whitepapers/mobile-private-networks-on-aws.pdf
 
 **Excerpt from the whitepaper**
 
-"EThis whitepaper introduces the relevant use cases, solutions, and best practices for designing and deploying mobile private networks powered by AWS. Cloud-enabled mobile private networks allow enterprises, governments, and professional organizations to autonomously deploy their own geo-dispersed, secure mobile private networks. These networks cover private facilities while meeting their performance, reliability, availability, security, and scalability requirements."
+"This whitepaper introduces the relevant use cases, solutions, and best practices for designing and deploying mobile private networks powered by AWS. Cloud-enabled mobile private networks allow enterprises, governments, and professional organizations to autonomously deploy their own geo-dispersed, secure mobile private networks. These networks cover private facilities while meeting their performance, reliability, availability, security, and scalability requirements."
 
 The same reference architecture used for Carnegie Mellon University - Open Edge Computing Lab as follow:
 
