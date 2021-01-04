@@ -6,7 +6,7 @@ module.exports = {
     company: 'Amazon Web Services',
     city: 'Dallas',
     description:
-      'sigit.cloud, a serverless blog built with GatsbyJS, AWS Amplify, AWS AppSync, and Amazon DynamoDB',
+      'sigit.cloud, a serverless blog, built with GatsbyJS, AWS Amplify, AWS AppSync, and Amazon DynamoDB',
     siteUrl: 'https://sigit.cloud',
     social: {
       linkedin: `sigitpriyanggoro`,
