@@ -3,7 +3,7 @@ title: "Rolling AMI Update for EKS Worker Nodes Managed Node Groups"
 date: "2021-02-11"
 ---
 
-It's much more simple nowadays spinning up Kubernetes cluster with services like EKS, back then when I have to do all things manually, control nodes configuration and deployment takes heavy toll on your "yaml eyes" skills :D 
+It's much more simple nowadays spinning up Kubernetes cluster with services like EKS, back then when I have to do all things manually, control nodes configuration and deployment takes heavy toll on your "YAML eyes" skills :D 
 
 Now with "Managed node groups", spinning and operating worker nodes also become so much simple!
 
@@ -164,3 +164,4 @@ I have **3 nodes with t3.small** instances with lightweight workload, the update
 **Disclaimer**
 
 https://sigit.cloud/disclaimer/
+
