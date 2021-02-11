@@ -21,7 +21,7 @@ You can add a managed node group to new or existing clusters using the Amazon EK
 
 [eksctl](https://eksctl.io/) is a tool jointly developed by AWS and [Weaveworks](https://weave.works/) that automates much of the experience of creating EKS clusters. Make sure you have AWS CLI and the right IAM users/roles/permissions to create EKS cluster available, follow [this](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) guide as prerequisites. eksctl will then create a cluster with ControlPlane and worker nodes as shown below. The number of worker nodes is specified on the cluster definition YAML file.
 
-![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-15-eks-managed-node-groups-rolling-update/images/k8s arch.png)
+![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-11-eks-managed-node-groups-rolling-update/images/k8s arch.png)
 
 **Cluster definition YAML file**
 
@@ -141,19 +141,19 @@ If there's a newer AMI release version for your managed node group's Kubernetes 
 
 From the AWS Management Console, visit your EKS cluster Compute Configuration. In this example, there is a new update on the Amazon EKS optimized Amazon Linux AMI version:
 
-![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-15-eks-managed-node-groups-rolling-update/images/eks-configuration-compute.png)
+![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-11-eks-managed-node-groups-rolling-update/images/eks-configuration-compute.png)
 
 
 
 To upgrade the node group, click **Update now**. Select the **Rolling update** option to respect pod disruption budgets for your cluster. The update fails if Amazon EKS is unable to gracefully drain the pods that are running on this Node Group due to a pod disruption budget issue. If you want to change your Launch template (changing AMI, or changing instance type, or modifying tags, for example), you can select the Launch template version here as well.
 
-![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-15-eks-managed-node-groups-rolling-update/images/update-node-group-eks.png)
+![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-11-eks-managed-node-groups-rolling-update/images/update-node-group-eks.png)
 
 
 
 Once you click **Update**, the update process will start with a specific **Update ID**, you can follow the update progress in the AWS Management Console:
 
-![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-15-eks-managed-node-groups-rolling-update/images/rolling-update-progress.png)
+![img](/Users/sigitp/Documents/sigit.cloud-gatsby/src/mdblogs/2021/02/2021-02-11-eks-managed-node-groups-rolling-update/images/rolling-update-progress.png)
 
 I have **3 nodes with t3.small** instances with lightweight workload, the update process took **~16 minutes**. Learn more [here](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html#aws-management-console) on EKS Rolling Update. 
 
