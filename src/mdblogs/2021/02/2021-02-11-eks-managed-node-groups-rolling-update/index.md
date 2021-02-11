@@ -1,6 +1,6 @@
 ---
 title: "Rolling AMI Update for EKS Worker Nodes Managed Node Groups"
-date: "2021-02-15"
+date: "2021-02-11"
 ---
 
 It's much more simple nowadays spinning up Kubernetes cluster with services like EKS, back then when I have to do all things manually, control nodes configuration and deployment takes heavy toll on your "yaml eyes" skills :D 
