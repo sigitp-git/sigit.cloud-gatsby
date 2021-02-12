@@ -173,6 +173,12 @@ I have **3 nodes with t3.small** instances with lightweight workload, the update
 
 [eksctl](https://eksctl.io/) is a tool jointly developed by AWS and [Weaveworks](https://weave.works/) that automates much of the experience of creating EKS clusters. Once your EKS cluster up and running, there are several scenarios where it's useful to update your Amazon EKS managed node group's version or configuration. The **Rolling update** option to respect pod disruption budgets for your cluster.
 
+**References**
+
+EKS user guide: https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html 
+
+Maximum pods based on Instance type: https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt 
+
 **Disclaimer**
 
 https://sigit.cloud/disclaimer/
