@@ -179,6 +179,8 @@ EKS user guide: https://docs.aws.amazon.com/eks/latest/userguide/getting-started
 
 Maximum pods based on Instance type: https://github.com/awslabs/amazon-eks-ami/blob/master/files/eni-max-pods.txt 
 
+Available IP per ENI on Instance type: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#AvailableIpPerENI
+
 **Disclaimer**
 
 https://sigit.cloud/disclaimer/
