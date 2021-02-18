@@ -1,5 +1,5 @@
 ---
-title: "Rolling AMI Update for EKS Worker Nodes Managed Node Groups"
+title: "Rolling AMI Update for EKS Worker Nodes Managed Node Groups - Update to k8s 1.19"
 date: "2021-02-11"
 ---
 
@@ -169,9 +169,49 @@ Amazon EKS triggers the [following](https://docs.aws.amazon.com/eks/latest/userg
 
 I have **3 nodes with t3.small** instances with lightweight workload, the update process took **~16 minutes**. Learn more [here](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html#aws-management-console) on EKS Rolling Update. 
 
+**[Real Life Scenario] Updating EKS cluster to 1.19** (Update 02-18-2021)
+
+Now let's apply learnings from above to upgrade our EKS cluster to [latest 1.19](https://aws.amazon.com/about-aws/whats-new/2021/02/amazon-eks-supports-kubernetes-version-1-19/ ).
+
+[Kubernetes](https://aws.amazon.com/kubernetes/) is rapidly evolving, with frequent feature releases and bug fixes. Highlights of the Kubernetes 1.19 release include [Ingress API](https://kubernetes.io/docs/concepts/services-networking/ingress/) and [Pod Topology Spread](https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/) reaching stable status, [EndpointSlices](https://kubernetes.io/blog/2020/09/02/scaling-kubernetes-networking-with-endpointslices/) being enabled by default, and immutable [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/#secret-immutable) and [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-immutable). Learn more about Kubernetes version 1.19 in the [Kubernetes project release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md).
+
+Firs step: upgrade your EKS cluster. In this example, I updated from 1.18
+
+![](images/1.18to1.19.png)
+
+Select 1.19 as target version:
+
+![](images/target-update.png)
+
+You can check the progress on **Update history** tab:
+
+![](images/update-history.png)
+
+Click the **Update ID** for more details:
+
+![](images/update-details.png)
+
+In my cluster, the EKS update completed in **~25 minutes**.
+
+Now we have the EKS control plane on version 1.19, we will have to proceed to update the current managed node group from 1.18 to 1.19 as well:
+
+![](images/current-nodegroups.png)
+
+Update the nodegroups into 1.19:
+
+![](images/update-nodegroups.png)
+
+You can follow the progress by looking at the **Update ID**:
+
+![](images/nodegroups-progress.png)
+
+On my nodegroups, it takes **~16 minutes**, the nodegroups consists of **3 nodes with t3.small** instances with lightweight workload. 
+
+With these update steps, now you have EKS 1.19 on both the control plane (manged by EKS) and the worker nodegroups. 
+
 **Summary**
 
-[eksctl](https://eksctl.io/) is a tool jointly developed by AWS and [Weaveworks](https://weave.works/) that automates much of the experience of creating EKS clusters. Once your EKS cluster up and running, there are several scenarios where it's useful to update your Amazon EKS managed node group's version or configuration. The **Rolling update** option to respect pod disruption budgets for your cluster.
+[eksctl](https://eksctl.io/) is a tool jointly developed by AWS and [Weaveworks](https://weave.works/) that automates much of the experience of creating EKS clusters. Once your EKS cluster up and running, there are several scenarios where it's useful to update your Amazon EKS managed node group's version or configuration. The **Rolling update** option to respect pod disruption budgets for your cluster. Remember to always test your cluster update in a sandbox or development environment first before doing it in production. 
 
 **References**
 
