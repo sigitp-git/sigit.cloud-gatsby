@@ -175,7 +175,7 @@ Now let's apply learnings from above to upgrade our EKS cluster to [latest 1.19]
 
 [Kubernetes](https://aws.amazon.com/kubernetes/) is rapidly evolving, with frequent feature releases and bug fixes. Highlights of the Kubernetes 1.19 release include [Ingress API](https://kubernetes.io/docs/concepts/services-networking/ingress/) and [Pod Topology Spread](https://kubernetes.io/docs/concepts/workloads/pods/pod-topology-spread-constraints/) reaching stable status, [EndpointSlices](https://kubernetes.io/blog/2020/09/02/scaling-kubernetes-networking-with-endpointslices/) being enabled by default, and immutable [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/#secret-immutable) and [ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-immutable). Learn more about Kubernetes version 1.19 in the [Kubernetes project release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md).
 
-Firs step: upgrade your EKS cluster. In this example, I updated from 1.18
+First step: upgrade your EKS cluster. In this example, I updated from 1.18
 
 ![](images/1.18to1.19.png)
 
