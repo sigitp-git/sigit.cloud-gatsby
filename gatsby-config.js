@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'sigit.cloud',
     author: 'Sigit Priyanggoro',
-    work: 'Sr Partner Solutions Architect, Dedicated Edge',
+    work: 'Sr Product Manager - Tech, Edge Compute',
     company: 'Amazon Web Services',
     city: 'Dallas',
     description:
