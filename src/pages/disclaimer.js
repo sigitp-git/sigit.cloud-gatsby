@@ -30,7 +30,7 @@ const Disclaimer = () => (
         solely responsible for all content published here.
       </p>
       <p>
-        This is a personal exploration blog, not a corporate blog. Content
+        This is a personal tech blog, not a corporate blog. Content
         published here is not read, reviewed, or approved in advance by my
         employer and does not necessarily represent or reflect the views or
         opinions of my employer or any of its divisions, subsidiaries, or
