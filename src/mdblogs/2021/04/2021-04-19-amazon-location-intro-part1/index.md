@@ -203,6 +203,8 @@ Use ctrl+ mouse left click drag to show the **2.5D** buildings map feature on th
 
 Amazon Location Services makes it easy for developers to add location data to applications without sacrificing data security and user privacy. With this service, developers can access Location Based Services (LBS) with consistent AWS managed API. In this part 1 post, we focused on Maps, we will discuss about Place, Geofence, and Tracker on part 2. 
 
+Discuss this blog over at Dev.To: https://dev.to/sigitp/introduction-to-amazon-location-service-part1-62a 
+
 **References**
 
 GitHub samples for Amazon Location Service: https://github.com/aws-samples/amazon-location-samples 
