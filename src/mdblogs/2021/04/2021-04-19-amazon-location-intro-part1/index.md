@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Amazon Location Service - Part1"
+title: "Introduction to Amazon Location Service"
 date: "2021-04-19"
 ---
 
@@ -11,7 +11,7 @@ In this blog, I just want to share how to try Amazon Location Service with simpl
 
 **Exploring the 4 Amazon Location Service Capabilities: Maps, Place, Geofence, and Tracker**
 
-In this part 1 blog, we will focus on Maps, we will discuss the other three on part 2 of the blog. Let's jump directly by logging in to your AWS account, then select Amazon Location Service, you will see the console as follow:
+In this blog, we will focus on Maps. Let's jump directly by logging in to your AWS account, then select Amazon Location Service, you will see the console as follow:
 
 ![img](images/als-console.png)
 
@@ -201,9 +201,7 @@ Use ctrl+ mouse left click drag to show the **2.5D** buildings map feature on th
 
 **Summary**
 
-Amazon Location Services makes it easy for developers to add location data to applications without sacrificing data security and user privacy. With this service, developers can access Location Based Services (LBS) with consistent AWS managed API. In this part 1 post, we focused on Maps, we will discuss about Place, Geofence, and Tracker on part 2. 
-
-Discuss this blog over at Dev.To: https://dev.to/sigitp/introduction-to-amazon-location-service-part1-62a 
+Amazon Location Services makes it easy for developers to add location data to applications without sacrificing data security and user privacy. With this service, developers can access Location Based Services (LBS) with consistent AWS managed API. 
 
 **References**
 
