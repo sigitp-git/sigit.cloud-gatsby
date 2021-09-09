@@ -43,10 +43,10 @@ const Header = ({ siteTitle }) => (
           <small className="blog-subheader">about</small>
         </Link>
         {` `}
-        {/* <Link to="/gallery/" style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}>
+        <Link to="/gallery/" style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}>
           <small className="blog-subheader">gallery</small>
         </Link>
-        {` `}*/}
+        {` `}
         <Link
           to="/disclaimer/"
           style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
