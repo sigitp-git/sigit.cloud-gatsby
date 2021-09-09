@@ -36,13 +36,19 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <hr />
         <footer>
-          <Link to="/"><span className="footer-links">Home</span></Link>
+          <Link to="/">
+            <span className="footer-links">Home</span>
+          </Link>
           {` `}
-          <Link to="/about/"><span className="footer-links">About</span></Link>
+          <Link to="/about/">
+            <span className="footer-links">About</span>
+          </Link>
           {` `}
-          <Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
-          {` `}
-          <Link to="/disclaimer/"><span className="footer-links">Disclaimer</span></Link>
+          {/*<Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
+          {` `} */}
+          <Link to="/disclaimer/">
+            <span className="footer-links">Disclaimer</span>
+          </Link>
           {` `}© {new Date().getFullYear()}, a{" "}
           <a
             href="https://aws.amazon.com/serverless/"
