@@ -48,6 +48,12 @@ const Header = ({ siteTitle }) => (
         </Link>
       {` `} */}
         <Link
+          to="/streetphotography/"
+          style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
+        >
+          <small className="blog-subheader">street 📸</small>
+        </Link>
+        <Link
           to="/disclaimer/"
           style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
         >
