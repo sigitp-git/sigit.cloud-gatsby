@@ -44,9 +44,13 @@ const streetPhotography = () => {
           `javascript`,
           `react`,
           `reactjs`,
+          `street photography`,
+          `leica`,
+          `leica q`,
+          `leica street photography`,
         ]}
       />
-      <h2>Street Photography</h2>
+      <h2>Street 📸</h2>
       <ImageGallery items={images} slideOnThumbnailOver={false} />
     </Layout>
   )
