@@ -53,12 +53,12 @@ const Header = ({ siteTitle }) => (
         >
           <small className="blog-subheader">street 📸</small>
         </Link>
-        <Link
+        {/*<Link
           to="/disclaimer/"
           style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
         >
           <small className="blog-subheader">disclaimer</small>
-        </Link>
+        </Link> */}
       </div>
     </div>
   </section>
