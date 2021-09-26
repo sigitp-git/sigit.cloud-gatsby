@@ -44,8 +44,8 @@ const Layout = ({ children }) => {
             <span className="footer-links">About</span>
           </Link>
           {` `}
-          {/* <Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
-          {` `} */}
+          <Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
+          {` `}
           <Link to="/streetphotography/">
             <span className="footer-links">Street 📸</span>
           </Link>
