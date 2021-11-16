@@ -99,7 +99,7 @@ const About = ({ data }) => {
           </a>
           <br />
           <a
-            href={`https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=KYC2NWE2CJ1QQKWT`}
+            href={`https://www.credly.com/users/sigit-priyanggoro`}
             target="_blank"
             rel="noopener noreferrer"
           >
