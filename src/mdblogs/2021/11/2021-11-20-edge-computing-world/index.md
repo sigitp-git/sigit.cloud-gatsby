@@ -12,7 +12,7 @@ I presented together with [Ildiko Vancsa](https://www.topionetworks.com/people/i
 
 ![](images/edge-computing-world-2021.png)
 
-Watch the recorded session [here].(https://www.topionetworks.com/events/617acba2949049189f10192e?flow=rw_media_signup#media-617fb808105eb55100b8cb52)
+Watch the recorded session [here](https://www.topionetworks.com/events/617acba2949049189f10192e?flow=rw_media_signup#media-617fb808105eb55100b8cb52). 
 
 **Disclaimer**
 https://sigit.cloud/disclaimer/
