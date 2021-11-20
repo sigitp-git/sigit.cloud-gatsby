@@ -2,7 +2,7 @@
 title: "Edge Computing World 2021"
 date: "2021-11-20"
 ---
-Edge Computing World is the premiere series of events for the Edge Computing space, recognized for bringing together the entire edge market for learning and networking.
+[**Edge Computing World**](https://www.edgecomputingworld.com/) is the premiere series of events for the Edge Computing space, recognized for bringing together the entire edge market for learning and networking.
 
 Edge Computing World Global in October will bring together over 4000 attendees from end users, ecosystem and developers, and **125+ speakers** in total with a unique collection of edge experiences, case studies & insights.
 
