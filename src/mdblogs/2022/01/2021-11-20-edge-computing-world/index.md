@@ -6,9 +6,9 @@ date: "2022-01-14"
 
 In my session, I talked about hybrid cloud: Bring AWS to your data centers, remote offices, and beyond. While most applications can be easily migrated to the cloud, some need to be re-architected or “modernized” before they can be moved to the cloud, while others need to remain on premises or in a specific location for the foreseeable future due to low latency, local data processing, or data residency requirements. 
 
-Watch this recorded session to learn how a hybrid cloud gives you a consistent set of cloud services to support your applications and end users, wherever you need it.
+Watch this recorded live session to learn how a hybrid cloud gives you a consistent set of cloud services to support your applications and end users, wherever you need it.
 
-I presented this session together with **Dr. Daniela Becker**, Senior Product Manager from AWS Storage Gateway team. 
+I presented this live session together with **Dr. Daniela Becker**, Senior Product Manager from AWS Storage Gateway team. 
 
 ![](images/AWS-reinvent2021-sigit.png)
 
