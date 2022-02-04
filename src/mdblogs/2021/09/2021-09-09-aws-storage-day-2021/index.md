@@ -9,7 +9,7 @@ I presented live from Seattle on Twitch about "**What our customers are doing wi
 
 ![](images/sigit-storage-day-2021-cover.jpg)
 
-Watch the recorded Twitch stream here: https://www.twitch.tv/videos/1136887952?t=05h22m19s, and YouTube re-upload here: https://www.youtube.com/watch?v=PHonPBZHGFQ 
+Watch the recorded Twitch stream here: https://www.twitch.tv/videos/1137248522?t=05h22m18s, and YouTube re-upload here: https://www.youtube.com/watch?v=PHonPBZHGFQ 
 
 **Disclaimer**
 
