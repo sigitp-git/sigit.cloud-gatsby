@@ -54,7 +54,13 @@ const About = ({ data }) => {
           >
             #serverless
           </a>{" "}
-          blog by <strong>{data.site.siteMetadata.author}</strong>
+          lightweight{" "}<a
+            href={`https://developer.mozilla.org/en-US/docs/Glossary/SPA`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SPA
+          </a>{" "}blog by <strong>{data.site.siteMetadata.author}</strong>
           <br />
           <strong>{data.site.siteMetadata.work}</strong>
           <br />
