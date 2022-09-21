@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'sigit.cloud',
     author: 'Sigit Priyanggoro',
-    work: 'Senior Solutions Architect',
-    company: 'Amazon Web Services',
-    city: 'Dallas',
+    work: 'Senior Product Manager - Tech',
+    company: 'Amazon Web Services, EC2 Edge',
+    city: 'Seattle',
     description:
       'sigit.cloud, a serverless blog, built with GatsbyJS, AWS Amplify, AWS AppSync, and Amazon DynamoDB',
     siteUrl: 'https://sigit.cloud',
