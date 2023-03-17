@@ -6,20 +6,20 @@ import SEO from "../components/seo"
 
 const streetPhotography = () => {
   const response = [
-    "seattle2021/1.DNG",
-    "seattle2021/2.DNG",
-    "seattle2021/3.DNG",
-    "seattle2021/4.DNG",
-    "seattle2021/5.DNG",
-    "seattle2021/7.DNG",
-    "seattle2021/8.DNG",
-    "seattle2021/9.DNG",
-    "seattle2021/10.DNG",
-    "seattle2021/11.DNG",
-    "seattle2021/12.DNG",
-    "seattle2021/13.DNG",
-    "seattle2021/14.jpg",
-    "seattle2021/PP.DNG",
+    "1.DNG",
+    "2.DNG",
+    "3.DNG",
+    "4.DNG",
+    "5.DNG",
+    "7.DNG",
+    "8.DNG",
+    "9.DNG",
+    "10.DNG",
+    "11.DNG",
+    "12.DNG",
+    "13.DNG",
+    "14.jpg",
+    "PP.DNG",
   ]
 
   const images = response.map(url => ({

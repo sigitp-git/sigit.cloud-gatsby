@@ -118,7 +118,7 @@ const Gallery = () => {
         ]}
       />
       <h2>Gallery</h2>
-      <ImageGallery items={images} slideOnThumbnailOver={true}/>
+      <ImageGallery items={images} slideOnThumbnailOver={false}/>
     </Layout>
   )
 }

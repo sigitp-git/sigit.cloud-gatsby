@@ -1,25 +1,25 @@
 import React from "react"
 import "react-image-gallery/styles/css/image-gallery.css"
 import ImageGallery from "react-image-gallery"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-const streetPhotography = () => {
+const seattle2021 = () => {
   const response = [
-    "seattle2021/1.DNG",
-    "seattle2021/2.DNG",
-    "seattle2021/3.DNG",
-    "seattle2021/4.DNG",
-    "seattle2021/5.DNG",
-    "seattle2021/7.DNG",
-    "seattle2021/8.DNG",
-    "seattle2021/9.DNG",
-    "seattle2021/10.DNG",
-    "seattle2021/11.DNG",
-    "seattle2021/12.DNG",
-    "seattle2021/13.DNG",
-    "seattle2021/14.jpg",
-    "seattle2021/PP.DNG",
+    "../seattle2021/1.DNG",
+    "../seattle2021/2.DNG",
+    "../seattle2021/3.DNG",
+    "../seattle2021/4.DNG",
+    "../seattle2021/5.DNG",
+    "../seattle2021/7.DNG",
+    "../seattle2021/8.DNG",
+    "../seattle2021/9.DNG",
+    "../seattle2021/10.DNG",
+    "../seattle2021/11.DNG",
+    "../seattle2021/12.DNG",
+    "../seattle2021/13.DNG",
+    "../seattle2021/14.jpg",
+    "../seattle2021/PP.DNG",
   ]
 
   const images = response.map(url => ({
@@ -50,9 +50,9 @@ const streetPhotography = () => {
           `leica street photography`,
         ]}
       />
-      <h2>Street 📸</h2>
+      <h2>Seattle 2021 📸</h2>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default streetPhotography
+export default seattle2021

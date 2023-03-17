@@ -50,6 +50,8 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/streetphotography/"
           style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
+          activeClassName="active"
+          partiallyActive={true}
         >
           <small className="blog-subheader">street 📸</small>
         </Link>
