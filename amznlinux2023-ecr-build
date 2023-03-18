@@ -1,0 +1,24 @@
+#public.ecr.aws/amazonlinux/amazonlinux:2023
+#public.ecr.aws/yourid/sigitp-ecr:latest
+
+Create the docker image
+-----------------------
+docker pull public.ecr.aws/amazonlinux/amazonlinux:2023
+docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2023 /bin/bash
+##install git, node18, yarn
+sudo docker commit d4a2750a8d7e amzonlinux-amplify
+aws configure
+creacte ecr public registry
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/yourid
+docker tag sigitp-ecr:latest public.ecr.aws/yourid/sigitp-ecr:latest
+docker push public.ecr.aws/yourid/sigitp-ecr:latest
+
+then use the public docker image on Amplify's build setting, custom image
+
+Profit
+------
+2023-03-18T20:22:31 [INFO]: Starting Deployment
+2023-03-18T20:22:31 [INFO]: Updating Edge config
+uildId 0000000012
+2023-03-18T20:22:32 [INFO]: Got archive: 82946432 bytes
+2023-03-18T20:22:37 [INFO]: Deployment complete
