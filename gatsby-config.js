@@ -41,6 +41,11 @@ module.exports = {
               linkImagesToOriginal: false,
               loading: `eager`,
               quality: 100,
+            },
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: 
+            {
+              ignoreFileExtensions: []
             }
           }
         ]
