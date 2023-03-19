@@ -1,10 +1,20 @@
 import React from "react"
 import "react-image-gallery/styles/css/image-gallery.css"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Link } from "gatsby"
+import ImageGallery from "react-image-gallery"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
-const streetPhotography = () => {
+const newyork2021 = () => {
+  const response = [
+    "../newyork2021/1.jpeg",
+    "../newyork2021/2.jpeg",
+  ]
+
+  const images = response.map(url => ({
+    original: `${url}`,
+    thumbnail: `${url}`,
+  }))
+
   return (
     <Layout>
       <SEO
@@ -28,13 +38,9 @@ const streetPhotography = () => {
           `leica street photography`,
         ]}
       />
-      <Link to="seattle2021/" style={{ fontSize: `1.2rem` }}>
-        <span className="footer-links">Seattle 2021 | </span>
-      </Link>
-      <Link to="newyork2021/" style={{ fontSize: `1.2rem` }}>
-        <span className="footer-links">New York 2021</span>
-      </Link>
+      <h3>New York 2021 📸</h3>
+      <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default streetPhotography
+export default newyork2021
