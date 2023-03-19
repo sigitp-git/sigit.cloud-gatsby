@@ -3,6 +3,8 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import "../components/layout.css"
 
 const streetPhotography = () => {
   return (
@@ -28,12 +30,70 @@ const streetPhotography = () => {
           `leica street photography`,
         ]}
       />
-      <Link to="seattle2021/" style={{ fontSize: `1.2rem` }}>
-        <span className="footer-links">Seattle 2021 | </span>
-      </Link>
-      <Link to="newyork2021/" style={{ fontSize: `1.2rem` }}>
-        <span className="footer-links">New York 2021</span>
-      </Link>
+      <div class="three-columns-grid">
+        <div>
+          <Link to="seattle2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h3>Seattle 2021</h3></span>
+            <StaticImage src="../../static/streetphotography/seattle2021/5.jpeg" alt="Seattle"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link></div>
+        <div>
+          <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h3>New York 2021</h3></span>
+            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div>
+          {/* <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links">New York 2021</span>
+            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link> */}
+        </div>
+      </div>
+      {/*placeholder*/}
+      {/* <div class="three-columns-grid">
+        <div>
+          <Link to="seattle2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links">Seattle 2021</span>
+            <StaticImage src="../../static/streetphotography/seattle2021/5.jpeg" alt="Seattle"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link></div>
+        <div>
+          <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links">New York 2021</span>
+            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div>
+          <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links">New York 2021</span>
+            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
+              placeholder="blurred"
+              layout="fixed"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+      </div> */}
+
     </Layout>
   )
 }

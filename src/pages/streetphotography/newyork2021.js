@@ -8,6 +8,10 @@ const newyork2021 = () => {
   const response = [
     "../newyork2021/1.jpeg",
     "../newyork2021/2.jpeg",
+    "../newyork2021/3.jpeg",
+    "../newyork2021/4.jpeg",
+    "../newyork2021/5.jpeg",
+    "../newyork2021/6.jpeg",
   ]
 
   const images = response.map(url => ({
@@ -38,7 +42,7 @@ const newyork2021 = () => {
           `leica street photography`,
         ]}
       />
-      <h3>New York 2021 📸</h3>
+      <h3>New York 2021</h3>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
