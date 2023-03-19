@@ -842,5 +842,5 @@ a:active {
 
 /* columns */
 .three-columns-grid>* {
-  padding: 1rem;
+  padding: 0.2rem;
 }
