@@ -51,7 +51,7 @@ const streetPhotography = () => {
         ]}
       />
       <h2>Seattle 2021 📸</h2>
-      <ImageGallery items={images} slideOnThumbnailOver={true} />
+      <ImageGallery items={images} slideOnThumbnailOver={true} lazyLoad={true}/>
     </Layout>
   )
 }
