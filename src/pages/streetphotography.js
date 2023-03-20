@@ -96,4 +96,5 @@ const streetPhotography = () => {
     </Layout>
   )
 }
+// update: multi-album
 export default streetPhotography
