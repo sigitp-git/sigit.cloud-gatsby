@@ -1,36 +1,16 @@
+/* dark-slate-blue + pastel-purple*/
 :root {
   --headerTitleColor: white;
-  /* --headerColor: darkslateblue; */
-  --headerColor: #957DAD;
-  /* --headerSubLinkBG: rgb(103, 93, 170); */
+  --headerColor: darkslateblue;
   --headerSubLinkBG: #eeecf1;
-  /* --headerSubLinkColor: white; */
-  --headerSubLinkColor: rgb(150, 144, 189);
-  /* --headerSubLinkBG: #353239; */
-  /* --bodyBGColor: #2B292E; */
+  --headerSubLinkColor: darkslateblue;
   --bodyBGColor: white;
   --themeColor: #2e152c;
-  /* --headingColor: rgb(104, 92, 184); */
-  --headingColor: rgb(155, 120, 189);
-  /* --hoverColor: rgb(194, 189, 233);  */
-  /* --hoverColor: rgb(150, 144, 189); */
+  --headingColor: rgb(104, 92, 184);
   --hoverColor: #8EA7E9;
-  /* --hoverColor: rgb(226, 212, 243);  */
-  /*  --blogListBG: #353239; */
-  /* --blogListBG: #eeecf1; */
-  --blogListBG: #faf9fb;
-  /* --blogListBGHover: #faf9fb; */
-  /* --blogListBGHover: #eeecf1; */
-  --blogListBGHover: white;
-  /* --blogListBGHover: #3d3941; */
+  --blogListBG: white;
+  --blogListBGHover: #eeecf1;
   --blogListBrdr: rgb(230, 223, 223);
-  /* --blogListBrdr: #423e47;  */
-  /* --headerColor: #6F439C; */
-  /* --themeColor: darkslateblue; */
-  /* --themeColor: #43799c; */
-  /* --themeColor: #6F439C; */
-  /* --headingColor: rebeccapurple; */
-  /* --hoverColor: rgb(105, 95, 171);  */
 }
 
 /* pastel-purple */
