@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/_gatsby/image/9f2c41a5b3f35caa015e3c83d1ea987f/04cfcabdf91a469b7c3265f86564f434/Final%20version%20for%20Contentful.avif?eu=88799c26da4a4ddc74def2f6474e9d82cca68ffcb62c5bff115f856968742ec716efd54f402c4151952ef3308beaa7d85deda3d97ba47a55add1d876cf6ddedfd2d10027014593de828b628628d1e35ad62bbbba2cb9326d169cd050993f383e0e275c2fb293a7f5327b69b0aaf3dee794af677d4066216287275b899602b1846bbf2e42853a15333dd21909f575977765c0c87fd7792b341587658f91b6ccea894045b29bd3c1359ae0e825651ff169ee01498abe2b8f4a5d53f58fabb1829029338fb50618685f75568139d6475acce5bc3a6aba&a=w%3D800%26h%3D456%26fm%3Davif%26q%3D75&cd=2023-02-01T17%3A29%3A15.513Z" width="80" />
   </a>
 </p>
 <h1 align="center">
