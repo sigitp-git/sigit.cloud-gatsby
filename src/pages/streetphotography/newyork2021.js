@@ -12,6 +12,7 @@ const newyork2021 = () => {
     "../newyork2021/4.jpeg",
     "../newyork2021/5.jpeg",
     "../newyork2021/6.jpeg",
+    "../newyork2021/7.jpeg",
   ]
 
   const images = response.map(url => ({
