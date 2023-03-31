@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 const Gallery = () => {
   const response = [
+    "sigit-mwc23-ipw-demo-dbrown.jpeg",
     "_0 (6).JPG",
     "DSC_0211.JPG",
     "DSC_0292.JPG",
