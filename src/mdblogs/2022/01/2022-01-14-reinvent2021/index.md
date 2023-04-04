@@ -10,7 +10,7 @@ Watch this recorded live session to learn how a hybrid cloud gives you a consist
 
 I presented this live session together with **Dr. Daniela Becker**, Senior Product Manager from AWS Storage Gateway team. 
 
-![](images/AWS-reinvent2021-sigit.png)
+![](https://sigit.cloud/gallery/AWS-reinvent2021-sigit.2.png)
 
 Watch the recorded session [**here**](https://youtu.be/MRK9XfO4J6k).
 
