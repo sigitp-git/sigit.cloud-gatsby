@@ -21,7 +21,7 @@ You can add a managed node group to new or existing clusters using the Amazon EK
 
 [eksctl](https://eksctl.io/) is a tool jointly developed by AWS and [Weaveworks](https://weave.works/) that automates much of the experience of creating EKS clusters. Make sure you have AWS CLI and the right IAM users/roles/permissions to create EKS cluster available, follow [this](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html) guide as prerequisites. eksctl will then create a cluster with ControlPlane and worker nodes as shown below. The number of worker nodes is specified on the cluster definition YAML file.
 
-![img](images/k8s arch.png)
+![img](images/k8s-arch.png)
 
 **Cluster definition YAML file**
 
