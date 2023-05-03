@@ -4,7 +4,7 @@ module.exports = {
     author: 'Sigit Priyanggoro',
     work: 'Senior Product Manager - Tech',
     company: 'Amazon Web Services, EC2 Edge',
-    city: 'Seattle',
+    city: 'Dallas',
     description:
       'sigit.cloud, a serverless blog, built with GatsbyJS, AWS Amplify, AWS AppSync, and Amazon DynamoDB',
     siteUrl: 'https://sigit.cloud',
