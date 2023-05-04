@@ -11,6 +11,7 @@ const seattle2023 = () => {
     "../seattle2023/3.jpg",
     "../seattle2023/4.jpg",
     "../seattle2023/5.jpg",
+    "../seattle2023/6.jpg",
     "../seattle2023/7.jpg",
     "../seattle2023/8.jpg",
     "../seattle2023/9.jpg",
