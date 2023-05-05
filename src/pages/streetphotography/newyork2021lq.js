@@ -4,27 +4,14 @@ import ImageGallery from "react-image-gallery"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const seattle2023 = () => {
+const newyork2021lq = () => {
   const response = [
-    "../seattle2023/1.jpg",
-    "../seattle2023/2.jpg",
-    "../seattle2023/3.jpg",
-    "../seattle2023/4.jpg",
-    "../seattle2023/5.jpg",
-    "../seattle2023/6.jpg",
-    "../seattle2023/7.jpg",
-    "../seattle2023/8.jpg",
-    "../seattle2023/9.jpg",
-    "../seattle2023/10.jpg",
-    "../seattle2023/11.jpg",
-    "../seattle2023/12.jpg",
-    "../seattle2023/13.jpg",
-    "../seattle2023/14.jpg",
-    "../seattle2023/15.jpg",
-    "../seattle2023/16.jpg",
-    "../seattle2023/17.jpg",
-    "../seattle2023/18.jpg",
-    "../seattle2023/19.jpg",
+    "../newyork2021-leicaq/1.jpeg",
+    "../newyork2021-leicaq/2.jpeg",
+    "../newyork2021-leicaq/3.jpeg",
+    "../newyork2021-leicaq/4.jpeg",
+    "../newyork2021-leicaq/5.jpeg",
+    "../newyork2021-leicaq/6.jpeg",
   ]
 
   const images = response.map(url => ({
@@ -55,9 +42,9 @@ const seattle2023 = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Seattle 2023</h3>
+      <h3>New York 2021 (Leica Q)</h3>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default seattle2023
+export default newyork2021lq

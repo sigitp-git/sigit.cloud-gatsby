@@ -4,15 +4,27 @@ import ImageGallery from "react-image-gallery"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const newyork2021 = () => {
+const seattle2023rch = () => {
   const response = [
-    "../newyork2021/1.jpeg",
-    "../newyork2021/2.jpeg",
-    "../newyork2021/3.jpeg",
-    "../newyork2021/4.jpeg",
-    "../newyork2021/5.jpeg",
-    "../newyork2021/6.jpeg",
-    "../newyork2021/7.jpeg",
+    "../seattle2023-ricohgriiix/1.jpg",
+    "../seattle2023-ricohgriiix/2.jpg",
+    "../seattle2023-ricohgriiix/3.jpg",
+    "../seattle2023-ricohgriiix/4.jpg",
+    "../seattle2023-ricohgriiix/5.jpg",
+    "../seattle2023-ricohgriiix/6.jpg",
+    "../seattle2023-ricohgriiix/7.jpg",
+    "../seattle2023-ricohgriiix/8.jpg",
+    "../seattle2023-ricohgriiix/9.jpg",
+    "../seattle2023-ricohgriiix/10.jpg",
+    "../seattle2023-ricohgriiix/11.jpg",
+    "../seattle2023-ricohgriiix/12.jpg",
+    "../seattle2023-ricohgriiix/13.jpg",
+    "../seattle2023-ricohgriiix/14.jpg",
+    "../seattle2023-ricohgriiix/15.jpg",
+    "../seattle2023-ricohgriiix/16.jpg",
+    "../seattle2023-ricohgriiix/17.jpg",
+    "../seattle2023-ricohgriiix/18.jpg",
+    "../seattle2023-ricohgriiix/19.jpg",
   ]
 
   const images = response.map(url => ({
@@ -43,9 +55,9 @@ const newyork2021 = () => {
           `leica street photography`,
         ]}
       />
-      <h3>New York 2021</h3>
+      <h3>Seattle 2023 (Ricoh GRIIIx)</h3>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default newyork2021
+export default seattle2023rch
