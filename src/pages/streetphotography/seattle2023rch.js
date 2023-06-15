@@ -55,7 +55,7 @@ const seattle2023rch = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Seattle 2023 (Ricoh GRIIIx)</h3>
+      <h3>Seattle 🇺🇸 2023</h3>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
