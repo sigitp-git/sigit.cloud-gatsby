@@ -53,7 +53,7 @@ const streetPhotography = () => {
         </div>
         <div>
           <Link to="fushimi2023rch/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h3>Fushimi Inari 🇯🇵 2023</h3></span>
+            <span className="footer-links"><h3>Fushimi 🇯🇵 2023</h3></span>
             <StaticImage src="../../static/streetphotography/japan2023-fushimi/1.jpg" alt="Fushimi Inari 🇯🇵 2023"
               placeholder="blurred"
               layout="constrained"
@@ -65,7 +65,7 @@ const streetPhotography = () => {
       <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="yosakoi2023fuji/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h3>Yosakoi Sapporo 🇯🇵 2023</h3></span>
+            <span className="footer-links"><h3>Sapporo 🇯🇵 2023</h3></span>
             <StaticImage src="../../static/streetphotography/japan2023-yosakoi/1.jpg" alt="Yosakoi Sapporo 🇯🇵 2023"
               placeholder="blurred"
               layout="constrained"
