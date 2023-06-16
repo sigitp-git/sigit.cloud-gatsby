@@ -49,7 +49,7 @@ const yosakoi2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Yosakoi Soran festival, Sapporo 🇯🇵 2023</h3>
+      <h4>Yosakoi Soran festival, Sapporo 🇯🇵 2023</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

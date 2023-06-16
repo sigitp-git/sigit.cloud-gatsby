@@ -45,7 +45,7 @@ const shibuya2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Shibuya 🇯🇵 2023</h3>
+      <h4>Shibuya 🇯🇵 2023</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

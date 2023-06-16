@@ -51,7 +51,7 @@ const tsukiji2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Tsukiji Outer Market 🇯🇵 2023</h3>
+      <h4>Tsukiji Outer Market 🇯🇵 2023</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

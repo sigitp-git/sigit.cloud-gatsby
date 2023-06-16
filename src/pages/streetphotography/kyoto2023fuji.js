@@ -51,7 +51,7 @@ const kyoto2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h3>Kyoto 🇯🇵 2023</h3>
+      <h4>Kyoto 🇯🇵 2023</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
