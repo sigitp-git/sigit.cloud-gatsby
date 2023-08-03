@@ -42,7 +42,7 @@ const newyork2021lq = () => {
           `leica street photography`,
         ]}
       />
-      <h4>New York 🇺🇸 2021</h4>
+      <h4>New York 🇺🇸 2021 | 📸 Leica Q</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

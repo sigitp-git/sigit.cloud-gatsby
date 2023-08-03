@@ -32,6 +32,16 @@ const streetPhotography = () => {
       />
       <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
+          <Link to="seattle2023m10r/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Seattle 🇺🇸 Summer'23</h4></span>
+            <StaticImage src="../../static/streetphotography/seattle2023-leicam10r/1.jpg" alt="Seattle 🇺🇸 Summer'23"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div>
           <Link to="tokyo2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tokyo 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography/japan2023-tokyo-jr/1.jpg" alt="Tokyo 🇯🇵 2023"
@@ -51,6 +61,8 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
+      </div>
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="tsukiji2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tsukiji 🇯🇵 2023</h4></span>
@@ -61,8 +73,6 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="fushimi2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Fushimi 🇯🇵 2023</h4></span>
@@ -83,6 +93,8 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
+      </div>
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="shibuya2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Shibuya 🇯🇵 2023</h4></span>
@@ -93,8 +105,6 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="seattle2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2023</h4></span>
@@ -115,6 +125,8 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
+      </div>
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="newyork2021lq/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>New York 🇺🇸 2021</h4></span>

@@ -51,7 +51,7 @@ const fushimi2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h4>Fushimi Inari night hike 🇯🇵 2023</h4>
+      <h4>Fushimi Inari night hike 🇯🇵 2023 | 📸 Ricoh GRIIIx</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

@@ -1,5 +1,5 @@
 ---
-title: "4 Amazon Inventor Awards"
+title: "Four Amazon Inventor Awards"
 date: "2023-07-31"
 ---
 I was part of the [**Integrated Private Wireless (IPW) on AWS**](https://aws.amazon.com/telecom/integrated-private-wireless/) launch at MWC 2023, and submitted 4 patent applications as part of the launch. 

@@ -4,17 +4,24 @@ import ImageGallery from "react-image-gallery"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-const shibuya2023fuji = () => {
+const seattle2023m10r = () => {
   const response = [
-    "../japan2023-shibuya/1.jpg",
-    "../japan2023-shibuya/2.jpg",
-    "../japan2023-shibuya/3.jpg",
-    "../japan2023-shibuya/4.jpg",
-    "../japan2023-shibuya/5.jpg",
-    "../japan2023-shibuya/6.jpg",
-    "../japan2023-shibuya/7.jpg",
-    "../japan2023-shibuya/8.jpg",
-    "../japan2023-shibuya/9.jpg",
+    "../seattle2023-leicam10r/1.jpg",
+    "../seattle2023-leicam10r/2.jpg",
+    "../seattle2023-leicam10r/3.jpg",
+    "../seattle2023-leicam10r/4.jpg",
+    "../seattle2023-leicam10r/5.jpg",
+    "../seattle2023-leicam10r/6.jpg",
+    "../seattle2023-leicam10r/7.jpg",
+    "../seattle2023-leicam10r/8.jpg",
+    "../seattle2023-leicam10r/9.jpg",
+    "../seattle2023-leicam10r/10.jpg",
+    "../seattle2023-leicam10r/11.jpg",
+    "../seattle2023-leicam10r/12.jpg",
+    "../seattle2023-leicam10r/13.jpg",
+    "../seattle2023-leicam10r/14.jpg",
+    "../seattle2023-leicam10r/15.jpg",
+    "../seattle2023-leicam10r/16.jpg",
   ]
 
   const images = response.map(url => ({
@@ -45,9 +52,9 @@ const shibuya2023fuji = () => {
           `leica street photography`,
         ]}
       />
-      <h4>Shibuya 🇯🇵 2023 | 📸 Fuji X100v</h4>
+      <h4>Seattle 🇺🇸 Summer'23 | 📸 Leica M10r, Summilux 35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default shibuya2023fuji
+export default seattle2023m10r
