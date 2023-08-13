@@ -22,9 +22,14 @@ const About = ({ data }) => {
           `javascript`,
           `react`,
           `reactjs`,
+          `5g`,
+          `cloud`,
+          `product manager`,
+          `solutions architect`,
+          `architect`,
         ]}
       />
-      <h2>About</h2>
+      <h2>About - Sigit Priyanggoro</h2>
       <div
         style={{
           maxWidth: `300px`,
@@ -44,9 +49,18 @@ const About = ({ data }) => {
           }}
         />
       </div>
+      <div>
+        <p>I am a Technical Product Manager, Solutions Architect, and Technical Lead for AWS 5G, and EC2 Edge services.
+          I work backwards with AWS hardware engineering, software engineering, and data center systems engineering to innovate on behalf of AWS customers and partners worldwide.
+          I am also an active contributor to AWS Telecom community, drives collaboration across AWS customers and partners to build best practices utilizing AWS technologies.
+          <br />
+          It's always Day 1: Work Hard. Have Fun. Make History.
+        </p>
+        <hr />
+      </div>
       <div style={{ display: `flex` }}>
         <p>
-          A{" "}
+          This is a{" "}
           <a
             href={`https://www.linkedin.com/feed/hashtag/?keywords=serverless`}
             target="_blank"
@@ -60,12 +74,39 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             SPA
-          </a>{" "}blog by <strong>{data.site.siteMetadata.author}</strong>
+            {` `}
+          </a>
+          {`blog built with `}
+          <a
+            href="https://www.gatsbyjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Gatsby
+          </a>
+          {`, `}
+          <a
+            href="https://aws.amazon.com/amplify/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AWS Amplify
+          </a>
+          {`, and `}
+          <a
+            href="https://aws.amazon.com/appsync/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AWS AppSync
+          </a>
+          {`.`}
+          {/* {" "}blog by <strong>{data.site.siteMetadata.author}</strong>
           <br />
           <strong>{data.site.siteMetadata.work}</strong>
           <br />
           at <strong>{data.site.siteMetadata.company}</strong>, based in{" "}
-          <strong>{data.site.siteMetadata.city}</strong>. {` `}
+          <strong>{data.site.siteMetadata.city}</strong>. {` `} */}
           <br />
           <br />
           <a
