@@ -29,7 +29,11 @@ const About = ({ data }) => {
           `architect`,
         ]}
       />
-      <h2>About - Sigit Priyanggoro</h2>
+      <h2>About</h2>
+      <b>Sigit Priyanggoro</b>
+      <br/>Product and Solutions Architect, EC2 Edge & 5G at Amazon Web Services
+      <br/>
+      <br/>
       <div
         style={{
           maxWidth: `300px`,
