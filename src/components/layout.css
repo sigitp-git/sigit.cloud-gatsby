@@ -6,7 +6,7 @@
   --headerSubLinkColor: darkslateblue;
   --bodyBGColor: white;
   --themeColor: #2e152c;
-  --headingColor: rgb(104, 92, 184);
+  --headingColor: darkslateblue;
   --hoverColor: #8EA7E9;
   --blogListBG: white;
   --blogListBGHover: #eeecf1;
@@ -21,6 +21,7 @@
   --headerSubLinkColor: rgb(150, 144, 189);
   --bodyBGColor: white;
   --themeColor: #2e152c;
+  --headingColor: rgb(104, 92, 184);
   --headingColor: rgb(155, 120, 189);
   --hoverColor: #8EA7E9;
   --blogListBG: #faf9fb;
