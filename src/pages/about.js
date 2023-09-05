@@ -54,7 +54,7 @@ const About = ({ data }) => {
         />
       </div>
       <div>
-        <p>I am a Solutions Architect, Technical Product Manager, and Technical Lead for AWS 5G, and EC2 Edge services.
+        <p>I am a Solutions Architect, Technical Product Manager, and Technical Lead for AWS 5G and EC2 Edge product development team.
           I work backwards with AWS hardware engineering, software engineering, and data center systems engineering to innovate on behalf of AWS customers and partners worldwide.
           I am also an active contributor to AWS Telecom community, drives collaboration across AWS customers and partners to build best practices utilizing AWS technologies.
           <br />
