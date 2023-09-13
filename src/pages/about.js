@@ -31,9 +31,9 @@ const About = ({ data }) => {
       />
       <h2>About</h2>
       <b>Sigit Priyanggoro</b>
-      <br/>Product and Solutions Architect, EC2 Edge & 5G at Amazon Web Services
-      <br/>
-      <br/>
+      <br />Product and Solutions Architect, EC2 Edge & 5G at Amazon Web Services
+      <br />
+      <br />
       <div
         style={{
           maxWidth: `300px`,
@@ -156,6 +156,15 @@ const About = ({ data }) => {
           >
             {" "}
             AWS Certifications
+          </a>
+          <br />
+          <a
+            href={`https://photos.app.goo.gl/JZEruZuq12mG84Tb8`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Select notes on Stoicism
           </a>
         </p>
       </div>
