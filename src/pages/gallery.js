@@ -14,6 +14,7 @@ const Gallery = () => {
     "DSC_0292.JPG",
     "IMG_2271.jpg",
     "IMG_2279.jpg",
+    "CNY2018.jpg",
     "IMG_0354.JPG",
     "FullSizeRender.jpg",
     "IMG-4242.jpg",
