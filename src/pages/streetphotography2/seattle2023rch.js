@@ -5,23 +5,27 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
 
-const tsukiji2023fuji = () => {
+const seattle2023rch = () => {
   const response = [
-    "../japan2023-tsukiji/1.jpg",
-    "../japan2023-tsukiji/2.jpg",
-    "../japan2023-tsukiji/3.jpg",
-    "../japan2023-tsukiji/4.jpg",
-    "../japan2023-tsukiji/5.jpg",
-    "../japan2023-tsukiji/6.jpg",
-    "../japan2023-tsukiji/7.jpg",
-    "../japan2023-tsukiji/8.jpg",
-    "../japan2023-tsukiji/9.jpg",
-    "../japan2023-tsukiji/10.jpg",
-    "../japan2023-tsukiji/11.jpg",
-    "../japan2023-tsukiji/12.jpg",
-    "../japan2023-tsukiji/13.jpg",
-    "../japan2023-tsukiji/14.jpg",
-    "../japan2023-tsukiji/15.jpg",
+    "../seattle2023-ricohgriiix/1.jpg",
+    "../seattle2023-ricohgriiix/2.jpg",
+    "../seattle2023-ricohgriiix/3.jpg",
+    "../seattle2023-ricohgriiix/4.jpg",
+    "../seattle2023-ricohgriiix/5.jpg",
+    "../seattle2023-ricohgriiix/6.jpg",
+    "../seattle2023-ricohgriiix/7.jpg",
+    "../seattle2023-ricohgriiix/8.jpg",
+    "../seattle2023-ricohgriiix/9.jpg",
+    "../seattle2023-ricohgriiix/10.jpg",
+    "../seattle2023-ricohgriiix/11.jpg",
+    "../seattle2023-ricohgriiix/12.jpg",
+    "../seattle2023-ricohgriiix/13.jpg",
+    "../seattle2023-ricohgriiix/14.jpg",
+    "../seattle2023-ricohgriiix/15.jpg",
+    "../seattle2023-ricohgriiix/16.jpg",
+    "../seattle2023-ricohgriiix/17.jpg",
+    "../seattle2023-ricohgriiix/18.jpg",
+    "../seattle2023-ricohgriiix/19.jpg",
   ]
 
   const images = response.map(url => ({
@@ -62,9 +66,9 @@ const tsukiji2023fuji = () => {
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
       </div>
-      <h4>Tsukiji Outer Market 🇯🇵 2023 | 📸 Ricoh GRIIIx</h4>
+      <h4>Seattle 🇺🇸 2023 | 📸 Ricoh GRIIIx</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default tsukiji2023fuji
+export default seattle2023rch

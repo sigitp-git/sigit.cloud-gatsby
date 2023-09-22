@@ -5,23 +5,21 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import { Link } from "gatsby"
 
-const tsukiji2023fuji = () => {
+const stroget2023fuji = () => {
   const response = [
-    "../japan2023-tsukiji/1.jpg",
-    "../japan2023-tsukiji/2.jpg",
-    "../japan2023-tsukiji/3.jpg",
-    "../japan2023-tsukiji/4.jpg",
-    "../japan2023-tsukiji/5.jpg",
-    "../japan2023-tsukiji/6.jpg",
-    "../japan2023-tsukiji/7.jpg",
-    "../japan2023-tsukiji/8.jpg",
-    "../japan2023-tsukiji/9.jpg",
-    "../japan2023-tsukiji/10.jpg",
-    "../japan2023-tsukiji/11.jpg",
-    "../japan2023-tsukiji/12.jpg",
-    "../japan2023-tsukiji/13.jpg",
-    "../japan2023-tsukiji/14.jpg",
-    "../japan2023-tsukiji/15.jpg",
+    "../denmark2023-stroget/1.jpg",
+    "../denmark2023-stroget/2.jpg",
+    "../denmark2023-stroget/3.jpg",
+    "../denmark2023-stroget/4.jpg",
+    "../denmark2023-stroget/5.jpg",
+    "../denmark2023-stroget/6.jpg",
+    "../denmark2023-stroget/7.jpg",
+    "../denmark2023-stroget/8.jpg",
+    "../denmark2023-stroget/9.jpg",
+    "../denmark2023-stroget/10.jpg",
+    "../denmark2023-stroget/11.jpg",
+    "../denmark2023-stroget/12.jpg",
+    "../denmark2023-stroget/13.jpg",
   ]
 
   const images = response.map(url => ({
@@ -62,9 +60,9 @@ const tsukiji2023fuji = () => {
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
       </div>
-      <h4>Tsukiji Outer Market 🇯🇵 2023 | 📸 Ricoh GRIIIx</h4>
+      <h4>Strøget 🇩🇰 2023 | 📸 Fuji XT-5, XF35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )
 }
-export default tsukiji2023fuji
+export default stroget2023fuji

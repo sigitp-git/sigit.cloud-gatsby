@@ -30,7 +30,38 @@ const streetPhotography = () => {
           `leica street photography`,
         ]}
       />
+      <div
+        style={{
+          background: `white`,
+          marginBottom: `1rem`,
+          border: `1px hidden var(--headerSubLinkBG)`,
+        }}
+      >
+        <Link to="../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
+        <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+      </div>
+      {/*===========3SET=========*/}
       <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+        <div>
+          <Link to="nyhavn2023m10r/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Nyhavn 🇩🇰 2023</h4></span>
+            <StaticImage src="../../static/streetphotography/denmark2023-nyhavn/1.jpg" alt="Nyhavn 🇩🇰 2023"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div>
+          <Link to="stroget2023fuji/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Strøget 🇩🇰 2023</h4></span>
+            <StaticImage src="../../static/streetphotography/denmark2023-stroget/1.jpg" alt="Strøget 🇩🇰 2023"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
         <div>
           <Link to="seattle2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 Summer'23</h4></span>
@@ -41,6 +72,9 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
+      </div>
+      {/*===========3SET=========*/}
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="tokyo2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tokyo 🇯🇵 2023</h4></span>
@@ -61,8 +95,6 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="tsukiji2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tsukiji 🇯🇵 2023</h4></span>
@@ -73,6 +105,9 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
+      </div>
+      {/*===========3SET=========*/}
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="fushimi2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Fushimi 🇯🇵 2023</h4></span>
@@ -93,44 +128,10 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div>
           <Link to="shibuya2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Shibuya 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography/japan2023-shibuya/1.jpg" alt="Shibuya 🇯🇵 2023"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link>
-        </div>
-        <div>
-          <Link to="seattle2023rch/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>Seattle 🇺🇸 2023</h4></span>
-            <StaticImage src="../../static/streetphotography/seattle2023-ricohgriiix/1.jpg" alt="Seattle"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link>
-        </div>
-        <div>
-          <Link to="seattle2021lq/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>Seattle 🇺🇸 2021</h4></span>
-            <StaticImage src="../../static/streetphotography/seattle2021-leicaq/5.jpeg" alt="Seattle"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link>
-        </div>
-      </div>
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
-        <div>
-          <Link to="newyork2021lq/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>New York 🇺🇸 2021</h4></span>
-            <StaticImage src="../../static/streetphotography/newyork2021-leicaq/1.jpeg" alt="New York"
               placeholder="blurred"
               layout="constrained"
               width={300}
@@ -170,6 +171,9 @@ const streetPhotography = () => {
           </Link>
         </div>
       </div> */}
+      <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 2</Link>
+      <br />
+      <br />
     </Layout>
   )
 }

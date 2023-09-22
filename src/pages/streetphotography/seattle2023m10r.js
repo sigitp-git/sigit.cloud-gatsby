@@ -3,6 +3,7 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import ImageGallery from "react-image-gallery"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import { Link } from "gatsby"
 
 const seattle2023m10r = () => {
   const response = [
@@ -52,6 +53,16 @@ const seattle2023m10r = () => {
           `leica street photography`,
         ]}
       />
+      <div
+        style={{
+          background: `white`,
+          marginBottom: `1rem`,
+          border: `1px hidden var(--headerSubLinkBG)`,
+        }}
+      >
+        <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
+        <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+      </div>
       <h4>Seattle 🇺🇸 Summer'23 | 📸 Leica M10r, Summilux 35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
