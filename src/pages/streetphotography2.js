@@ -42,7 +42,7 @@ const streetPhotography2 = () => {
       </div>
       {/*===========3SET=========*/}
       <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
-        <div>
+        <div className="blog-list">
           <Link to="seattle2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2023</h4></span>
             <StaticImage src="../../static/streetphotography2/seattle2023-ricohgriiix/1.jpg" alt="Seattle"
@@ -52,7 +52,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div>
+        <div className="blog-list">
           <Link to="seattle2021lq/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2021</h4></span>
             <StaticImage src="../../static/streetphotography2/seattle2021-leicaq/5.jpeg" alt="Seattle"
@@ -62,7 +62,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div>
+        <div className="blog-list">
           <Link to="newyork2021lq/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>New York 🇺🇸 2021</h4></span>
             <StaticImage src="../../static/streetphotography2/newyork2021-leicaq/1.jpeg" alt="New York"
