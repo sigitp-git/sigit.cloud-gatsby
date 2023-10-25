@@ -43,6 +43,39 @@ const streetPhotography = () => {
       {/*===========3SET=========*/}
       <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
         <div className="blog-list">
+          <Link to="london2023fujixt5/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>London 🇩🇬 2023</h4></span>
+            <StaticImage src="../../static/streetphotography/london2023-fujixt5/1.jpg" alt="London 🇩🇬 2023"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="london2023ctm10r/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>London China Town 🇩🇬 2023</h4></span>
+            <StaticImage src="../../static/streetphotography/london2023-ct-leicam10r/1.jpg" alt="Strøget 🇩🇰 2023"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="seattle2023m10r/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Seattle 🇺🇸 Summer'23</h4></span>
+            <StaticImage src="../../static/streetphotography/seattle2023-leicam10r/8.jpg" alt="Seattle 🇺🇸 Summer'23"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
+          </Link>
+        </div>
+      </div>
+      {/*===========3SET=========*/}
+      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+        <div className="blog-list">
           <Link to="nyhavn2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Nyhavn 🇩🇰 2023</h4></span>
             <StaticImage src="../../static/streetphotography/denmark2023-nyhavn/1.jpg" alt="Nyhavn 🇩🇰 2023"
