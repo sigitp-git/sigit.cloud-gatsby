@@ -14,6 +14,18 @@ const london2023ctm10r = () => {
     "../london2023-ct-leicam10r/5.jpg",
     "../london2023-ct-leicam10r/6.jpg",
     "../london2023-ct-leicam10r/7.jpg",
+    "../london2023-ct-leicam10r/8.jpg",
+    "../london2023-ct-leicam10r/9.jpg",
+    "../london2023-ct-leicam10r/10.jpg",
+    "../london2023-ct-leicam10r/11.jpg",
+    "../london2023-ct-leicam10r/12.jpg",
+    "../london2023-ct-leicam10r/13.jpg",
+    "../london2023-ct-leicam10r/14.jpg",
+    "../london2023-ct-leicam10r/15.jpg",
+    "../london2023-ct-leicam10r/16.jpg",
+    "../london2023-ct-leicam10r/17.jpg",
+    "../london2023-ct-leicam10r/18.jpg",
+    "../london2023-ct-leicam10r/19.jpg",
   ]
 
   const images = response.map(url => ({
@@ -54,7 +66,7 @@ const london2023ctm10r = () => {
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
       </div>
-      <h4>London China Town 🇬🇧 2023 | 📸 Leica M10r, Summilux 35mm F1.4</h4>
+      <h4>London & China Town 🇬🇧 2023 | 📸 Leica M10r, Summilux 35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
     </Layout>
   )

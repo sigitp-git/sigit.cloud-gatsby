@@ -54,7 +54,7 @@ const streetPhotography = () => {
         </div>
         <div className="blog-list">
           <Link to="london2023ctm10r/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>London China Town 🇩🇬 2023</h4></span>
+            <span className="footer-links"><h4>London & China Town 🇩🇬 2023</h4></span>
             <StaticImage src="../../static/streetphotography/london2023-ct-leicam10r/1.jpg" alt="Strøget 🇩🇰 2023"
               placeholder="blurred"
               layout="constrained"
