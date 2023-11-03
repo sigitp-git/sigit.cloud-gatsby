@@ -66,7 +66,7 @@ const BlogList = ({ data, pageContext }) => {
         >
           {!isFirst && (
             <Link
-              to={prevPage}
+              to={`/`+prevPage}
               rel="prev"
               style={{
                 marginTop: "0.1rem",
@@ -103,7 +103,7 @@ const BlogList = ({ data, pageContext }) => {
           ))}
           {!isLast && (
             <Link
-              to={nextPage}
+              to={`/`+nextPage}
               rel="next"
               style={{
                 marginTop: "0.1rem",
