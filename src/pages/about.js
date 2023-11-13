@@ -31,7 +31,7 @@ const About = ({ data }) => {
       />
       <h2>About</h2>
       <b>Sigit Priyanggoro</b>
-      <br />Senior Solutions Architect at Amazon Web Services
+      <br />Product & Solutions Architect at Amazon Web Services
       <br />
       <br />
       <div
@@ -54,7 +54,8 @@ const About = ({ data }) => {
         />
       </div>
       <div>
-        <p>I am a Senior Solutions Architect at Amazon Web Services.
+        <p>I am a Solutions Architect, Technical Product Manager, and Technical Lead for AWS 5G and EC2 Edge product development team. I work backwards with AWS hardware engineering, software engineering, and data center systems engineering to innovate on behalf of AWS customers and partners worldwide.
+          <br />
           <br />
           It's always Day 1: Work Hard. Have Fun. Make History.
         </p>
@@ -75,7 +76,7 @@ const About = ({ data }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            SPA
+            Single Page Application (SPA)
             {` `}
           </a>
           {`blog built with `}
