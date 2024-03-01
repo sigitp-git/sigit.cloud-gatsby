@@ -31,7 +31,7 @@ const About = ({ data }) => {
       />
       <h2>About</h2>
       <b>Sigit Priyanggoro</b>
-      <br />Product & Solutions Architect at Amazon Web Services
+      <br />Principal Architect, EC2 Edge at Amazon Web Services
       <br />
       <br />
       <div
