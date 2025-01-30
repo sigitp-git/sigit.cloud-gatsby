@@ -168,6 +168,15 @@ const About = ({ data }) => {
             {" "}
             Select notes on Stoicism
           </a>
+          <br />
+          <a
+            href={`https://patents.justia.com/inventor/sigit-priyanggoro`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Patents
+          </a>
         </p>
       </div>
       <div style={{ display: `flex`, marginBottom: `2rem` }}>
