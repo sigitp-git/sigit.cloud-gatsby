@@ -175,7 +175,16 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            Patents
+            Patents summary
+          </a>
+          <br />
+          <a
+            href={`https://github.com/sigitp-git/patents/tree/main`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Patents PDF file
           </a>
         </p>
       </div>
