@@ -121,7 +121,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            LinkedIn
+            o LinkedIn
           </a>
           <br />
           <a
@@ -130,7 +130,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            GitHub
+            o GitHub
           </a>
           <br />
           <a
@@ -139,7 +139,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            Dev.To
+            o Dev.To
           </a>
           <br />
           <a
@@ -148,7 +148,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            AWS Blogs
+            o AWS Blogs
           </a>
           <br />
           <a
@@ -157,7 +157,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            AWS Certifications
+            o AWS Certifications
           </a>
           <br />
           <a
@@ -166,7 +166,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            Select notes on Stoicism
+            o Notes on Stoicism
           </a>
           <br />
           <a
@@ -175,7 +175,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            Patents summary
+            o Patents summary
           </a>
           <br />
           <a
@@ -184,7 +184,7 @@ const About = ({ data }) => {
             rel="noopener noreferrer"
           >
             {" "}
-            Patents PDF file
+            o Patents PDF
           </a>
         </p>
       </div>
