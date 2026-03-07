@@ -17,29 +17,11 @@ const BlogList = ({ data, pageContext }) => {
 
   return (
     <Layout location={pageContext.location} title={siteTitle}>
-      <SEO
-        title={siteTitle}
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-        ]}
-      />
-
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <Link key={node.fields.slug} style={{ boxShadow: "none" }} to={node.fields.slug}>
-            <div key={node.fields.slug} className="blog-list">
+            <div className="blog-list">
               <h2
                 style={{
                   marginBottom: "1rem",
@@ -53,7 +35,7 @@ const BlogList = ({ data, pageContext }) => {
           </Link>
         )
       })}
-      <div>
+      <nav aria-label="pagination">
         <ul
           style={{
             display: "flex",
@@ -116,12 +98,19 @@ const BlogList = ({ data, pageContext }) => {
             </Link>
           )}
         </ul>
-      </div>
+      </nav>
     </Layout>
   )
 }
 
 export default BlogList
+
+export function Head({ data }) {
+  const siteTitle = data.site.siteMetadata.title
+  return (
+    <SEO title={siteTitle} />
+  )
+}
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {

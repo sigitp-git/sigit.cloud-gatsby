@@ -9,6 +9,16 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// Define optional frontmatter fields so GraphQL queries don't fail
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+    createTypes(`
+        type MarkdownRemarkFrontmatter {
+            keywords: [String]
+        }
+    `)
+}
+
 // Creates path to the nodes (md files from MarkdownRemark)
 // onCreateNode runs during server start
 // bunch of nodes created from the filesystem during server starts

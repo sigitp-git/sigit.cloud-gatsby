@@ -1,37 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import Image from "gatsby-image"
 import SEO from "../components/seo"
 
 const About = ({ data }) => {
+  const avatarImage = getImage(data.avatar)
+
   return (
     <Layout>
-      <SEO
-        title="About"
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-          `5g`,
-          `cloud`,
-          `product manager`,
-          `solutions architect`,
-          `architect`,
-        ]}
-      />
       <h2>About</h2>
       <b>Sigit Priyanggoro</b>
-      <br />Principal Architect, EC2 Edge at Amazon Web Services
+      <br />Principal Solutions Architect, Autonomous Networks at Amazon Web Services
       <br />
       <br />
       <div
@@ -41,9 +21,8 @@ const About = ({ data }) => {
           borderRadius: `100%`,
         }}
       >
-        <Image
-          eager
-          fixed={data.avatar.childImageSharp.fixed}
+        <GatsbyImage
+          image={avatarImage}
           alt={data.site.siteMetadata.author}
           style={{
             marginRight: "1rem",
@@ -107,12 +86,6 @@ const About = ({ data }) => {
             AWS AppSync
           </a>
           {`.`}
-          {/* {" "}blog by <strong>{data.site.siteMetadata.author}</strong>
-          <br />
-          <strong>{data.site.siteMetadata.work}</strong>
-          <br />
-          at <strong>{data.site.siteMetadata.company}</strong>, based in{" "}
-          <strong>{data.site.siteMetadata.city}</strong>. {` `} */}
           <br />
           <br />
           <a
@@ -200,11 +173,14 @@ const About = ({ data }) => {
             alignItems: `flex-start`,
           }}
         >
-          {data.allFile.edges.map(({ node }, i) => (
-            <div key={i} style={{ marginBottom: "0.5rem" }}>
-              <Image eager fixed={node.childImageSharp.fixed} alt={node.name} />
-            </div>
-          ))}
+          {data.allFile.edges.map(({ node }, i) => {
+            const certImage = getImage(node.childImageSharp)
+            return (
+              <div key={i} style={{ marginBottom: "0.5rem" }}>
+                <GatsbyImage image={certImage} alt={node.name} />
+              </div>
+            )
+          })}
         </div>
       </div>
     </Layout>
@@ -213,13 +189,38 @@ const About = ({ data }) => {
 
 export default About
 
+export function Head() {
+  return (
+    <SEO
+      title="About"
+      keywords={[
+        `sigit`,
+        `priyanggoro`,
+        `sigit priyanggoro`,
+        `aws`,
+        `severless`,
+        `amplify`,
+        `appsync`,
+        `blog`,
+        `gatsby`,
+        `javascript`,
+        `react`,
+        `reactjs`,
+        `5g`,
+        `cloud`,
+        `product manager`,
+        `solutions architect`,
+        `architect`,
+      ]}
+    />
+  )
+}
+
 export const aboutQuery = graphql`
   query AboutQuery {
     avatar: file(relativePath: { eq: "profile-pic.jpg" }) {
       childImageSharp {
-        fixed(width: 302, height: 403, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(width: 302, height: 403, quality: 100, layout: FIXED)
       }
     }
     allFile(
@@ -227,15 +228,13 @@ export const aboutQuery = graphql`
         extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
         absolutePath: { regex: "/cer/" }
       }
-      sort: { order: ASC, fields: relativePath }
+      sort: { relativePath: ASC }
     ) {
       edges {
         node {
           name
           childImageSharp {
-            fixed(width: 100, quality: 100) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(width: 100, quality: 100, layout: FIXED)
           }
         }
       }

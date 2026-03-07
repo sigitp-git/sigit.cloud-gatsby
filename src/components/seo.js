@@ -2,15 +2,13 @@
  * SEO component that queries for data with
  *  Gatsby's useStaticQuery React hook
  *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
+ * See: https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-seo-component/
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description = '', lang = 'en', meta = [], keywords = [], title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -35,94 +33,48 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
 
+  const defaultKeywords = [
+    `sigit`,
+    `priyanggoro`,
+    `sigit priyanggoro`,
+    `aws`,
+    `severless`,
+    `amplify`,
+    `appsync`,
+    `blog`,
+    `gatsby`,
+    `javascript`,
+    `react`,
+    `reactjs`,
+  ]
+
+  const effectiveKeywords = keywords.length > 0 ? keywords : defaultKeywords
+
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `github:creator`,
-          content: site.siteMetadata.social.github,
-        },
-        {
-          name: `linkedin:creator`,
-          content: site.siteMetadata.social.linkedin,
-        },
-        {
-          name: `blog:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `blog:work`,
-          content: site.siteMetadata.work,
-        },
-        {
-          name: `blog:company`,
-          content: site.siteMetadata.company,
-        },
-        {
-          name: `author:city`,
-          content: site.siteMetadata.city,
-        },
-        {
-          name: `blog:siteUrl`,
-          content: site.siteMetadata.siteUrl,
-        },
-        {
-          name: `blog:description`,
-          content: site.siteMetadata.description,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <title>{`${title} | ${site.siteMetadata.title}`}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="github:creator" content={site.siteMetadata.social.github} />
+      <meta name="linkedin:creator" content={site.siteMetadata.social.linkedin} />
+      <meta name="blog:creator" content={site.siteMetadata.author} />
+      <meta name="blog:work" content={site.siteMetadata.work} />
+      <meta name="blog:company" content={site.siteMetadata.company} />
+      <meta name="author:city" content={site.siteMetadata.city} />
+      <meta name="blog:siteUrl" content={site.siteMetadata.siteUrl} />
+      <meta name="blog:description" content={site.siteMetadata.description} />
+      <meta name="keywords" content={effectiveKeywords.join(`, `)} />
+      {meta.map((m, i) => (
+        <meta key={i} {...m} />
+      ))}
+    </>
   )
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

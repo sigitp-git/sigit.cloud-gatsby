@@ -1,9 +1,8 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import "./layout.css"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle = '' }) => (
   <section>
     <header
       style={{
@@ -39,11 +38,11 @@ const Header = ({ siteTitle }) => (
           padding: `0.5rem 1.0875rem`,
         }}
       >
-        <Link to="/about/" style={{ fontSize: `1.5rem` }}>
+        <Link to="/about/" style={{ fontSize: `1.5rem` }} aria-label="about page">
           <small className="blog-subheader">about</small>
         </Link>
         {` `}
-        <Link to="/gallery/" style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}>
+        <Link to="/gallery/" style={{ marginLeft: `2rem`, fontSize: `1.5rem` }} aria-label="gallery page">
           <small className="blog-subheader">gallery</small>
         </Link>
         {` `}
@@ -52,6 +51,7 @@ const Header = ({ siteTitle }) => (
           style={{ marginLeft: `2rem`, fontSize: `1.5rem` }}
           activeClassName="active"
           partiallyActive={true}
+          aria-label="street photography page"
         >
           <small className="blog-subheader">street 📸</small>
         </Link>
@@ -65,13 +65,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </section>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

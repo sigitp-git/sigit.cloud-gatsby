@@ -4,32 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import AlbumGrid from "../components/album-grid"
 import "../components/layout.css"
 
 const streetPhotography2 = () => {
   return (
     <Layout>
-      <SEO
-        title="Street Photography"
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-          `street photography`,
-          `leica`,
-          `leica q`,
-          `leica street photography`,
-        ]}
-      />
       <div
         style={{
           background: `white`,
@@ -41,7 +21,7 @@ const streetPhotography2 = () => {
         <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
       </div>
       {/*===========3SET=========*/}
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+      <AlbumGrid>
         <div className="blog-list">
           <Link to="fushimi2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Fushimi 🇯🇵 2023</h4></span>
@@ -72,9 +52,9 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-      </div>
+      </AlbumGrid>
       {/*===========3SET=========*/}
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+      <AlbumGrid>
         <div className="blog-list">
           <Link to="seattle2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2023</h4></span>
@@ -105,7 +85,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-      </div>
+      </AlbumGrid>
       <Link to="../streetphotography/" style={{ fontSize: `1rem` }}>{"<< "}back to 📸 Album 1</Link>
       <br />
       <br />
@@ -114,3 +94,29 @@ const streetPhotography2 = () => {
 }
 // update: multi-album
 export default streetPhotography2
+
+export function Head() {
+  return (
+    <SEO
+      title="Street Photography"
+      keywords={[
+        `sigit`,
+        `priyanggoro`,
+        `sigit priyanggoro`,
+        `aws`,
+        `severless`,
+        `amplify`,
+        `appsync`,
+        `blog`,
+        `gatsby`,
+        `javascript`,
+        `react`,
+        `reactjs`,
+        `street photography`,
+        `leica`,
+        `leica q`,
+        `leica street photography`,
+      ]}
+    />
+  )
+}

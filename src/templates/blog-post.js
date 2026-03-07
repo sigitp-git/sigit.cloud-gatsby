@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import DOMPurify from "isomorphic-dompurify"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -10,27 +11,10 @@ const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-        ]}
-      />
       <div>
         <h2>{post.frontmatter.title}</h2>
         <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html) }} />
       </div>
       <br />
       <ul
@@ -63,6 +47,17 @@ const BlogPost = ({ data, pageContext }) => {
 
 export default BlogPost
 
+export function Head({ data }) {
+  const post = data.markdownRemark
+  const keywords = post.frontmatter.keywords || []
+  return (
+    <SEO
+      title={post.frontmatter.title}
+      keywords={keywords}
+    />
+  )
+}
+
 // $slug is a context passed from gatsby-node.js, the context named 'slug' during the createPage() action
 export const query = graphql`
   query($slug: String!) {
@@ -71,6 +66,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        keywords
       }
     }
   }

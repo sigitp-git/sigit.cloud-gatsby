@@ -4,32 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import AlbumGrid from "../components/album-grid"
 import "../components/layout.css"
 
 const streetPhotography = () => {
   return (
     <Layout>
-      <SEO
-        title="Street Photography"
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-          `street photography`,
-          `leica`,
-          `leica q`,
-          `leica street photography`,
-        ]}
-      />
       <div
         style={{
           background: `white`,
@@ -41,7 +21,7 @@ const streetPhotography = () => {
         <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
       </div>
       {/*===========3SET=========*/}
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+      <AlbumGrid>
         <div className="blog-list">
           <Link to="london2023fujixt5/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>London 🇩🇬 2023</h4></span>
@@ -72,9 +52,9 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
+      </AlbumGrid>
       {/*===========3SET=========*/}
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+      <AlbumGrid>
         <div className="blog-list">
           <Link to="nyhavn2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Nyhavn 🇩🇰 2023</h4></span>
@@ -105,9 +85,9 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
+      </AlbumGrid>
       {/*===========3SET=========*/}
-      <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
+      <AlbumGrid>
         <div className="blog-list">
           <Link to="tokyo2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tokyo 🇯🇵 2023</h4></span>
@@ -138,39 +118,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-      </div>
-      {/*placeholder*/}
-      {/* <div class="three-columns-grid" style={{ marginBottom: "1.5rem" }}>
-        <div>
-          <Link to="seattle2021/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>Seattle 2021</h4></span>
-            <StaticImage src="../../static/streetphotography/seattle2021/5.jpeg" alt="Seattle"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link></div>
-        <div>
-          <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>New York 2021</h4></span>
-            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link>
-        </div>
-        <div>
-          <Link to="newyork2021/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>New York 2021</h4></span>
-            <StaticImage src="../../static/streetphotography/newyork2021/1.jpeg" alt="New York"
-              placeholder="blurred"
-              layout="constrained"
-              width={300}
-              height={300} />
-          </Link>
-        </div>
-      </div> */}
+      </AlbumGrid>
       <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 2</Link>
       <br />
       <br />
@@ -179,3 +127,29 @@ const streetPhotography = () => {
 }
 // update: multi-album
 export default streetPhotography
+
+export function Head() {
+  return (
+    <SEO
+      title="Street Photography"
+      keywords={[
+        `sigit`,
+        `priyanggoro`,
+        `sigit priyanggoro`,
+        `aws`,
+        `severless`,
+        `amplify`,
+        `appsync`,
+        `blog`,
+        `gatsby`,
+        `javascript`,
+        `react`,
+        `reactjs`,
+        `street photography`,
+        `leica`,
+        `leica q`,
+        `leica street photography`,
+      ]}
+    />
+  )
+}

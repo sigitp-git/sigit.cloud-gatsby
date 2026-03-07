@@ -107,26 +107,31 @@ const Gallery = () => {
 
   return (
     <Layout>
-      <SEO
-        title="Gallery"
-        keywords={[
-          `sigit`,
-          `priyanggoro`,
-          `sigit priyanggoro`,
-          `aws`,
-          `severless`,
-          `amplify`,
-          `appsync`,
-          `blog`,
-          `gatsby`,
-          `javascript`,
-          `react`,
-          `reactjs`,
-        ]}
-      />
       <h2>Gallery</h2>
       <ImageGallery items={images} slideOnThumbnailOver={true} lazyLoad={true}/>
     </Layout>
   )
 }
 export default Gallery
+
+export function Head() {
+  return (
+    <SEO
+      title="Gallery"
+      keywords={[
+        `sigit`,
+        `priyanggoro`,
+        `sigit priyanggoro`,
+        `aws`,
+        `severless`,
+        `amplify`,
+        `appsync`,
+        `blog`,
+        `gatsby`,
+        `javascript`,
+        `react`,
+        `reactjs`,
+      ]}
+    />
+  )
+}

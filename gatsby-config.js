@@ -15,7 +15,7 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,16 +39,17 @@ module.exports = {
             options: {
               maxWidth: 590,
               linkImagesToOriginal: false,
-              loading: `eager`,
-              quality: 100,
+              loading: `lazy`,
+              quality: 80,
             },
+          },
+          {
             resolve: `gatsby-remark-copy-linked-files`,
-            options: 
-            {
-              ignoreFileExtensions: []
-            }
-          }
-        ]
+            options: {
+              ignoreFileExtensions: [],
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
