@@ -18,7 +18,12 @@ const ghApi = (path, token, opts = {}) =>
       ...(opts.headers || {}),
     },
   }).then(async r => {
-    const data = await r.json()
+    let data
+    try {
+      data = await r.json()
+    } catch {
+      throw new Error(`GitHub API ${r.status}: failed to parse response`)
+    }
     if (!r.ok) throw new Error(data.message || `GitHub API ${r.status}`)
     return data
   })
@@ -136,9 +141,9 @@ function generateIndexPage(collectionName, albums, allCollections) {
     const items = chunk.map(album =>
       `        <div className="blog-list">
           <Link to="${album.slug}/" style={{ fontSize: \`1rem\` }}>
-            <span className="footer-links"><h4>${album.title}</h4></span>
+            <span className="footer-links"><h4 style={{ minHeight: "2.4em", lineHeight: "1.2em", overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>${album.title}</h4></span>
             <img src="../../${collectionName}/${album.slug}/1.jpg" alt="${album.title}"
-              style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+              style={{ width: "100%", maxWidth: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
           </Link>
         </div>`
     ).join("\n")
@@ -306,6 +311,21 @@ const styles = {
     background: "#ffebee", padding: "1rem", borderRadius: 4,
     marginTop: "1rem", color: "#c62828",
   },
+  queueItem: {
+    background: "var(--blogListBG)", padding: "0.75rem", borderRadius: 4,
+    marginBottom: "0.5rem", display: "flex", justifyContent: "space-between",
+    alignItems: "center",
+  },
+  queueInfo: { flex: 1 },
+  queueRemoveBtn: {
+    background: "#c62828", color: "white", border: "none", borderRadius: 4,
+    padding: "0.3rem 0.7rem", cursor: "pointer", fontSize: "0.85rem",
+    fontFamily: "inherit",
+  },
+  queueSection: {
+    marginTop: "1.5rem", padding: "1rem",
+    border: "2px dashed var(--blogListBrdr)", borderRadius: 8,
+  },
 }
 
 const CreateAlbum = () => {
@@ -314,6 +334,7 @@ const CreateAlbum = () => {
   )
   const [authenticated, setAuthenticated] = useState(false)
   const [ghUser, setGhUser] = useState("")
+  // Current form fields (for the album being composed)
   const [title, setTitle] = useState("")
   const [camera, setCamera] = useState("")
   const [collection, setCollection] = useState("streetphotography3")
@@ -323,6 +344,8 @@ const CreateAlbum = () => {
   ])
   const [files, setFiles] = useState([])
   const [previews, setPreviews] = useState([])
+  // Queue of albums to publish in a single commit
+  const [queue, setQueue] = useState([])
   const [log, setLog] = useState([])
   const [publishing, setPublishing] = useState(false)
   const [result, setResult] = useState(null)
@@ -348,11 +371,10 @@ const CreateAlbum = () => {
       setGhUser(data.login)
       setAuthenticated(true)
       addLog(`✅ Authenticated as ${data.login}`)
-      // Discover existing collections
       const cols = await ghListCollections(token)
       if (cols.length > 0) {
         setCollections(cols)
-        setCollection(cols[cols.length - 1]) // default to latest
+        setCollection(cols[cols.length - 1])
         addLog(`📂 Found collections: ${cols.map(COLLECTION_LABEL).join(", ")}`)
       }
     } catch (err) {
@@ -366,6 +388,7 @@ const CreateAlbum = () => {
     setAuthenticated(false)
     setGhUser("")
     setLog([])
+    setQueue([])
   }
 
   const handleFiles = e => {
@@ -376,22 +399,51 @@ const CreateAlbum = () => {
     setPreviews(selected.map(f => URL.createObjectURL(f)))
   }
 
-  const handlePublish = async () => {
-    if (!title.trim() || files.length === 0) return
-    setPublishing(true)
-    setResult(null)
+  const resetForm = () => {
+    setTitle("")
+    setCamera("")
+    setFiles([])
+    setPreviews([])
+    if (fileInputRef.current) fileInputRef.current.value = ""
+  }
 
+  const handleAddToQueue = () => {
+    if (!title.trim() || files.length === 0) return
     const effectiveCollection = collection === "__new__" ? customCollection.trim() : collection
     if (!effectiveCollection || !effectiveCollection.startsWith("streetphotography")) {
       addLog("❌ Collection name must start with 'streetphotography'")
-      setPublishing(false)
       return
     }
-
     const slug = slugify(title)
-    const imgDir = `static/${effectiveCollection}/${slug}`
-    const pagePath = `src/pages/${effectiveCollection}/${slug}.js`
-    const indexPath = `src/pages/${effectiveCollection}.js`
+    if (queue.find(a => a.slug === slug && a.collection === effectiveCollection)) {
+      addLog(`❌ Album "${title}" already in queue for ${COLLECTION_LABEL(effectiveCollection)}`)
+      return
+    }
+    setQueue(prev => [...prev, {
+      title,
+      camera,
+      collection: effectiveCollection,
+      slug,
+      files: [...files],
+      photoCount: files.length,
+    }])
+    addLog(`➕ Added "${title}" (${files.length} photos) to queue → ${COLLECTION_LABEL(effectiveCollection)}`)
+    resetForm()
+  }
+
+  const handleRemoveFromQueue = idx => {
+    const removed = queue[idx]
+    setQueue(prev => prev.filter((_, i) => i !== idx))
+    addLog(`➖ Removed "${removed.title}" from queue`)
+  }
+
+  const handlePublishAll = async () => {
+    if (queue.length === 0) return
+    setPublishing(true)
+    setResult(null)
+
+    const totalPhotos = queue.reduce((sum, a) => sum + a.files.length, 0)
+    addLog(`🚀 Publishing ${queue.length} album(s) with ${totalPhotos} total photos in a single commit...`)
 
     try {
       // Step 1: Get the current commit SHA and tree SHA
@@ -402,79 +454,101 @@ const CreateAlbum = () => {
       const baseTreeSha = commit.tree.sha
 
       // Step 2: Discover all collections and determine the full nav set
-      addLog("� Discovering album collections...")
+      addLog("📂 Discovering album collections...")
       const existingCollections = await ghListCollections(token)
       const allCollections = [...existingCollections]
-      if (!allCollections.includes(effectiveCollection)) {
-        allCollections.push(effectiveCollection)
-        allCollections.sort((a, b) => {
-          const numA = parseInt(a.replace("streetphotography", "") || "1")
-          const numB = parseInt(b.replace("streetphotography", "") || "1")
-          return numA - numB
-        })
+      const newCollections = []
+      for (const album of queue) {
+        if (!allCollections.includes(album.collection)) {
+          allCollections.push(album.collection)
+          newCollections.push(album.collection)
+        }
       }
-      const isNewCollection = !existingCollections.includes(effectiveCollection)
-      addLog(`  Collections: ${allCollections.map(COLLECTION_LABEL).join(", ")}${isNewCollection ? ` (${COLLECTION_LABEL(effectiveCollection)} is new)` : ""}`)
+      allCollections.sort((a, b) => {
+        const numA = parseInt(a.replace("streetphotography", "") || "1")
+        const numB = parseInt(b.replace("streetphotography", "") || "1")
+        return numA - numB
+      })
+      addLog(`  Collections: ${allCollections.map(COLLECTION_LABEL).join(", ")}${newCollections.length ? ` (new: ${newCollections.map(COLLECTION_LABEL).join(", ")})` : ""}`)
 
-      // Step 3: Create blobs for each image
-      addLog(`📤 Uploading ${files.length} images...`)
       const treeItems = []
 
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i]
-        addLog(`  Uploading ${i + 1}/${files.length}: ${file.name} (${(file.size / 1024).toFixed(0)} KB)`)
-        const base64 = await fileToBase64(file)
-        const blob = await ghApi("/git/blobs", token, {
+      // Step 3: Process each album in the queue
+      for (let qi = 0; qi < queue.length; qi++) {
+        const album = queue[qi]
+        addLog(`\n📦 [${qi + 1}/${queue.length}] Processing "${album.title}"...`)
+
+        const imgDir = `static/${album.collection}/${album.slug}`
+        const pagePath = `src/pages/${album.collection}/${album.slug}.js`
+
+        // Upload images
+        addLog(`  📤 Uploading ${album.files.length} images...`)
+        for (let i = 0; i < album.files.length; i++) {
+          const file = album.files[i]
+          addLog(`    ${i + 1}/${album.files.length}: ${file.name} (${(file.size / 1024).toFixed(0)} KB)`)
+          const base64 = await fileToBase64(file)
+          const blob = await ghApi("/git/blobs", token, {
+            method: "POST",
+            body: JSON.stringify({ content: base64, encoding: "base64" }),
+          })
+          treeItems.push({
+            path: `${imgDir}/${i + 1}.jpg`,
+            mode: "100644",
+            type: "blob",
+            sha: blob.sha,
+          })
+        }
+
+        // Generate album page
+        addLog("  📝 Generating album page...")
+        const pageCode = generateAlbumPageCode(album.slug, album.files.length, album.title, album.camera, album.collection, allCollections)
+        const pageBlob = await ghApi("/git/blobs", token, {
           method: "POST",
-          body: JSON.stringify({ content: base64, encoding: "base64" }),
+          body: JSON.stringify({ content: textToBase64(pageCode), encoding: "base64" }),
         })
         treeItems.push({
-          path: `${imgDir}/${i + 1}.jpg`,
+          path: pagePath,
           mode: "100644",
           type: "blob",
-          sha: blob.sha,
+          sha: pageBlob.sha,
         })
       }
 
-      // Step 4: Create blob for the album page source
-      addLog("📝 Generating album page...")
-      const pageCode = generateAlbumPageCode(slug, files.length, title, camera, effectiveCollection, allCollections)
-      const pageBlob = await ghApi("/git/blobs", token, {
-        method: "POST",
-        body: JSON.stringify({ content: textToBase64(pageCode), encoding: "base64" }),
-      })
-      treeItems.push({
-        path: pagePath,
-        mode: "100644",
-        type: "blob",
-        sha: pageBlob.sha,
-      })
-
-      // Step 5: Update the index page for this collection
-      addLog("📝 Updating index page...")
-      const existingIndex = await ghGetFile(indexPath, token)
-      let albums = existingIndex ? parseExistingAlbums(existingIndex) : []
-      if (!albums.find(a => a.slug === slug)) {
-        albums.push({ slug, title })
+      // Step 4: Update index pages for each affected collection
+      const albumsByCollection = {}
+      for (const album of queue) {
+        if (!albumsByCollection[album.collection]) albumsByCollection[album.collection] = []
+        albumsByCollection[album.collection].push(album)
       }
-      const indexCode = generateIndexPage(effectiveCollection, albums, allCollections)
-      const indexBlob = await ghApi("/git/blobs", token, {
-        method: "POST",
-        body: JSON.stringify({ content: textToBase64(indexCode), encoding: "base64" }),
-      })
-      treeItems.push({
-        path: indexPath,
-        mode: "100644",
-        type: "blob",
-        sha: indexBlob.sha,
-      })
 
-      // Step 6: If this is a new collection, update nav on ALL existing pages
-      if (isNewCollection) {
+      for (const [col, newAlbums] of Object.entries(albumsByCollection)) {
+        const indexPath = `src/pages/${col}.js`
+        addLog(`📝 Updating index page: ${indexPath}`)
+        const existingIndex = await ghGetFile(indexPath, token)
+        let albums = existingIndex ? parseExistingAlbums(existingIndex) : []
+        for (const a of newAlbums) {
+          if (!albums.find(x => x.slug === a.slug)) {
+            albums.push({ slug: a.slug, title: a.title })
+          }
+        }
+        const indexCode = generateIndexPage(col, albums, allCollections)
+        const indexBlob = await ghApi("/git/blobs", token, {
+          method: "POST",
+          body: JSON.stringify({ content: textToBase64(indexCode), encoding: "base64" }),
+        })
+        treeItems.push({
+          path: indexPath,
+          mode: "100644",
+          type: "blob",
+          sha: indexBlob.sha,
+        })
+      }
+
+      // Step 5: If any new collections, update nav on ALL existing pages
+      if (newCollections.length > 0) {
         addLog("🔗 Updating navigation across all existing pages...")
 
         for (const col of existingCollections) {
-          // Update the index page for this collection
           const colIndexPath = `src/pages/${col}.js`
           const colIndexContent = await ghGetFile(colIndexPath, token)
           if (colIndexContent) {
@@ -489,7 +563,6 @@ const CreateAlbum = () => {
             }
           }
 
-          // Update all sub-album pages in this collection
           try {
             const dirItems = await ghApi(`/contents/src/pages/${col}?ref=${BRANCH}`, token)
             const jsFiles = dirItems.filter(i => i.name.endsWith(".js"))
@@ -514,15 +587,18 @@ const CreateAlbum = () => {
         }
       }
 
-      // Step 7: Create a new tree
+      // Step 6: Create a new tree
       addLog("🌳 Creating commit tree...")
       const newTree = await ghApi("/git/trees", token, {
         method: "POST",
         body: JSON.stringify({ base_tree: baseTreeSha, tree: treeItems }),
       })
 
-      // Step 8: Create the commit
-      const commitMsg = `Add album: ${title}`
+      // Step 7: Create the commit
+      const albumTitles = queue.map(a => a.title)
+      const commitMsg = queue.length === 1
+        ? `Add album: ${albumTitles[0]}`
+        : `Add ${queue.length} albums: ${albumTitles.join(", ")}`
       addLog(`💾 Committing: "${commitMsg}"`)
       const newCommit = await ghApi("/git/commits", token, {
         method: "POST",
@@ -533,20 +609,22 @@ const CreateAlbum = () => {
         }),
       })
 
-      // Step 9: Update the branch ref
+      // Step 8: Update the branch ref
       await ghApi(`/git/refs/heads/${BRANCH}`, token, {
         method: "PATCH",
         body: JSON.stringify({ sha: newCommit.sha }),
       })
 
-      addLog(`✅ Pushed commit ${newCommit.sha.substring(0, 7)} to ${BRANCH}`)
-      addLog("🚀 Amplify will auto-deploy shortly!")
-      addLog(`📍 Album page: /${effectiveCollection}/${slug}/`)
-      addLog(`📍 Index page: /${effectiveCollection}/`)
+      addLog(`\n✅ Pushed commit ${newCommit.sha.substring(0, 7)} to ${BRANCH}`)
+      addLog("🚀 Amplify will auto-deploy shortly — single build for all albums!")
+      for (const album of queue) {
+        addLog(`📍 /${album.collection}/${album.slug}/`)
+      }
       setResult({
         success: true,
-        message: `Album "${title}" published! Amplify will deploy it to sigit.cloud/${effectiveCollection}/${slug}/`,
+        message: `${queue.length} album(s) published in a single commit! Amplify will build once for all of them.`,
       })
+      setQueue([])
     } catch (err) {
       addLog(`❌ Error: ${err.message}`)
       setResult({ success: false, message: err.message })
@@ -558,7 +636,10 @@ const CreateAlbum = () => {
   return (
     <Layout>
       <div style={styles.container}>
-        <h3>Create Street Photography Album</h3>
+        <h3>Create Street Photography Albums</h3>
+        <p style={{ color: "#666", fontSize: "0.9rem", marginTop: "-0.5rem" }}>
+          Queue multiple albums, then publish them all in a single commit to save on Amplify build costs.
+        </p>
 
         {/* Auth section */}
         {!authenticated ? (
@@ -603,7 +684,7 @@ const CreateAlbum = () => {
 
         {authenticated && (
           <>
-            {/* Album collection */}
+            {/* Album form — add to queue */}
             <div style={styles.field}>
               <label style={styles.label} htmlFor="collection">Album Collection</label>
               <select
@@ -632,7 +713,6 @@ const CreateAlbum = () => {
               )}
             </div>
 
-            {/* Title */}
             <div style={styles.field}>
               <label style={styles.label} htmlFor="album-title">Album Title</label>
               <input
@@ -644,7 +724,6 @@ const CreateAlbum = () => {
               />
             </div>
 
-            {/* Camera */}
             <div style={styles.field}>
               <label style={styles.label} htmlFor="camera">Camera (optional)</label>
               <input
@@ -656,7 +735,6 @@ const CreateAlbum = () => {
               />
             </div>
 
-            {/* Photos */}
             <div style={styles.field}>
               <label style={styles.label}>Photos</label>
               <small style={{ display: "block", marginBottom: "0.5rem", color: "#666" }}>
@@ -689,23 +767,75 @@ const CreateAlbum = () => {
               )}
             </div>
 
-            {/* Publish */}
-            <div style={{ ...styles.field, marginTop: "1.5rem" }}>
+            {/* Add to Queue button */}
+            <div style={styles.field}>
               <button
                 style={{
                   ...styles.btn,
-                  ...(publishing || !title.trim() || files.length === 0 ? styles.btnDisabled : {}),
+                  ...(!title.trim() || files.length === 0 ? styles.btnDisabled : {}),
                   width: "100%",
-                  padding: "1rem",
-                  fontSize: "1.1rem",
+                  background: "#1976d2",
                 }}
-                onClick={handlePublish}
-                disabled={publishing || !title.trim() || files.length === 0}
+                onClick={handleAddToQueue}
+                disabled={!title.trim() || files.length === 0}
                 type="button"
               >
-                {publishing ? "Publishing..." : `Publish Album (${files.length} photos)`}
+                ➕ Add Album to Queue {files.length > 0 ? `(${files.length} photos)` : ""}
               </button>
             </div>
+
+            {/* Queue display */}
+            {queue.length > 0 && (
+              <div style={styles.queueSection}>
+                <label style={{ ...styles.label, fontSize: "1rem", marginBottom: "0.75rem" }}>
+                  📋 Album Queue ({queue.length} album{queue.length !== 1 ? "s" : ""},{" "}
+                  {queue.reduce((sum, a) => sum + a.photoCount, 0)} total photos)
+                </label>
+                {queue.map((album, idx) => (
+                  <div key={idx} style={styles.queueItem}>
+                    <div style={styles.queueInfo}>
+                      <strong>{album.title}</strong>
+                      {album.camera && <span> | {album.camera}</span>}
+                      <br />
+                      <small style={{ color: "#666" }}>
+                        {COLLECTION_LABEL(album.collection)} · {album.photoCount} photos
+                      </small>
+                    </div>
+                    <button
+                      style={styles.queueRemoveBtn}
+                      onClick={() => handleRemoveFromQueue(idx)}
+                      disabled={publishing}
+                      type="button"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+
+                {/* Publish All button */}
+                <button
+                  style={{
+                    ...styles.btn,
+                    ...(publishing ? styles.btnDisabled : {}),
+                    width: "100%",
+                    padding: "1rem",
+                    fontSize: "1.1rem",
+                    marginTop: "0.75rem",
+                    background: "#2e7d32",
+                  }}
+                  onClick={handlePublishAll}
+                  disabled={publishing}
+                  type="button"
+                >
+                  {publishing
+                    ? "Publishing..."
+                    : `🚀 Publish All ${queue.length} Album${queue.length !== 1 ? "s" : ""} (single commit)`}
+                </button>
+                <small style={{ display: "block", marginTop: "0.5rem", color: "#666", textAlign: "center" }}>
+                  All albums will be pushed in one commit → one Amplify build
+                </small>
+              </div>
+            )}
           </>
         )}
 
