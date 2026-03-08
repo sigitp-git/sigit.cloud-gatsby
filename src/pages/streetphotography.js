@@ -120,9 +120,9 @@ const streetPhotography = () => {
           </Link>
         </div>
       </AlbumGrid>
-      <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 2</Link>
+      <Link to="../streetphotography2/" style={{ fontSize: `0.85rem` }}>{"> "}go to 📸 Album 2</Link>
       <br />
-      <Link to="../streetphotography3/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 3</Link>
+      <Link to="../streetphotography3/" style={{ fontSize: `0.85rem` }}>{"> "}go to 📸 Album 3</Link>
       <br />
       <br />
     </Layout>

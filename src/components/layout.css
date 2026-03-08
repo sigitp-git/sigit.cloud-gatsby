@@ -826,6 +826,13 @@ a:active {
   background: var(--blogListBGHover);
 }
 
+.blog-list h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
 .footer-links {
   color: var(--headingColor);
 }

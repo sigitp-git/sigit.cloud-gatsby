@@ -13,7 +13,7 @@ const streetPhotography2 = () => {
       <div
         style={{
           background: `white`,
-          marginBottom: `1rem`,
+          marginBottom: `0rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}
       >
@@ -87,9 +87,33 @@ const streetPhotography2 = () => {
           </Link>
         </div>
       </AlbumGrid>
-      <Link to="../streetphotography/" style={{ fontSize: `1rem` }}>{"<< "}back to 📸 Album 1</Link>
+      {/*===========3SET=========*/}
+      <AlbumGrid>
+        <div className="blog-list">
+          <Link to="summer-in-vietnam-2024/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Summer in Vietnam 🇻🇳 2024</h4></span>
+            <img src="../../streetphotography2/summer-in-vietnam-2024/1.jpg" alt="Summer in Vietnam 🇻🇳 2024"
+              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="labuan-bajo-east-nusa-tenggara-2024/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Labuan Bajo 🇮🇩 2024</h4></span>
+            <img src="../../streetphotography2/labuan-bajo-east-nusa-tenggara-2024/1.jpg" alt="Labuan Bajo, East Nusa Tenggara 🇮🇩 2024"
+              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="rainy-day-in-paris-2025/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Rainy day in Paris 🇫🇷 2025</h4></span>
+            <img src="../../streetphotography2/rainy-day-in-paris-2025/1.jpg" alt="Rainy day in Paris 🇫🇷 2025"
+              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+      </AlbumGrid>
+      <Link to="../streetphotography/" style={{ fontSize: `0.85rem` }}>{"< "}back to 📸 Album 1</Link>
       <br />
-      <Link to="../streetphotography3/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 3</Link>
+      <Link to="../streetphotography3/" style={{ fontSize: `0.85rem` }}>{"> "}go to 📸 Album 3</Link>
       <br />
       <br />
     </Layout>

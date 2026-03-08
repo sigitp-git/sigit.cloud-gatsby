@@ -141,9 +141,9 @@ function generateIndexPage(collectionName, albums, allCollections) {
     const items = chunk.map(album =>
       `        <div className="blog-list">
           <Link to="${album.slug}/" style={{ fontSize: \`1rem\` }}>
-            <span className="footer-links"><h4 style={{ minHeight: "2.4em", lineHeight: "1.2em", overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>${album.title}</h4></span>
+            <span className="footer-links"><h4>${album.title}</h4></span>
             <img src="../../${collectionName}/${album.slug}/1.jpg" alt="${album.title}"
-              style={{ width: "100%", maxWidth: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
           </Link>
         </div>`
     ).join("\n")
@@ -156,8 +156,8 @@ function generateIndexPage(collectionName, albums, allCollections) {
     .map(c => {
       const label = COLLECTION_LABEL(c)
       const idx = allCollections.indexOf(c)
-      const arrow = idx < allCollections.indexOf(collectionName) ? '{"<< "}back to' : '{">> "}go to'
-      return `      <Link to="../${c}/" style={{ fontSize: \`1rem\` }}>${arrow} 📸 ${label}</Link>\n      <br />`
+      const arrow = idx < allCollections.indexOf(collectionName) ? '{"< "}back to' : '{"> "}go to'
+      return `      <Link to="../${c}/" style={{ fontSize: \`0.85rem\` }}>${arrow} 📸 ${label}</Link>\n      <br />`
     })
     .join("\n")
 
