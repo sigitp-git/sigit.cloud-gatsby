@@ -90,6 +90,18 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
+## 🧪 Local Dev Testing
+
+```shell
+export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm use 18
+npm install
+npm test
+npx gatsby build
+npx gatsby serve --host 0.0.0.0 --port 8000
+```
+
+Site will be available at `http://localhost:8000/`
+
 ## 💫 Deploy
 
 [![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/sigitp-git/sigit.cloud-gatsby)
