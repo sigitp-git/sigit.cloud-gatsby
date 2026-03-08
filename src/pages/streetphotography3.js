@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import AlbumGrid from "../components/album-grid"
 import "../components/layout.css"
 
-const streetPhotography3 = () => {
+const streetphotography3 = () => {
   return (
     <Layout>
       <div
@@ -20,12 +20,42 @@ const streetPhotography3 = () => {
         <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
         <Link to="../streetphotography3/" style={{ fontSize: `1rem` }}> | Album 3</Link>
       </div>
-      {/*===========3SET=========*/}
       <AlbumGrid>
         <div className="blog-list">
           <Link to="summer-in-vietnam-2024/" style={{ fontSize: `1rem` }}>
-            <span className="footer-links"><h4>Summer in Vietnam 🇻🇳 2024</h4></span>
-            <img src="../../streetphotography3/summer-in-vietnam-2024/1.jpg" alt="Summer in Vietnam 🇻🇳 2024"
+            <span className="footer-links"><h4>Summer in Vietnam ð»ð³ 2024</h4></span>
+            <img src="../../streetphotography3/summer-in-vietnam-2024/1.jpg" alt="Summer in Vietnam ð»ð³ 2024"
+              style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="labuan-bajo-east-nusa-tenggara-2024/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Labuan Bajo, East Nusa Tenggara 🇮🇩 2024</h4></span>
+            <img src="../../streetphotography3/labuan-bajo-east-nusa-tenggara-2024/1.jpg" alt="Labuan Bajo, East Nusa Tenggara 🇮🇩 2024"
+              style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="rainy-day-in-paris-2025/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Rainy day in Paris 🇫🇷 2025</h4></span>
+            <img src="../../streetphotography3/rainy-day-in-paris-2025/1.jpg" alt="Rainy day in Paris 🇫🇷 2025"
+              style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+      </AlbumGrid>
+      {/*===========3SET=========*/}
+      <AlbumGrid>
+        <div className="blog-list">
+          <Link to="street-food-stalls-fukuoka-2025/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Street food stalls, Fukuoka 🇯🇵 2025</h4></span>
+            <img src="../../streetphotography3/street-food-stalls-fukuoka-2025/1.jpg" alt="Street food stalls, Fukuoka 🇯🇵 2025"
+              style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
+          </Link>
+        </div>
+        <div className="blog-list">
+          <Link to="night-in-barcelona-2026/" style={{ fontSize: `1rem` }}>
+            <span className="footer-links"><h4>Night in Barcelona 🇪🇸 2026</h4></span>
+            <img src="../../streetphotography3/night-in-barcelona-2026/1.jpg" alt="Night in Barcelona 🇪🇸 2026"
               style={{ width: 300, height: 300, objectFit: "cover", borderRadius: "4px" }} />
           </Link>
         </div>
@@ -38,19 +68,13 @@ const streetPhotography3 = () => {
     </Layout>
   )
 }
-export default streetPhotography3
+export default streetphotography3
 
 export function Head() {
   return (
     <SEO
       title="Street Photography"
-      keywords={[
-        `sigit`,
-        `priyanggoro`,
-        `street photography`,
-        `leica`,
-        `fujifilm`,
-      ]}
+      keywords={[`sigit`, `priyanggoro`, `street photography`, `leica`, `fujifilm`]}
     />
   )
 }
