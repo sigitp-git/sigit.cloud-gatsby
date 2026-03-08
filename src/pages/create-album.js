@@ -6,6 +6,7 @@ import "../components/layout.css"
 const REPO_OWNER = "sigitp-git"
 const REPO_NAME = "sigit.cloud-gatsby"
 const BRANCH = "master"
+const ALLOWED_USER = "sigitp-git"
 
 // GitHub API helpers
 const ghApi = (path, token, opts = {}) =>
@@ -339,6 +340,10 @@ const CreateAlbum = () => {
       })
       const data = await res.json()
       if (!res.ok) throw new Error(data.message)
+      if (data.login !== ALLOWED_USER) {
+        addLog(`❌ Access denied. Only ${ALLOWED_USER} can use this page.`)
+        return
+      }
       localStorage.setItem("gh_pat", token)
       setGhUser(data.login)
       setAuthenticated(true)

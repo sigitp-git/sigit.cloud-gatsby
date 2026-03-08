@@ -14,7 +14,7 @@ const BlogPost = ({ data, pageContext }) => {
       <div>
         <h2>{post.frontmatter.title}</h2>
         <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html) }} />
+        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html, { ADD_ATTR: ['target', 'rel'] }) }} />
       </div>
       <br />
       <ul
