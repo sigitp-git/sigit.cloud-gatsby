@@ -92,15 +92,15 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 🧪 Local Dev Testing
 
-```shell
-export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm use 18
-npm install
-npm test
-npx gatsby build
-npx gatsby serve --host 0.0.0.0 --port 8000
 ```
+ubuntu@cloud9-sigitp2:~/sigit.cloud-gatsby$ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && nvm use 18 && npx gatsby serve --host 0.0.0.0 --port 8000
+Now using node v18.20.8 (npm v10.8.2)
 
-Site will be available at `http://localhost:8000/`
+You can now view gatsby-starter-default in the browser.
+
+  Local:            http://localhost:8000/
+  On Your Network:  http://10.0.10.242:8000/
+```
 
 ## 💫 Deploy
 
