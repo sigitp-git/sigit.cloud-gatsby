@@ -52,6 +52,7 @@ const nyhavn2023m10r = () => {
       >
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+        <Link to="../../streetphotography3/" style={{ fontSize: `1rem` }}> | Album 3</Link>
       </div>
       <h4>Nyhavn 🇩🇰 2023 | 📸 Leica M10r, Summilux 35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />

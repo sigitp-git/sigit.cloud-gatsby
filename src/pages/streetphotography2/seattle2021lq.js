@@ -60,6 +60,7 @@ const seattle2021lq = () => {
       >
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+        <Link to="../../streetphotography3/" style={{ fontSize: `1rem` }}> | Album 3</Link>
       </div>
       <h4>Seattle 🇺🇸 2021 | 📸 Leica Q</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />

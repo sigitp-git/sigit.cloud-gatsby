@@ -19,6 +19,7 @@ const streetPhotography = () => {
       >
         <Link to="../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+        <Link to="../streetphotography3/" style={{ fontSize: `1rem` }}> | Album 3</Link>
       </div>
       {/*===========3SET=========*/}
       <AlbumGrid>
@@ -120,6 +121,8 @@ const streetPhotography = () => {
         </div>
       </AlbumGrid>
       <Link to="../streetphotography2/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 2</Link>
+      <br />
+      <Link to="../streetphotography3/" style={{ fontSize: `1rem` }}>{">> "}go to 📸 Album 3</Link>
       <br />
       <br />
     </Layout>

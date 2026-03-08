@@ -59,6 +59,7 @@ const stroget2023fuji = () => {
       >
         <Link to="../../streetphotography/" style={{ fontSize: `1rem` }}>📸 | Album 1</Link>
         <Link to="../../streetphotography2/" style={{ fontSize: `1rem` }}> | Album 2</Link>
+        <Link to="../../streetphotography3/" style={{ fontSize: `1rem` }}> | Album 3</Link>
       </div>
       <h4>Strøget 🇩🇰 2023 | 📸 Fuji XT-5, XF35mm F1.4</h4>
       <ImageGallery items={images} slideOnThumbnailOver={true} />
