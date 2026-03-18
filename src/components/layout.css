@@ -868,3 +868,24 @@ a:active {
 .three-columns-grid>* {
   padding: 0.2rem;
 }
+
+/* mobile: stack albums in a single column */
+@media only screen and (max-width: 600px) {
+  .three-columns-grid {
+    grid-template-columns: 1fr;
+  }
+  .blog-list {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .blog-list h4 {
+    max-width: 100%;
+  }
+}
+
+/* tablet: 2 columns */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .three-columns-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
