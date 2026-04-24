@@ -13,7 +13,15 @@ Before we get to the CS rankings, UCLA was just ranked the <a href="https://nypo
 
 UCLA is also the #1 public university in the country with an acceptance rate under 10 percent. For Computer Science specifically, the admit rate drops to <a href="https://www.sfchronicle.com/projects/2025/uc-acceptance-rate-by-major-csu/" target="_blank" rel="noopener noreferrer">around 3-4%</a>.
 
-This matters for CS students: four years is a long time. Where you live, eat, and study affects your experience as much as the curriculum does.
+This matters for CS students: four years is a long time. Where you live, eat, and study affects your experience as much as the curriculum does. UCLA also <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">became the first UC to guarantee all undergraduates campus housing</a>. Students entering as freshmen will be offered four years in campus residences.
+
+## The Most Applied-To University in the US
+
+UCLA is the <a href="https://apb.ucla.edu/campus-statistics/admissions" target="_blank" rel="noopener noreferrer">most applied-to university in the United States</a>. For Fall 2026, <a href="https://newsroom.ucla.edu/stories/uclabound-admitted-students-reactions-2026" target="_blank" rel="noopener noreferrer">nearly 147,000 first-year students and roughly 31,000 transfer students</a> (about 178,000 total) applied for admission. For Fall 2025, the total reached <a href="https://apb.ucla.edu/campus-statistics/admissions" target="_blank" rel="noopener noreferrer">173,374 applications</a>, 145,086 from prospective freshmen and 28,288 from transfer students.
+
+This isn't a one-year spike. UCLA has held the title of most applied-to university for years running, and it has been <a href="https://newsroom.ucla.edu/stories/ucla-number-one-for-a-reason" target="_blank" rel="noopener noreferrer">ranked the best public university in the nation for eight straight years</a>. The overall acceptance rate sits at about 9%, and for Computer Science it drops to <a href="https://www.sfchronicle.com/projects/2025/uc-acceptance-rate-by-major-csu/" target="_blank" rel="noopener noreferrer">3-4%</a>.
+
+The demand speaks for itself: students across the country and around the world see UCLA as a top choice, and the numbers back it up.
 
 ## UCLA is a Public Ivy
 
@@ -46,6 +54,7 @@ Berkeley edges UCLA by 2.2 points overall (92.8 vs 90.6) and holds a perfect 100
 - **Research Environment**: UCLA 93.6 vs Berkeley 92.8, UCLA provides a stronger research ecosystem for students to participate in
 - **Industry score**: UCLA 93.5 vs Berkeley 93.9, essentially a tie
 - **Campus and student life**: UCLA is the <a href="https://nypost.com/2026/04/22/us-news/ucla-ranked-as-the-best-college-campus-in-the-united-states/" target="_blank" rel="noopener noreferrer">#1 college campus in America</a> with <a href="https://newsroom.ucla.edu/stories/9-reasons-ucla-dining-is-the-best-in-the-nation" target="_blank" rel="noopener noreferrer">#1 ranked food</a>. Berkeley doesn't crack the top spot in either.
+- **Housing guarantee**: UCLA is the <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">first UC to guarantee all undergraduates campus housing</a>. Berkeley does not offer this, and off-campus housing in the Bay Area is among the most expensive in the country, adding significant hidden costs for students without guaranteed on-campus options.
 
 ### UCLA vs the rest of the pack
 
@@ -55,6 +64,7 @@ Against UIUC, UW, Georgia Tech, and UT Austin, UCLA pulls ahead more decisively:
 - **International Outlook**: UCLA's 79.0 is the highest among all top US public CS programs. Compare that to UT Austin's 46.8 or UIUC's 65.6.
 - **Overall balance**: UT Austin and UIUC score well in Industry and Research but fall off sharply in International Outlook and Teaching. UCLA has no weak pillar.
 - **Campus experience**: None of UIUC, UW, Georgia Tech, or UT Austin hold the <a href="https://nypost.com/2026/04/22/us-news/ucla-ranked-as-the-best-college-campus-in-the-united-states/" target="_blank" rel="noopener noreferrer">#1 campus</a> or <a href="https://newsroom.ucla.edu/stories/9-reasons-ucla-dining-is-the-best-in-the-nation" target="_blank" rel="noopener noreferrer">#1 food ranking</a>. UCLA does.
+- **Housing guarantee**: UCLA is the <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">first UC to guarantee all undergraduates campus housing</a>. None of the other top public CS schools offer this.
 
 ## The Cost: Public vs Private
 
@@ -109,7 +119,7 @@ The private schools deliver about 3-6 more ranking points at about 1.4 score/$1K
 
 Four UC schools in the global top 80 for CS. No other state system comes close.
 
-Among them, UCLA stands out: #18 globally at about $16,700/year in-state tuition (about $45,400 out-of-state, still far less than any top private school), the <a href="https://nypost.com/2026/04/22/us-news/ucla-ranked-as-the-best-college-campus-in-the-united-states/" target="_blank" rel="noopener noreferrer">#1 campus in America</a>, <a href="https://newsroom.ucla.edu/stories/9-reasons-ucla-dining-is-the-best-in-the-nation" target="_blank" rel="noopener noreferrer">#1 college food</a>, a <a href="https://www.sfchronicle.com/projects/2025/uc-acceptance-rate-by-major-csu/" target="_blank" rel="noopener noreferrer">3-4% CS admit rate</a>, and a 419-acre Westwood campus often described as a "college in a garden." For CS students spending four years somewhere, the combination of academics, cost, and quality of life is hard to beat.
+Among them, UCLA stands out: #18 globally at about $16,700/year in-state tuition (about $45,400 out-of-state, still far less than any top private school), the <a href="https://nypost.com/2026/04/22/us-news/ucla-ranked-as-the-best-college-campus-in-the-united-states/" target="_blank" rel="noopener noreferrer">#1 campus in America</a>, <a href="https://newsroom.ucla.edu/stories/9-reasons-ucla-dining-is-the-best-in-the-nation" target="_blank" rel="noopener noreferrer">#1 college food</a>, a <a href="https://www.sfchronicle.com/projects/2025/uc-acceptance-rate-by-major-csu/" target="_blank" rel="noopener noreferrer">3-4% CS admit rate</a>, a <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">guaranteed housing for all undergraduates</a>, and a 419-acre Westwood campus often described as a "college in a garden." For CS students spending four years somewhere, the combination of academics, cost, and quality of life is hard to beat.
 
 ## Where UCLA CS Graduates Work
 
@@ -136,7 +146,7 @@ For CS students, this means UCLA isn't just a place to learn. It's a launchpad, 
 2. **Private schools cost 4x more for ~3-6 extra ranking points**: MIT, Stanford, and CMU are world-class, but the value proposition of UCLA and Berkeley is hard to beat.
 3. **UT Austin and UIUC are strong but lopsided**: excellent Industry and Research scores, but significantly weaker International Outlook and Teaching.
 4. **The UC system dominates US public CS**: four UC schools in the top 80 globally. No other state system comes close.
-5. **For the full student experience, academics, campus life, food, location, diversity, and cost, UCLA is the best value in the US.**
+5. **For the full student experience, academics, campus life, food, location, diversity, <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">guaranteed housing for all undergraduates</a>, and cost, UCLA is the best value in the US.**
 6. **UCLA CS graduates land at top employers**: Amazon, Apple, Google, Microsoft, SpaceX, and more actively recruit from UCLA, and alumni have founded companies like Uber, Blizzard Entertainment, and Applied Semantics (Google AdSense). It's a launchpad, whether you're heading to a FAANG (Facebook/Meta, Amazon, Apple, Netflix, Google) company or building the next one.
 
 ## Bonus: UCLA Bruin Day 2026 📸
@@ -157,6 +167,10 @@ I attended UCLA Bruin Day 2026 and brought my camera along. Here are some photos
 - Uber / Travis Kalanick: <a href="https://newsroom.ucla.edu/stories/q-a-with-travis-kalanick-uber-co-founder-and-ceo-and-a-former-ucla-student" target="_blank" rel="noopener noreferrer">Q&A with Travis Kalanick</a> (UCLA Newsroom)
 - Blizzard Entertainment: <a href="https://samueli.ucla.edu/blizzard-ceo-advises-break-large-projects-into-bite-size-pieces/" target="_blank" rel="noopener noreferrer">Blizzard CEO Advises UCLA</a> (UCLA Samueli)
 - UCLA Alumni Founded LA Companies: <a href="https://www.builtinla.com/articles/ucla-alumni-founded-la-companies" target="_blank" rel="noopener noreferrer">28 UCLA Alumni Who Founded Major LA Tech Companies</a> (Built In LA)
+- UCLA Admissions Statistics: <a href="https://apb.ucla.edu/campus-statistics/admissions" target="_blank" rel="noopener noreferrer">UCLA Academic Planning and Budget - Admissions</a>
+- UCLA Fall 2026 Admissions: <a href="https://newsroom.ucla.edu/stories/uclabound-admitted-students-reactions-2026" target="_blank" rel="noopener noreferrer">Students Share Joy at Being Admitted to UCLA</a> (UCLA Newsroom)
+- UCLA #1 Public University: <a href="https://newsroom.ucla.edu/stories/ucla-number-one-for-a-reason" target="_blank" rel="noopener noreferrer">UCLA: #1 for a Reason</a> (UCLA Newsroom, September 2024)
+- UCLA Housing Guarantee: <a href="https://newsroom.ucla.edu/releases/expanded-housing-guarantee-ucla-undergraduates" target="_blank" rel="noopener noreferrer">UCLA Becomes First UC to Guarantee All Undergraduates Campus Housing</a> (UCLA Newsroom)
 - Tuition Data: Official university cost of attendance pages for 2025-2026 academic year
 
 **Disclaimer** <a href="https://sigit.cloud/disclaimer/" target="_blank" rel="noopener noreferrer">https://sigit.cloud/disclaimer/</a>
