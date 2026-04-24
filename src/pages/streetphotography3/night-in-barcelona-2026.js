@@ -34,7 +34,7 @@ const night_in_barcelona_2026 = () => {
     <Layout>
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

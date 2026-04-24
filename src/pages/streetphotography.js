@@ -12,7 +12,7 @@ const streetPhotography = () => {
     <Layout>
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `0rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}
@@ -23,7 +23,7 @@ const streetPhotography = () => {
       </div>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="london2023fujixt5/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>London 🇩🇬 2023</h4></span>
             <StaticImage src="../../static/streetphotography/london2023-fujixt5/1.jpg" alt="London 🇩🇬 2023"
@@ -33,7 +33,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="london2023ctm10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>London CT 🇩🇬 2023</h4></span>
             <StaticImage src="../../static/streetphotography/london2023-ct-leicam10r/1.jpg" alt="Strøget 🇩🇰 2023"
@@ -43,7 +43,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="seattle2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 Summer'23</h4></span>
             <StaticImage src="../../static/streetphotography/seattle2023-leicam10r/8.jpg" alt="Seattle 🇺🇸 Summer'23"
@@ -56,7 +56,7 @@ const streetPhotography = () => {
       </AlbumGrid>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="nyhavn2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Nyhavn 🇩🇰 2023</h4></span>
             <StaticImage src="../../static/streetphotography/denmark2023-nyhavn/1.jpg" alt="Nyhavn 🇩🇰 2023"
@@ -66,7 +66,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="stroget2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Strøget 🇩🇰 2023</h4></span>
             <StaticImage src="../../static/streetphotography/denmark2023-stroget/1.jpg" alt="Strøget 🇩🇰 2023"
@@ -76,7 +76,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="seattle2023m10r/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 Summer'23</h4></span>
             <StaticImage src="../../static/streetphotography/seattle2023-leicam10r/1.jpg" alt="Seattle 🇺🇸 Summer'23"
@@ -89,7 +89,7 @@ const streetPhotography = () => {
       </AlbumGrid>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="tokyo2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tokyo 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography/japan2023-tokyo-jr/1.jpg" alt="Tokyo 🇯🇵 2023"
@@ -99,7 +99,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="kyoto2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Kyoto 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography/japan2023-kyoto/1.jpg" alt="Kyoto 🇯🇵 2023"
@@ -109,7 +109,7 @@ const streetPhotography = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="tsukiji2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Tsukiji 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography/japan2023-tsukiji/1.jpg" alt="Tsukiji 🇯🇵 2023"

@@ -52,7 +52,7 @@ const stroget2023fuji = () => {
       />
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

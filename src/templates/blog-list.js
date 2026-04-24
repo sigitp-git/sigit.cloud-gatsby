@@ -24,13 +24,14 @@ const BlogList = ({ data, pageContext }) => {
             <div className="blog-list">
               <h2
                 style={{
-                  marginBottom: "1rem",
+                  marginBottom: "0.4rem",
+                  fontSize: "1.2rem",
                 }}
               >
                 {title}
               </h2>
-              {node.frontmatter.date}
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <small style={{ color: "#888", fontSize: "0.85rem" }}>{node.frontmatter.date}</small>
+              <p style={{ marginTop: "0.5rem", color: "#555", fontSize: "0.95rem" }} dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           </Link>
         )
@@ -54,7 +55,7 @@ const BlogList = ({ data, pageContext }) => {
                 marginTop: "0.1rem",
                 marginBottom: "0.1rem",
                 padding: "0.5rem",
-                color: "var(--headerColor)",
+                color: "#555",
               }}
             >
               {"<< Prev"}
@@ -72,11 +73,13 @@ const BlogList = ({ data, pageContext }) => {
                 style={{
                   marginTop: "0.1rem",
                   marginBottom: "0.1rem",
-                  padding: "0.5rem",
+                  padding: "0.4rem 0.7rem",
                   textDecoration: "none",
+                  borderRadius: "6px",
+                  fontSize: "0.9rem",
                   color:
-                    i + 1 === currentPage ? "#ffffff" : "var(--headerColor)",
-                  background: i + 1 === currentPage ? "var(--headerColor)" : "",
+                    i + 1 === currentPage ? "#fff" : "#555",
+                  background: i + 1 === currentPage ? "#6366f1" : "",
                 }}
               >
                 {i + 1}
@@ -91,7 +94,7 @@ const BlogList = ({ data, pageContext }) => {
                 marginTop: "0.1rem",
                 marginBottom: "0.1rem",
                 padding: "0.5rem",
-                color: "var(--headerColor)",
+                color: "#555",
               }}
             >
               {"Next >>"}

@@ -12,7 +12,7 @@ const streetPhotography2 = () => {
     <Layout>
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `0rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}
@@ -23,7 +23,7 @@ const streetPhotography2 = () => {
       </div>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="fushimi2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Fushimi 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography2/japan2023-fushimi/1.jpg" alt="Fushimi Inari 🇯🇵 2023"
@@ -33,7 +33,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="yosakoi2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Sapporo 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography2/japan2023-yosakoi/1.jpg" alt="Yosakoi Sapporo 🇯🇵 2023"
@@ -43,7 +43,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="shibuya2023fuji/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Shibuya 🇯🇵 2023</h4></span>
             <StaticImage src="../../static/streetphotography2/japan2023-shibuya/1.jpg" alt="Shibuya 🇯🇵 2023"
@@ -56,7 +56,7 @@ const streetPhotography2 = () => {
       </AlbumGrid>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="seattle2023rch/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2023</h4></span>
             <StaticImage src="../../static/streetphotography2/seattle2023-ricohgriiix/1.jpg" alt="Seattle"
@@ -66,7 +66,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="seattle2021lq/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Seattle 🇺🇸 2021</h4></span>
             <StaticImage src="../../static/streetphotography2/seattle2021-leicaq/5.jpeg" alt="Seattle"
@@ -76,7 +76,7 @@ const streetPhotography2 = () => {
               height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="newyork2021lq/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>New York 🇺🇸 2021</h4></span>
             <StaticImage src="../../static/streetphotography2/newyork2021-leicaq/1.jpeg" alt="New York"
@@ -89,25 +89,34 @@ const streetPhotography2 = () => {
       </AlbumGrid>
       {/*===========3SET=========*/}
       <AlbumGrid>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="summer-in-vietnam-2024/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Summer in Vietnam 🇻🇳 2024</h4></span>
-            <img src="../../streetphotography2/summer-in-vietnam-2024/1.jpg" alt="Summer in Vietnam 🇻🇳 2024"
-              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+            <StaticImage src="../../static/streetphotography2/summer-in-vietnam-2024/1.jpg" alt="Summer in Vietnam 🇻🇳 2024"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="labuan-bajo-east-nusa-tenggara-2024/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Labuan Bajo 🇮🇩 2024</h4></span>
-            <img src="../../streetphotography2/labuan-bajo-east-nusa-tenggara-2024/1.jpg" alt="Labuan Bajo, East Nusa Tenggara 🇮🇩 2024"
-              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+            <StaticImage src="../../static/streetphotography2/labuan-bajo-east-nusa-tenggara-2024/1.jpg" alt="Labuan Bajo, East Nusa Tenggara 🇮🇩 2024"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
           </Link>
         </div>
-        <div className="blog-list">
+        <div className="album-card">
           <Link to="rainy-day-in-paris-2025/" style={{ fontSize: `1rem` }}>
             <span className="footer-links"><h4>Rainy day in Paris 🇫🇷 2025</h4></span>
-            <img src="../../streetphotography2/rainy-day-in-paris-2025/1.jpg" alt="Rainy day in Paris 🇫🇷 2025"
-              width={300} height={300} style={{ objectFit: "cover", borderRadius: "4px" }} />
+            <StaticImage src="../../static/streetphotography2/rainy-day-in-paris-2025/1.jpg" alt="Rainy day in Paris 🇫🇷 2025"
+              placeholder="blurred"
+              layout="constrained"
+              width={300}
+              height={300} />
           </Link>
         </div>
       </AlbumGrid>

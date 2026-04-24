@@ -1,16 +1,16 @@
-/* dark-slate-blue + pastel-purple*/
+/* modern minimal - inspired by marco.fyi */
 :root {
-  --headerTitleColor: white;
-  --headerColor: darkslateblue;
-  --headerSubLinkBG: #eeecf1;
-  --headerSubLinkColor: darkslateblue;
-  --bodyBGColor: white;
-  --themeColor: darkslateblue;
-  --headingColor: rgb(104, 92, 184);
-  --hoverColor: #8EA7E9;
-  --blogListBG: white;
-  --blogListBGHover: #eeecf1;
-  --blogListBrdr: rgb(230, 223, 223);
+  --headerTitleColor: #1a1a1a;
+  --headerColor: #fafafa;
+  --headerSubLinkBG: #fafafa;
+  --headerSubLinkColor: #555;
+  --bodyBGColor: #fafafa;
+  --themeColor: #1a1a1a;
+  --headingColor: #333;
+  --hoverColor: #6366f1;
+  --blogListBG: #fff;
+  --blogListBGHover: #f5f3ff;
+  --blogListBrdr: #e5e7eb;
 }
 
 /* pastel-purple */
@@ -314,9 +314,10 @@ body {
   /* color: hsla(0, 0%, 0%, 0.8); */
   color: var(--themeColor);
   /* font-family: georgia, serif; */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
+  line-height: 1.7;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -619,8 +620,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  /* background: hsla(249, 64%, 34%, 0.2); */
-  background: var(--headerColor);
+  background: #e5e7eb;
   border: none;
   height: 1px;
 }
@@ -809,21 +809,76 @@ a:active {
   color: var(--headingColor);
 }
 
+.blog-post-content a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--hoverColor);
+}
+
 .blog-list {
   text-decoration: none;
-  margin: 1.6rem 0;
-  padding: 1rem 1.6rem;
+  margin: 1rem 0;
+  padding: 1.25rem 1.5rem;
   display: block;
-  align-items: center;
   cursor: pointer;
-  border: 1px hidden var(--blogListBrdr);
-  border-radius: 5px;
+  border: 1px solid var(--blogListBrdr);
+  border-radius: 8px;
   background: var(--blogListBG);
-  transition: background 1s ease, color 1s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 }
 
 .blog-list:hover {
   background: var(--blogListBGHover);
+  border-color: var(--hoverColor);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+
+.album-card {
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.album-card:hover {
+  background: var(--blogListBGHover);
+}
+
+.album-card h4 {
+  min-height: 2.4em;
+  margin-bottom: 0.3rem;
+  line-height: 1.2;
+}
+
+.album-card img,
+.album-card .gatsby-image-wrapper {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 4px;
+}
+
+.album-card .gatsby-image-wrapper img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
 }
 
 .blog-list h4 {
@@ -860,7 +915,6 @@ a:active {
 /* container */
 .three-columns-grid {
   display: grid;
-  grid-auto-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 

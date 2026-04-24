@@ -11,7 +11,7 @@ const About = ({ data }) => {
     <Layout>
       <h2>About</h2>
       <b>Sigit Priyanggoro</b>
-      <br />Principal Solutions Architect, Autonomous Networks at Amazon Web Services
+      <br />Principal Solutions Architect, Telco Networks at Amazon Web Services
       <br />
       <br />
       <div
@@ -116,7 +116,7 @@ const About = ({ data }) => {
           </a>
           <br />
           <a
-            href={`https://aws.amazon.com/blogs/?filtered-posts.q=sigit%2Bpriyanggoro&filtered-posts.q_operator=AND&awsf.blog-master-events=*all`}
+            href={`https://aws.amazon.com/blogs/?filtered-posts.q=sigit%20priyanggoro&filtered-posts.q_operator=AND&awsf.blog-master-events=*all&ams%23article-feed%23pattern-data-357110997.search=sigit%20priyanggoro`}
             target="_blank"
             rel="noopener noreferrer"
           >

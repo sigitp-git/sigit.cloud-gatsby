@@ -56,7 +56,7 @@ const london2023fujixt5 = () => {
       />
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

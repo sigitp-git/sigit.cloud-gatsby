@@ -29,64 +29,41 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 720,
+          padding: `0 1.0875rem 2rem`,
         }}
       >
         <main>{children}</main>
         <hr />
-        <footer>
-          <Link to="/">
-            <span className="footer-links">Home</span>
-          </Link>
-          {` `}
-          <Link to="/about/">
-            <span className="footer-links">About</span>
-          </Link>
-          {` `}
-          <Link to="/gallery/"><span className="footer-links">Gallery</span></Link>
-          {` `}
-          <Link to="/streetphotography/">
-            <span className="footer-links">Street 📸</span>
-          </Link>
-          {` `}
-          <Link to="/disclaimer/">
-            <span className="footer-links">Disclaimer</span>
-          </Link>
-          {` `}© {new Date().getFullYear()}, a{" "}
-          <a
-            href="https://aws.amazon.com/serverless/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            #serverless
-          </a>{" "}
-          Blog, Built with
-          {` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
-          </a>
-          {` `}
-          <a
-            href="https://aws.amazon.com/amplify/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Amplify
-          </a>
-          {` `}
-          <a
-            href="https://aws.amazon.com/appsync/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            AppSync
-          </a>
-          {` `}
+        <footer style={{ 
+          paddingTop: `1.5rem`,
+          fontSize: `0.85rem`,
+          color: `#888`,
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-between`,
+          alignItems: `center`,
+          gap: `0.5rem`,
+        }}>
+          <div>
+            <Link to="/" className="nav-link">Home</Link>
+            {` · `}
+            <Link to="/about/" className="nav-link">About</Link>
+            {` · `}
+            <Link to="/gallery/" className="nav-link">Gallery</Link>
+            {` · `}
+            <Link to="/streetphotography/" className="nav-link">Street 📸</Link>
+            {` · `}
+            <Link to="/disclaimer/" className="nav-link">Disclaimer</Link>
+          </div>
+          <div>
+            © {new Date().getFullYear()}{" "}
+            <a href="https://aws.amazon.com/serverless/" target="_blank" rel="noopener noreferrer" className="nav-link">#serverless</a>
+            {` · `}
+            <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer" className="nav-link">Gatsby</a>
+            {` · `}
+            <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer" className="nav-link">Amplify</a>
+          </div>
         </footer>
       </div>
     </>

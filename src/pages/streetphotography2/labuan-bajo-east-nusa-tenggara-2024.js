@@ -29,7 +29,7 @@ const labuan_bajo_east_nusa_tenggara_2024 = () => {
     <Layout>
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

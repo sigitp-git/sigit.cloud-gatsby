@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import { Link, graphql } from "gatsby"
 import DOMPurify from "isomorphic-dompurify"
 import Layout from "../components/layout"
@@ -9,12 +9,23 @@ const BlogPost = ({ data, pageContext }) => {
   //console.log(pageContext)
   const { previous, next } = pageContext
   const post = data.markdownRemark
+  const contentRef = useRef(null)
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.querySelectorAll("a").forEach(link => {
+        link.setAttribute("target", "_blank")
+        link.setAttribute("rel", "noopener noreferrer")
+      })
+    }
+  }, [])
+
   return (
     <Layout>
       <div>
-        <h2>{post.frontmatter.title}</h2>
-        <p>{post.frontmatter.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html, { ADD_ATTR: ['target', 'rel'] }) }} />
+        <h2 style={{ marginBottom: "0.4rem" }}>{post.frontmatter.title}</h2>
+        <small style={{ color: "#888", fontSize: "0.85rem" }}>{post.frontmatter.date}</small>
+        <div ref={contentRef} className="blog-post-content" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html, { ADD_ATTR: ['target', 'rel'] }) }} />
       </div>
       <br />
       <ul

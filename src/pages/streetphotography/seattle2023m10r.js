@@ -55,7 +55,7 @@ const seattle2023m10r = () => {
       />
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

@@ -58,7 +58,7 @@ const london2023ctm10r = () => {
       />
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}

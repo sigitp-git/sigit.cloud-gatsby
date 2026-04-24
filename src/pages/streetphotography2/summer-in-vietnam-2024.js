@@ -26,7 +26,7 @@ const summer_in_vietnam_2024 = () => {
     <Layout>
       <div
         style={{
-          background: `white`,
+          background: `transparent`,
           marginBottom: `1rem`,
           border: `1px hidden var(--headerSubLinkBG)`,
         }}
