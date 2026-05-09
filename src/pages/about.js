@@ -33,7 +33,7 @@ const About = ({ data }) => {
         />
       </div>
       <div>
-        <p>I am a Solutions Architect, Technical Product Manager, and Technical Lead for AWS 5G and EC2 Edge product development team. I work backwards with AWS hardware engineering, software engineering, and data center systems engineering to innovate on behalf of AWS customers and partners worldwide.
+        <p>I am a Solutions Architect, Technical Product Manager, and Technical Lead for AWS Telco Industry Business Unit, Customer Solutions Engineering (CSE) team. I work backwards with AWS hardware engineering, software engineering, and data center systems engineering to innovate on behalf of AWS customers and partners worldwide.
           <br />
           <br />
           "There are two kinds of people: those who do the work and those who take the credit. Try to be in the first group; there is less competition."

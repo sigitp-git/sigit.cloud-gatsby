@@ -30,8 +30,8 @@ const BlogList = ({ data, pageContext }) => {
               >
                 {title}
               </h2>
-              <small style={{ color: "#888", fontSize: "0.85rem" }}>{node.frontmatter.date}</small>
-              <p style={{ marginTop: "0.5rem", color: "#555", fontSize: "0.95rem" }} dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <small style={{ color: "var(--mutedText)", fontSize: "0.85rem" }}>{node.frontmatter.date}</small>
+              <p style={{ marginTop: "0.5rem", color: "var(--secondaryText)", fontSize: "0.95rem" }} dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           </Link>
         )
@@ -55,7 +55,7 @@ const BlogList = ({ data, pageContext }) => {
                 marginTop: "0.1rem",
                 marginBottom: "0.1rem",
                 padding: "0.5rem",
-                color: "#555",
+                color: "var(--secondaryText)",
               }}
             >
               {"<< Prev"}
@@ -78,8 +78,8 @@ const BlogList = ({ data, pageContext }) => {
                   borderRadius: "6px",
                   fontSize: "0.9rem",
                   color:
-                    i + 1 === currentPage ? "#fff" : "#555",
-                  background: i + 1 === currentPage ? "#6366f1" : "",
+                    i + 1 === currentPage ? "#fff" : "var(--secondaryText)",
+                  background: i + 1 === currentPage ? "var(--accentColor)" : "",
                 }}
               >
                 {i + 1}
@@ -94,7 +94,7 @@ const BlogList = ({ data, pageContext }) => {
                 marginTop: "0.1rem",
                 marginBottom: "0.1rem",
                 padding: "0.5rem",
-                color: "#555",
+                color: "var(--secondaryText)",
               }}
             >
               {"Next >>"}

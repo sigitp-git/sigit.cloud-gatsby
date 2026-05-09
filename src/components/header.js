@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import ThemeToggle from "./theme-toggle"
 import "./layout.css"
 
 const Header = ({ siteTitle = '' }) => (
@@ -12,7 +13,7 @@ const Header = ({ siteTitle = '' }) => (
   >
     <header
       style={{
-        background: `#6366f1`,
+        background: `var(--accentColor)`,
         borderRadius: `8px`,
         padding: `2rem 1.5rem`,
         display: `flex`,
@@ -35,6 +36,7 @@ const Header = ({ siteTitle = '' }) => (
         <Link to="/about/" className="nav-link" style={{ fontSize: `0.95rem`, color: `rgba(255,255,255,0.85)` }} aria-label="about page">about</Link>
         <Link to="/gallery/" className="nav-link" style={{ fontSize: `0.95rem`, color: `rgba(255,255,255,0.85)` }} aria-label="gallery page">gallery</Link>
         <Link to="/streetphotography/" className="nav-link" style={{ fontSize: `0.95rem`, color: `rgba(255,255,255,0.85)` }} aria-label="street photography page">street 📸</Link>
+        <span style={{ marginLeft: `auto` }}><ThemeToggle /></span>
       </nav>
     </header>
   </div>

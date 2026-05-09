@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <footer style={{ 
           paddingTop: `1.5rem`,
           fontSize: `0.85rem`,
-          color: `#888`,
+          color: `var(--mutedText)`,
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,

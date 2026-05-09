@@ -24,7 +24,7 @@ const BlogPost = ({ data, pageContext }) => {
     <Layout>
       <div>
         <h2 style={{ marginBottom: "0.4rem" }}>{post.frontmatter.title}</h2>
-        <small style={{ color: "#888", fontSize: "0.85rem" }}>{post.frontmatter.date}</small>
+        <small style={{ color: "var(--mutedText)", fontSize: "0.85rem" }}>{post.frontmatter.date}</small>
         <div ref={contentRef} className="blog-post-content" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.html, { ADD_ATTR: ['target', 'rel'] }) }} />
       </div>
       <br />

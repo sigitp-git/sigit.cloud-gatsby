@@ -11,6 +11,38 @@
   --blogListBG: #fff;
   --blogListBGHover: #f5f3ff;
   --blogListBrdr: #e5e7eb;
+  --accentColor: #6366f1;
+  --mutedText: #888;
+  --secondaryText: #555;
+}
+
+[data-theme="dark"] {
+  --headerTitleColor: #f1f5f9;
+  --headerColor: #0f172a;
+  --headerSubLinkBG: #1e293b;
+  --headerSubLinkColor: #94a3b8;
+  --bodyBGColor: #0f172a;
+  --themeColor: #f1f5f9;
+  --headingColor: #e2e8f0;
+  --hoverColor: #a5b4fc;
+  --blogListBG: #1e293b;
+  --blogListBGHover: #312e81;
+  --blogListBrdr: #334155;
+  --accentColor: #818cf8;
+  --mutedText: #64748b;
+  --secondaryText: #94a3b8;
+}
+
+[data-theme="dark"] hr {
+  background: #334155;
+}
+
+[data-theme="dark"] .blog-list {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .blog-list:hover {
+  box-shadow: 0 2px 8px rgba(129, 140, 248, 0.15);
 }
 
 /* pastel-purple */
@@ -620,7 +652,7 @@ hr {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: calc(1.45rem - 1px);
-  background: #e5e7eb;
+  background: var(--blogListBrdr);
   border: none;
   height: 1px;
 }
