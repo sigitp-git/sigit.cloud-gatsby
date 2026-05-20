@@ -17,8 +17,8 @@ const setThemeScript = `
   })();
 `
 
-exports.onRenderBody = ({ setPreBodyComponents }) => {
-  setPreBodyComponents([
+exports.onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
     React.createElement("script", {
       key: "theme-init",
       dangerouslySetInnerHTML: { __html: setThemeScript },
